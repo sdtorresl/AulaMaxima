@@ -98,58 +98,8 @@ $cakeDescription = __('Aula Maxima - Administrative Panel');
                 </nav>
             </header>
             <div class="page-content d-flex align-items-stretch">
-                <!-- Side Navbar -->
-                <nav class="side-navbar">
-                    <!-- Sidebar Header-->
-                    <div class="sidebar-header d-flex align-items-center">
-                        <div class="avatar">
-                            <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
-                        </div>
-                        <div class="title">
-                            <h1 class="h4"><?= $userData['first_name'] . $userData['last_name'] ?></h1>
-                            <?php if ($userData['role'] == 'admin'): ?>
-                            <p><?= __('Administrator') ?> </p>
-                            <?php endif; ?>    
-                        </div>
-                    </div>
-                    <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
-                    <ul class="list-unstyled">
-                        <li class="active">
-                            <?= $this->Html->link(
-                                array(
-                                    $this->Html->tag('i', '', array('class' => 'icon-home')),
-                                    __('Users')
-                                ),
-                                array(
-                                    'controller' => 'Display', 
-                                    'action' => 'admin'
-                                ),
-                                array(
-                                    'escape' => false
-                                )
-                            ); ?>
-                        </li>
-                        <li>
-                            <a href="#dashvariants" aria-expanded="false" data-toggle="collapse">
-                                <i class="icon-interface-windows"></i>Users
-                            </a>
-                            <ul id="dashvariants" class="collapse list-unstyled">
-                                <li><?= $this->Html->link(__('List'), ['controller' => 'Users', 'action' => 'add']); ?></li>
-                                <li><?= $this->Html->link(__('Add'), ['controller' => 'Users', 'action' => 'add']); ?></li>
-                            </ul>
-                        </li>
-                    <li> <a href="tables.html"> <i class="icon-grid"></i>Tables </a></li>
-                    <li> <a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
-                    <li> <a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
-                    <li> <a href="login.html"> <i class="icon-interface-windows"></i>Login Page</a></li>
-                    </ul><span class="heading">Extras</span>
-                    <ul class="list-unstyled">
-                        <li> <a href="#"> <i class="icon-flask"></i>Demo </a></li>
-                        <li> <a href="#"> <i class="icon-screen"></i>Demo </a></li>
-                        <li> <a href="#"> <i class="icon-mail"></i>Demo </a></li>
-                        <li> <a href="#"> <i class="icon-picture"></i>Demo </a></li>
-                    </ul>
-                </nav>
+                
+                <?= $this->element('navigation') ?>
                             
 
                 <div class="content-inner">
@@ -163,10 +113,11 @@ $cakeDescription = __('Aula Maxima - Administrative Panel');
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <p>Your company &copy; 2017-2019</p>
+                            <p><?= __('Aula Máxima') ?> &copy; 2017</p>
                         </div>
                         <div class="col-sm-6 text-right">
-                            <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+                            <p><?= __('Design by') ?> <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+                            <p><?= __('Developed by') ?> <a href="https://innovaciones.co" class="external">Innovaciones</a></p>
                             <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
                         </div>
                     </div>
