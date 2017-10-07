@@ -1,14 +1,14 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\BusinessLine[]|\Cake\Collection\CollectionInterface $businessLines
+ * @var \App\Model\Entity\Contact[]|\Cake\Collection\CollectionInterface $contacts
  */
 ?>
 
 <!-- Page Header-->
 <header class="page-header">
     <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= __('Business Lines') ?></h2>
+        <h2 class="no-margin-bottom"><?= __('Contacts') ?></h2>
     </div>
 </header>
 
@@ -18,7 +18,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header d-flex align-items-center">
-                        <h3 class="h4"><?= __('Business Lines') ?></h3>
+                        <h3 class="h4"><?= __('Contacts') ?></h3>
                     </div>
 
                     <div class="card-body">
@@ -26,51 +26,43 @@
                             <thead>
                                 <tr>
                                     <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('title') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('background') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('background_dir') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('main_picture') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('main_picture_dir') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('secondary_picture') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('secondary_picture_dir') ?></th>
+                                    <th scope="col"><?= $this->Paginator->sort('email') ?></th>
+                                    <th scope="col"><?= $this->Paginator->sort('first_name') ?></th>
+                                    <th scope="col"><?= $this->Paginator->sort('last_name') ?></th>
+                                    <th scope="col"><?= $this->Paginator->sort('viewed') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                                     <th scope="col" class="actions"><?= __('Actions') ?></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($businessLines as $businessLine): ?>
+                                <?php foreach ($contacts as $contact): ?>
                                 <tr>
-                                    <td><?= $this->Number->format($businessLine->id) ?></td>
-                                    <td><?= h($businessLine->title) ?></td>
-                                    <td><?= h($businessLine->background) ?></td>
-                                    <td><?= h($businessLine->background_dir) ?></td>
-                                    <td><?= h($businessLine->main_picture) ?></td>
-                                    <td><?= h($businessLine->main_picture_dir) ?></td>
-                                    <td><?= h($businessLine->secondary_picture) ?></td>
-                                    <td><?= h($businessLine->secondary_picture_dir) ?></td>
-                                    <td><?= h($businessLine->created) ?></td>
-                                    <td><?= h($businessLine->modified) ?></td>
+                                    <td><?= $this->Number->format($contact->id) ?></td>
+                                    <td><?= h($contact->email) ?></td>
+                                    <td><?= h($contact->first_name) ?></td>
+                                    <td><?= h($contact->last_name) ?></td>
+                                    <td><?= h($contact->viewed) ?></td>
+                                    <td><?= h($contact->created) ?></td>
                                     <td class="actions">
                                         <!-- View -->
                                         <?= $this->Html->link(
                                             [$this->Html->tag('i', '', ['class' => 'icon-search'])],
-                                            ['action' => 'view', $businessLine->id],
+                                            ['action' => 'view', $contact->id],
                                             ['escape' => false]
                                         ); ?>
                                         <!-- Edit -->
                                         <?= $this->Html->link(
                                             [$this->Html->tag('i', '', ['class' => 'icon-form'])],
-                                            ['action' => 'edit', $businessLine->id],
+                                            ['action' => 'edit', $contact->id],
                                             ['escape' => false]
                                         ); ?>
                                         <!-- Delete -->
                                         <?= $this->Form->postLink(
                                             [$this->Html->tag('i', '', ['class' => 'icon-close'])],
-                                            ['action' => 'delete', $businessLine->id],
+                                            ['action' => 'delete', $contact->id],
                                             [
                                                 'escape' => false,
-                                                'confirm' => __('Are you sure you want to delete # {0}?', $businessLine->id)
+                                                'confirm' => __('Are you sure you want to delete # {0}?', $contact->id)
                                             ]
                                         ); ?>
                                     </td>
@@ -84,7 +76,7 @@
                         <div class="row">                 
                             <div class="col ">
                                 <?= $this->Html->link(
-                                    __('New Business Line'),
+                                    __('New Contact'),
                                     ['action' => 'add'],
                                     ['class' => 'btn btn-primary']
                                 ); ?>

@@ -3,8 +3,7 @@
 	<!-- Sidebar Header-->
 	<div class="sidebar-header d-flex align-items-center">
 		<div class="avatar">
-			<!-- <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"> -->
-			<i class="icon-user rounded-circle"></i>
+			<img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
 		</div>
 		<div class="title">
 			<h1 class="h4"><?= $userData['first_name'] . ' ' . $userData['last_name'] ?></h1>
@@ -18,7 +17,7 @@
 	
 	<span class="heading"><?= __('Administration') ?></span>
 	<ul class="list-unstyled">
-		<li class="active">
+		<li>
 			<?= $this->Html->link(
 			array(
 			$this->Html->tag('i', '', array('class' => 'icon-home')),
@@ -76,7 +75,7 @@
 	</ul>
 	<span class="heading"><?= __('Forms') ?></span>
 	<ul class="list-unstyled">
-		<li class="active">
+		<li>
 			<?= $this->Html->link(
 			array(
 			$this->Html->tag('i', '', array('class' => 'icon-mail')),

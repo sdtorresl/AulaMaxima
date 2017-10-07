@@ -38,85 +38,116 @@ if (!empty($indexColumns)) {
 }
 
 %>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New <%= $singularHumanName %>'), ['action' => 'add']) ?></li>
-<%
-    $done = [];
-    foreach ($associations as $type => $data):
-        foreach ($data as $alias => $details):
-            if (!empty($details['navLink']) && $details['controller'] !== $this->name && !in_array($details['controller'], $done)):
-%>
-        <li><?= $this->Html->link(__('List <%= $this->_pluralHumanName($alias) %>'), ['controller' => '<%= $details['controller'] %>', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New <%= $this->_singularHumanName($alias) %>'), ['controller' => '<%= $details['controller'] %>', 'action' => 'add']) ?></li>
-<%
-                $done[] = $details['controller'];
-            endif;
-        endforeach;
-    endforeach;
-%>
-    </ul>
-</nav>
-<div class="<%= $pluralVar %> index large-9 medium-8 columns content">
-    <h3><?= __('<%= $pluralHumanName %>') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-<% foreach ($fields as $field): %>
-                <th scope="col"><?= $this->Paginator->sort('<%= $field %>') ?></th>
-<% endforeach; %>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($<%= $pluralVar %> as $<%= $singularVar %>): ?>
-            <tr>
-<%        foreach ($fields as $field) {
-            $isKey = false;
-            if (!empty($associations['BelongsTo'])) {
-                foreach ($associations['BelongsTo'] as $alias => $details) {
-                    if ($field === $details['foreignKey']) {
-                        $isKey = true;
-%>
-                <td><?= $<%= $singularVar %>->has('<%= $details['property'] %>') ? $this->Html->link($<%= $singularVar %>-><%= $details['property'] %>-><%= $details['displayField'] %>, ['controller' => '<%= $details['controller'] %>', 'action' => 'view', $<%= $singularVar %>-><%= $details['property'] %>-><%= $details['primaryKey'][0] %>]) : '' ?></td>
-<%
-                        break;
-                    }
-                }
-            }
-            if ($isKey !== true) {
-                if (!in_array($schema->columnType($field), ['integer', 'float', 'decimal', 'biginteger', 'smallinteger', 'tinyinteger'])) {
-%>
-                <td><?= h($<%= $singularVar %>-><%= $field %>) ?></td>
-<%
-                } else {
-%>
-                <td><?= $this->Number->format($<%= $singularVar %>-><%= $field %>) ?></td>
-<%
-                }
-            }
-        }
 
-        $pk = '$' . $singularVar . '->' . $primaryKey[0];
-%>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', <%= $pk %>]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', <%= $pk %>]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', <%= $pk %>], ['confirm' => __('Are you sure you want to delete # {0}?', <%= $pk %>)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+<!-- Page Header-->
+<header class="page-header">
+    <div class="container-fluid">
+        <h2 class="no-margin-bottom"><?= __('<%= $pluralHumanName %>') ?></h2>
     </div>
-</div>
+</header>
+
+<section class="tables table-hover">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <h3 class="h4"><?= __('<%= $pluralHumanName %>') ?></h3>
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+<% foreach ($fields as $field): %>
+                                    <th scope="col"><?= $this->Paginator->sort('<%= $field %>') ?></th>
+<% endforeach; %>
+                                    <th scope="col" class="actions"><?= __('Actions') ?></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($<%= $pluralVar %> as $<%= $singularVar %>): ?>
+                                <tr>
+<% foreach ($fields as $field) {
+    $isKey = false;
+    if (!empty($associations['BelongsTo'])) {
+        foreach ($associations['BelongsTo'] as $alias => $details) {
+            if ($field === $details['foreignKey']) {
+                $isKey = true;
+%>
+                                    <td><?= $<%= $singularVar %>->has('<%= $details['property'] %>') ? $this->Html->link($<%= $singularVar %>-><%= $details['property'] %>-><%= $details['displayField'] %>, ['controller' => '<%= $details['controller'] %>', 'action' => 'view', $<%= $singularVar %>-><%= $details['property'] %>-><%= $details['primaryKey'][0] %>]) : '' ?></td>
+<%
+                break;
+            }
+        } 
+    }
+    if ($isKey !== true) {
+        if (!in_array($schema->columnType($field), ['integer', 'float', 'decimal', 'biginteger', 'smallinteger', 'tinyinteger'])) {
+%>
+                                    <td><?= h($<%= $singularVar %>-><%= $field %>) ?></td>
+<%
+        } else {
+%>
+                                    <td><?= $this->Number->format($<%= $singularVar %>-><%= $field %>) ?></td>
+<%
+        }
+    }
+}
+
+$pk = '$' . $singularVar . '->' . $primaryKey[0];
+%>
+                                    <td class="actions">
+                                        <!-- View -->
+                                        <?= $this->Html->link(
+                                            [$this->Html->tag('i', '', ['class' => 'icon-search'])],
+                                            ['action' => 'view', <%= $pk %>],
+                                            ['escape' => false]
+                                        ); ?>
+                                        <!-- Edit -->
+                                        <?= $this->Html->link(
+                                            [$this->Html->tag('i', '', ['class' => 'icon-form'])],
+                                            ['action' => 'edit', <%= $pk %>],
+                                            ['escape' => false]
+                                        ); ?>
+                                        <!-- Delete -->
+                                        <?= $this->Form->postLink(
+                                            [$this->Html->tag('i', '', ['class' => 'icon-close'])],
+                                            ['action' => 'delete', <%= $pk %>],
+                                            [
+                                                'escape' => false,
+                                                'confirm' => __('Are you sure you want to delete # {0}?', <%= $pk %>)
+                                            ]
+                                        ); ?>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">                 
+                            <div class="col ">
+                                <?= $this->Html->link(
+                                    __('New <%= $singularHumanName %>'),
+                                    ['action' => 'add'],
+                                    ['class' => 'btn btn-primary']
+                                ); ?>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="container-fluid">
+                        <ul class="pagination">
+                            <?= $this->Paginator->first('<< ') ?>
+                            <?= $this->Paginator->prev('< ') ?>
+                            <?= $this->Paginator->numbers() ?>
+                            <?= $this->Paginator->next(' >') ?>
+                            <?= $this->Paginator->last(' >>') ?>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

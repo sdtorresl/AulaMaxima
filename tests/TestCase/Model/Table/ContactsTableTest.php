@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\BusinessLinesTable;
+use App\Model\Table\ContactsTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\BusinessLinesTable Test Case
+ * App\Model\Table\ContactsTable Test Case
  */
-class BusinessLinesTableTest extends TestCase
+class ContactsTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\BusinessLinesTable
+     * @var \App\Model\Table\ContactsTable
      */
-    public $BusinessLines;
+    public $Contacts;
 
     /**
      * Fixtures
@@ -24,7 +24,7 @@ class BusinessLinesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.business_lines'
+        'app.contacts'
     ];
 
     /**
@@ -35,8 +35,8 @@ class BusinessLinesTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('BusinessLines') ? [] : ['className' => BusinessLinesTable::class];
-        $this->BusinessLines = TableRegistry::get('BusinessLines', $config);
+        $config = TableRegistry::exists('Contacts') ? [] : ['className' => ContactsTable::class];
+        $this->Contacts = TableRegistry::get('Contacts', $config);
     }
 
     /**
@@ -46,7 +46,7 @@ class BusinessLinesTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->BusinessLines);
+        unset($this->Contacts);
 
         parent::tearDown();
     }

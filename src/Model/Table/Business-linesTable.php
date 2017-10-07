@@ -7,19 +7,19 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * BusinessLines Model
+ * Business-lines Model
  *
- * @method \App\Model\Entity\BusinessLine get($primaryKey, $options = [])
- * @method \App\Model\Entity\BusinessLine newEntity($data = null, array $options = [])
- * @method \App\Model\Entity\BusinessLine[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\BusinessLine|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\BusinessLine patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\BusinessLine[] patchEntities($entities, array $data, array $options = [])
- * @method \App\Model\Entity\BusinessLine findOrCreate($search, callable $callback = null, $options = [])
+ * @method \App\Model\Entity\Business-line get($primaryKey, $options = [])
+ * @method \App\Model\Entity\Business-line newEntity($data = null, array $options = [])
+ * @method \App\Model\Entity\Business-line[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\Business-line|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Business-line patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\Business-line[] patchEntities($entities, array $data, array $options = [])
+ * @method \App\Model\Entity\Business-line findOrCreate($search, callable $callback = null, $options = [])
  *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
-class BusinessLinesTable extends Table
+class Business-linesTable extends Table
 {
 
     /**
@@ -33,7 +33,7 @@ class BusinessLinesTable extends Table
         parent::initialize($config);
 
         $this->setTable('business_lines');
-        $this->setDisplayField('id');
+        $this->setDisplayField('title');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
@@ -63,6 +63,7 @@ class BusinessLinesTable extends Table
             ->notEmpty('description');
 
         $validator
+            ->scalar('background')
             ->allowEmpty('background');
 
         $validator
@@ -70,6 +71,7 @@ class BusinessLinesTable extends Table
             ->allowEmpty('background_dir');
 
         $validator
+            ->scalar('main_picture')
             ->allowEmpty('main_picture');
 
         $validator
@@ -77,6 +79,7 @@ class BusinessLinesTable extends Table
             ->allowEmpty('main_picture_dir');
 
         $validator
+            ->scalar('secondary_picture')
             ->allowEmpty('secondary_picture');
 
         $validator

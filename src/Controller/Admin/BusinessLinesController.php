@@ -24,6 +24,8 @@ class BusinessLinesController extends AppController
 
         $this->set(compact('businessLines'));
         $this->set('_serialize', ['businessLines']);
+        $this->set('page', 'home-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -41,6 +43,9 @@ class BusinessLinesController extends AppController
 
         $this->set('businessLine', $businessLine);
         $this->set('_serialize', ['businessLine']);
+
+        $this->set('page', 'home-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -62,6 +67,9 @@ class BusinessLinesController extends AppController
         }
         $this->set(compact('businessLine'));
         $this->set('_serialize', ['businessLine']);
+
+        $this->set('page', 'home-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -87,6 +95,9 @@ class BusinessLinesController extends AppController
         }
         $this->set(compact('businessLine'));
         $this->set('_serialize', ['businessLine']);
+
+        $this->set('page', 'home-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**

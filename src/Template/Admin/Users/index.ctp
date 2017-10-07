@@ -12,7 +12,7 @@
     </div>
 </header>
 
-<section class="tables">
+<section class="tables table-hover">
     <div class="container-fluid">
 
         <div class="row">
@@ -23,7 +23,6 @@
                     </div>
 
                     <div class="card-body">
-
                         <table class="table" cellpadding="0" cellspacing="0">
                             <thead>
                                 <tr>
@@ -34,8 +33,8 @@
                                     <th scope="col"><?= $this->Paginator->sort('last_name') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('role') ?></th>
                                     <!-- <th scope="col"><?= $this->Paginator->sort('last_access') ?></th> -->
-                                    <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                                    <!-- <th scope="col"><?= $this->Paginator->sort('created') ?></th> -->
+                                    <!-- <th scope="col"><?= $this->Paginator->sort('modified') ?></th> -->
                                     <th scope="col" class="actions"><?= __('Actions') ?></th>
                                 </tr>
                             </thead>
@@ -49,8 +48,8 @@
                                     <td><?= h($user->last_name) ?></td>
                                     <td><?= h($user->role) ?></td>
                                     <!-- <td><?= h($user->last_access) ?></td> -->
-                                    <td><?= h($user->created) ?></td>
-                                    <td><?= h($user->modified) ?></td>
+                                    <!-- <td><?= h($user->created) ?></td> -->
+                                    <!-- <td><?= h($user->modified) ?></td> -->
                                     <td class="actions">
                                         <!-- View -->
                                         <?= $this->Html->link(
@@ -73,7 +72,6 @@
                                                 'confirm' => __('Are you sure you want to delete # {0}?', $user->id)
                                             ]
                                         ); ?>
-
                                     </td>
                                 </tr>
                                 <?php endforeach; ?>
@@ -81,16 +79,27 @@
                         </table>
                     </div>
 
-                    <div class="paginator container-fluid">
-                        <ul class="pagination">
-                            <?= $this->Paginator->first('<< ' . __('first')) ?>
-                            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-                            <?= $this->Paginator->numbers() ?>
-                            <?= $this->Paginator->next(__('next') . ' >') ?>
-                            <?= $this->Paginator->last(__('last') . ' >>') ?>
-                        </ul>
-                        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+                    <div class="container">
+                        <div class="row">                 
+                            <div class="col ">
+                                <?= $this->Html->link(
+                                    __('Add User'),
+                                    ['action' => 'add'],
+                                    ['class' => 'btn btn-primary align-self-end']
+                                ); ?>
+                            </div>
+                        </div>
                     </div>
+
+                    <nav class="container-fluid">
+                        <ul class="pagination">
+                            <?= $this->Paginator->first('<< ') ?>
+                            <?= $this->Paginator->prev('< ') ?>
+                            <?= $this->Paginator->numbers() ?>
+                            <?= $this->Paginator->next(' >') ?>
+                            <?= $this->Paginator->last(' >>') ?>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

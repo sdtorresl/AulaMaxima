@@ -19,7 +19,6 @@
             echo $this->Form->control('background', ['type' => 'file']);
             echo $this->Form->control('main_picture', ['type' => 'file']);
             echo $this->Form->control('secondary_picture', ['type' => 'file']);
-
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

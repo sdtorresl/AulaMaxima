@@ -13,6 +13,8 @@
 * @license       https://opensource.org/licenses/mit-license.php MIT License
 */
 $cakeDescription = __('Aula Maxima - Administrative Panel');
+
+$users = 'Hola';
 ?>
 <!DOCTYPE html>
 <html>
