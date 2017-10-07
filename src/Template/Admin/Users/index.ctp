@@ -4,19 +4,13 @@
 * @var \App\Model\Entity\User[]|\Cake\Collection\CollectionInterface $users
 */
 ?>
+
 <!-- Page Header-->
 <header class="page-header">
     <div class="container-fluid">
-        <h2 class="no-margin-bottom">Tables</h2>
+        <h2 class="no-margin-bottom"><?= __('Administration') ?></h2>
     </div>
 </header>
-<!-- Breadcrumb-->
-<ul class="breadcrumb">
-    <div class="container-fluid">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Tables</li>
-    </div>
-</ul>
 
 <section class="tables">
     <div class="container-fluid">
@@ -58,9 +52,28 @@
                                     <td><?= h($user->created) ?></td>
                                     <td><?= h($user->modified) ?></td>
                                     <td class="actions">
-                                        <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
-                                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>
-                                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?>
+                                        <!-- View -->
+                                        <?= $this->Html->link(
+                                            [$this->Html->tag('i', '', ['class' => 'icon-search'])],
+                                            ['action' => 'view', $user->id],
+                                            ['escape' => false]
+                                        ); ?>
+                                        <!-- Edit -->
+                                        <?= $this->Html->link(
+                                            [$this->Html->tag('i', '', ['class' => 'icon-form'])],
+                                            ['action' => 'edit', $user->id],
+                                            ['escape' => false]
+                                        ); ?>
+                                        <!-- Delete -->
+                                        <?= $this->Form->postLink(
+                                            [$this->Html->tag('i', '', ['class' => 'icon-close'])],
+                                            ['action' => 'delete', $user->id],
+                                            [
+                                                'escape' => false,
+                                                'confirm' => __('Are you sure you want to delete # {0}?', $user->id)
+                                            ]
+                                        ); ?>
+
                                     </td>
                                 </tr>
                                 <?php endforeach; ?>
