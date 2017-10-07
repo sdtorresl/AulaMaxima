@@ -25,6 +25,8 @@ class UsersController extends AppController
 
         $this->set(compact('users'));
         $this->set('_serialize', ['users']);
+        $this->set('page', 'home-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -121,13 +123,13 @@ class UsersController extends AppController
 
     public function login()
     {
-        $this->viewBuilder()->setLayout('admin');
+        $this->viewBuilder()->setLayout('login');
         $this->set('page', 'login-page'); 
 
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
-                // $this->Auth->setUser($user);
+                $this->Auth->setUser($user);
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error(__('Invalid username or password, try again'));

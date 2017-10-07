@@ -12,18 +12,18 @@
 <div class="users form large-9 medium-8 columns content">
     <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= __('Agregar Usuario') ?></legend>
+        <legend><?= __('Add User') ?></legend>
         <?php
-            echo $this->Form->control('first_name', ['label' => __('Nombre')]);
-            echo $this->Form->control('last_name', ['label' => __('Apellido')]);
-            echo $this->Form->control('username', ['label' => __('Nombre de Usuario')]);
-            echo $this->Form->control('email', ['label' => __('Correo')]);
-            echo $this->Form->control('password', ['label' => __('Contraseña')]);
-            echo $this->Form->control('password_confirmation', ['label' => __('Confirmación de contraseña')]);
-            echo $this->Form->control('role', ['options' => ['admin' => __('Administrador')], 'label' => __('Tipo de usuario')]);
+            echo $this->Form->control('first_name', ['label' => __('First name')]);
+            echo $this->Form->control('last_name', ['label' => __('Last name')]);
+            echo $this->Form->control('username', ['label' => __('Username')]);
+            echo $this->Form->control('email', ['label' => __('Email')]);
+            echo $this->Form->control('password', ['label' => __('Password')]);
+            echo $this->Form->control('password_confirmation', ['label' => __('Password confirmation')]);
+            echo $this->Form->control('role', ['options' => ['admin' => __('Administrator')], 'label' => __('Rol')]);
             // echo $this->Form->control('last_access', ['empty' => true]);
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Agregar')) ?>
+    <?= $this->Form->button(__('Add')) ?>
     <?= $this->Form->end() ?>
 </div>

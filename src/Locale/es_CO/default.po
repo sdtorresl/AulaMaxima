@@ -1,0 +1,473 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-10-07 03:01+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Admin/BusinessLinesController.php:57;82
+msgid "The business line has been saved."
+msgstr ""
+
+#: Controller/Admin/BusinessLinesController.php:61;86
+msgid "The business line could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/BusinessLinesController.php:104
+msgid "The business line has been deleted."
+msgstr ""
+
+#: Controller/Admin/BusinessLinesController.php:106
+msgid "The business line could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/FieldsController.php:57;82
+msgid "The field has been saved."
+msgstr ""
+
+#: Controller/Admin/FieldsController.php:61;86
+msgid "The field could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/FieldsController.php:104
+msgid "The field has been deleted."
+msgstr ""
+
+#: Controller/Admin/FieldsController.php:106
+msgid "The field could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/SectorsController.php:60;86
+msgid "The sector has been saved."
+msgstr ""
+
+#: Controller/Admin/SectorsController.php:64;90
+msgid "The sector could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/SectorsController.php:109
+msgid "The sector has been deleted."
+msgstr ""
+
+#: Controller/Admin/SectorsController.php:111
+msgid "The sector could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:58;83
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:62;87
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:105
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:107
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:133
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Template/Admin/BusinessLines/add.ctp:8
+#: Template/Admin/BusinessLines/edit.ctp:8
+#: Template/Admin/BusinessLines/index.ctp:9;28
+#: Template/Admin/BusinessLines/view.ctp:9
+#: Template/Admin/Fields/add.ctp:8
+#: Template/Admin/Fields/edit.ctp:8
+#: Template/Admin/Fields/index.ctp:9;23
+#: Template/Admin/Fields/view.ctp:9
+#: Template/Admin/Sectors/add.ctp:8
+#: Template/Admin/Sectors/edit.ctp:8
+#: Template/Admin/Sectors/index.ctp:9;25
+#: Template/Admin/Sectors/view.ctp:9
+#: Template/Admin/Users/add.ctp:8
+#: Template/Admin/Users/edit.ctp:8
+#: Template/Admin/Users/index.ctp:9;28
+#: Template/Admin/Users/view.ctp:9
+msgid "Actions"
+msgstr ""
+
+#: Template/Admin/BusinessLines/add.ctp:9
+#: Template/Admin/BusinessLines/edit.ctp:15
+#: Template/Admin/BusinessLines/view.ctp:12
+msgid "List Business Lines"
+msgstr ""
+
+#: Template/Admin/BusinessLines/add.ctp:15
+msgid "Add Business Line"
+msgstr ""
+
+#: Template/Admin/BusinessLines/add.ctp:25
+#: Template/Admin/BusinessLines/edit.ctp:33
+#: Template/Admin/Fields/add.ctp:22
+#: Template/Admin/Fields/edit.ctp:28
+#: Template/Admin/Sectors/add.ctp:24
+#: Template/Admin/Sectors/edit.ctp:30
+#: Template/Admin/Users/edit.ctp:32
+msgid "Submit"
+msgstr ""
+
+#: Template/Admin/BusinessLines/edit.ctp:10
+#: Template/Admin/BusinessLines/index.ctp:47
+#: Template/Admin/Fields/edit.ctp:10
+#: Template/Admin/Fields/index.ctp:37
+#: Template/Admin/Sectors/edit.ctp:10
+#: Template/Admin/Sectors/index.ctp:41
+#: Template/Admin/Users/edit.ctp:10
+#: Template/Admin/Users/index.ctp:47
+msgid "Delete"
+msgstr ""
+
+#: Template/Admin/BusinessLines/edit.ctp:12
+#: Template/Admin/BusinessLines/index.ctp:47
+#: Template/Admin/BusinessLines/view.ctp:11
+#: Template/Admin/Fields/edit.ctp:12
+#: Template/Admin/Fields/index.ctp:37
+#: Template/Admin/Fields/view.ctp:11
+#: Template/Admin/Sectors/edit.ctp:12
+#: Template/Admin/Sectors/index.ctp:41
+#: Template/Admin/Sectors/view.ctp:11
+#: Template/Admin/Users/edit.ctp:12
+#: Template/Admin/Users/index.ctp:47
+#: Template/Admin/Users/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Admin/BusinessLines/edit.ctp:21
+#: Template/Admin/BusinessLines/view.ctp:10
+msgid "Edit Business Line"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:10
+#: Template/Admin/BusinessLines/view.ctp:13
+msgid "New Business Line"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:14
+msgid "Business Lines"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:45
+#: Template/Admin/Fields/index.ctp:35
+#: Template/Admin/Sectors/index.ctp:39
+#: Template/Admin/Users/index.ctp:45
+msgid "View"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:46
+#: Template/Admin/Fields/index.ctp:36
+#: Template/Admin/Sectors/index.ctp:40
+#: Template/Admin/Users/index.ctp:46
+msgid "Edit"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:55
+#: Template/Admin/Fields/index.ctp:45
+#: Template/Admin/Sectors/index.ctp:49
+#: Template/Admin/Users/index.ctp:55
+msgid "first"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:56
+#: Template/Admin/Fields/index.ctp:46
+#: Template/Admin/Sectors/index.ctp:50
+#: Template/Admin/Users/index.ctp:56
+msgid "previous"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:58
+#: Template/Admin/Fields/index.ctp:48
+#: Template/Admin/Sectors/index.ctp:52
+#: Template/Admin/Users/index.ctp:58
+msgid "next"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:59
+#: Template/Admin/Fields/index.ctp:49
+#: Template/Admin/Sectors/index.ctp:53
+#: Template/Admin/Users/index.ctp:59
+msgid "last"
+msgstr ""
+
+#: Template/Admin/BusinessLines/index.ctp:61
+#: Template/Admin/Fields/index.ctp:51
+#: Template/Admin/Sectors/index.ctp:55
+#: Template/Admin/Users/index.ctp:61
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "Página {{page}} de {{pages}}, mostrando {{current}} registro(s) de {{count}}"
+
+#: Template/Admin/BusinessLines/view.ctp:11
+msgid "Delete Business Line"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:20
+#: Template/Admin/Fields/view.ctp:20
+#: Template/Admin/Sectors/view.ctp:20
+msgid "Title"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:24
+msgid "Background"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:28
+msgid "Background Dir"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:32
+msgid "Main Picture"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:36
+msgid "Main Picture Dir"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:40
+msgid "Secondary Picture"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:44
+msgid "Secondary Picture Dir"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:48
+#: Template/Admin/Fields/view.ctp:24
+#: Template/Admin/Sectors/view.ctp:32
+#: Template/Admin/Users/view.ctp:44
+msgid "Id"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:52
+#: Template/Admin/Fields/view.ctp:28
+#: Template/Admin/Sectors/view.ctp:40
+#: Template/Admin/Users/view.ctp:52
+msgid "Created"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:56
+#: Template/Admin/Fields/view.ctp:32
+#: Template/Admin/Sectors/view.ctp:44
+#: Template/Admin/Users/view.ctp:56
+msgid "Modified"
+msgstr ""
+
+#: Template/Admin/BusinessLines/view.ctp:61
+#: Template/Admin/Sectors/view.ctp:49
+msgid "Description"
+msgstr ""
+
+#: Template/Admin/Fields/add.ctp:9
+#: Template/Admin/Fields/edit.ctp:15
+#: Template/Admin/Fields/view.ctp:12
+msgid "List Fields"
+msgstr ""
+
+#: Template/Admin/Fields/add.ctp:15
+msgid "Add Field"
+msgstr ""
+
+#: Template/Admin/Fields/edit.ctp:21
+#: Template/Admin/Fields/view.ctp:10
+msgid "Edit Field"
+msgstr ""
+
+#: Template/Admin/Fields/index.ctp:10
+#: Template/Admin/Fields/view.ctp:13
+msgid "New Field"
+msgstr ""
+
+#: Template/Admin/Fields/index.ctp:14
+msgid "Fields"
+msgstr ""
+
+#: Template/Admin/Fields/view.ctp:11
+msgid "Delete Field"
+msgstr ""
+
+#: Template/Admin/Fields/view.ctp:36
+msgid "Published"
+msgstr ""
+
+#: Template/Admin/Fields/view.ctp:37
+msgid "Yes"
+msgstr ""
+
+#: Template/Admin/Fields/view.ctp:37
+msgid "No"
+msgstr ""
+
+#: Template/Admin/Fields/view.ctp:41
+msgid "Body"
+msgstr ""
+
+#: Template/Admin/Sectors/add.ctp:9
+#: Template/Admin/Sectors/edit.ctp:15
+#: Template/Admin/Sectors/view.ctp:12
+msgid "List Sectors"
+msgstr ""
+
+#: Template/Admin/Sectors/add.ctp:15
+msgid "Add Sector"
+msgstr ""
+
+#: Template/Admin/Sectors/edit.ctp:21
+#: Template/Admin/Sectors/view.ctp:10
+msgid "Edit Sector"
+msgstr ""
+
+#: Template/Admin/Sectors/index.ctp:10
+#: Template/Admin/Sectors/view.ctp:13
+msgid "New Sector"
+msgstr ""
+
+#: Template/Admin/Sectors/index.ctp:14
+msgid "Sectors"
+msgstr ""
+
+#: Template/Admin/Sectors/view.ctp:11
+msgid "Delete Sector"
+msgstr ""
+
+#: Template/Admin/Sectors/view.ctp:24
+msgid "Picture"
+msgstr ""
+
+#: Template/Admin/Sectors/view.ctp:28
+msgid "Picture Dir"
+msgstr ""
+
+#: Template/Admin/Sectors/view.ctp:36
+msgid "Business Id"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:9
+#: Template/Admin/Users/edit.ctp:15
+#: Template/Admin/Users/view.ctp:12
+msgid "List Users"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:15
+msgid "Add User"
+msgstr "Crear Usuario"
+
+#: Template/Admin/Users/add.ctp:17
+msgid "First name"
+msgstr "Nombre"
+
+#: Template/Admin/Users/add.ctp:18
+msgid "Last name"
+msgstr "Apellido"
+
+#: Template/Admin/Users/add.ctp:19
+#: Template/Admin/Users/login.ctp:26
+#: Template/Admin/Users/view.ctp:20
+msgid "Username"
+msgstr "Nombre de Usuario"
+
+#: Template/Admin/Users/add.ctp:20
+#: Template/Admin/Users/view.ctp:24
+msgid "Email"
+msgstr "Correo"
+
+#: Template/Admin/Users/add.ctp:21
+#: Template/Admin/Users/login.ctp:37
+#: Template/Admin/Users/view.ctp:28
+msgid "Password"
+msgstr "Contraseña"
+
+#: Template/Admin/Users/add.ctp:22
+msgid "Password confirmation"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:23
+msgid "Administrator"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:23
+msgid "Rol"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:27
+msgid "Add"
+msgstr ""
+
+#: Template/Admin/Users/edit.ctp:21
+#: Template/Admin/Users/view.ctp:10
+msgid "Edit User"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:10
+#: Template/Admin/Users/view.ctp:13
+msgid "New User"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:14
+msgid "Users"
+msgstr ""
+
+#: Template/Admin/Users/login.ctp:9
+msgid "Aula Máxima"
+msgstr ""
+
+#: Template/Admin/Users/login.ctp:11
+msgid "Administrative Panel"
+msgstr ""
+
+#: Template/Admin/Users/login.ctp:44
+msgid "Login"
+msgstr ""
+
+#: Template/Admin/Users/login.ctp:51
+msgid "Forgot your password?"
+msgstr "¿Olvidaste tu contraseña?"
+
+#: Template/Admin/Users/login.ctp:53
+msgid "Don't have an account?"
+msgstr ""
+
+#: Template/Admin/Users/login.ctp:54
+msgid "Request for one"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:11
+msgid "Delete User"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:32
+msgid "First Name"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:36
+msgid "Last Name"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:40
+msgid "Role"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:48
+msgid "Last Access"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+

@@ -52,6 +52,7 @@ class AppController extends Controller
         //$this->loadComponent('Csrf');
 
         $this->loadComponent('Auth', [
+            'authorize' => ['Controller'],
             'loginAction' => [
                 'controller' => 'Users',
                 'action' => 'login',
@@ -62,10 +63,9 @@ class AppController extends Controller
                 'action' => 'index'
             ],
             'logoutRedirect' => [
-                'controller' => 'Pages',
-                'action' => 'display',
-                'home',
-                'prefix' => false
+                'controller' => 'Users',
+                'action' => 'login',
+                'prefix' => 'admin'
             ]
         ]);
     }
@@ -93,5 +93,17 @@ class AppController extends Controller
         if (empty($this->request->params['prefix']) || $this->request->params['prefix'] !== 'admin') {
             $this->Auth->allow();
         }
+
+        $this->set('userData', $this->Auth->user());
+    }
+
+    public function isAuthorized ($user) {
+        // Admin can access every action
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            return true;
+        }
+        
+        // Default deny
+        return false;
     }
 }

@@ -6,9 +6,9 @@
 		  <div class="info d-flex align-items-center">
 			<div class="content">
 				<div class="logo">
-					<h1>Aula Máxima</h1>
+					<h1><?= __('Aula Máxima') ?></h1>
 				</div>
-			 	<p>Panel Administrativo</p>
+			 	<p><?= __('Administrative Panel') ?></p>
 			</div>
 		  </div>
 		</div>
@@ -23,7 +23,7 @@
 								'class' => 'input-material',
 								'id' => 'username',
 								'label' => [
-									'text' => __('Nombre de usuario'),
+									'text' => __('Username'),
 									'class' => 'label-material input-material'
 								]
 							]) ?>
@@ -34,24 +34,24 @@
 								'class' => 'input-material',
 								'id' => 'password',
 								'label' => [
-									'text' => __('Contraseña'),
+									'text' => __('Password'),
 									'class' => 'label-material'
 								]
 							]) ?>
 					</div>
 						
 					
-				<?= $this->Form->button(__('Ingresar'), [
+				<?= $this->Form->button(__('Login'), [
 						'id' => 'login',
 						'class' => 'btn btn-primary'
 					]); ?>
 
 				<?= $this->Form->end() ?>
 
-			  <a href="#" class="forgot-pass">¿Olvidaste la contraseña?</a>
+			  <a href="#" class="forgot-pass"><?= __('Forgot your password?') ?></a>
 			  <br>
-			  <small>¿No tienes cuenta? </small>
-			  <a href="register.html" class="signup">Solicita una</a>
+			  <small><?= __('Don\'t have an account?') ?></small>
+			  <a href="register.html" class="signup"><?=__('Request for one') ?></a>
 			</div>
 		  </div>
 		</div>
