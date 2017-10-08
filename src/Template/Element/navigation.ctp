@@ -3,7 +3,8 @@
 	<!-- Sidebar Header-->
 	<div class="sidebar-header d-flex align-items-center">
 		<div class="avatar">
-			<img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
+			<!-- <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"> -->
+			<?= $this->Html->image('project-1.jpg', ['class' => 'img-fluid rounded-circle']); ?>
 		</div>
 		<div class="title">
 			<h1 class="h4"><?= $userData['first_name'] . ' ' . $userData['last_name'] ?></h1>

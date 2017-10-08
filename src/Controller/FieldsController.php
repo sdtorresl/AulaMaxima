@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller\Admin;
+namespace App\Controller;
 
 use App\Controller\AppController;
 
@@ -24,8 +24,6 @@ class FieldsController extends AppController
 
         $this->set(compact('fields'));
         $this->set('_serialize', ['fields']);
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -43,8 +41,6 @@ class FieldsController extends AppController
 
         $this->set('field', $field);
         $this->set('_serialize', ['field']);
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -66,8 +62,6 @@ class FieldsController extends AppController
         }
         $this->set(compact('field'));
         $this->set('_serialize', ['field']);
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -93,8 +87,6 @@ class FieldsController extends AppController
         }
         $this->set(compact('field'));
         $this->set('_serialize', ['field']);
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**

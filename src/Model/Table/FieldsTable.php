@@ -53,11 +53,18 @@ class FieldsTable extends Table
 
         $validator
             ->scalar('title')
-            ->allowEmpty('title');
+            ->requirePresence('title', 'create')
+            ->notEmpty('title');
 
         $validator
             ->scalar('body')
-            ->allowEmpty('body');
+            ->requirePresence('body', 'create')
+            ->notEmpty('body');
+
+        $validator
+            ->scalar('type')
+            ->requirePresence('type', 'create')
+            ->notEmpty('type');
 
         $validator
             ->boolean('published')

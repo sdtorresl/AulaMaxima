@@ -30,7 +30,7 @@ class SectorsFixture extends TestFixture
         ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'fk_sectors_business' => ['type' => 'foreign', 'columns' => ['business_id'], 'references' => ['business lines', 'id'], 'update' => 'noAction', 'delete' => 'noAction', 'length' => []],
+            'fk_sectors_business' => ['type' => 'foreign', 'columns' => ['business_id'], 'references' => ['business_lines', 'id'], 'update' => 'noAction', 'delete' => 'noAction', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -52,8 +52,8 @@ class SectorsFixture extends TestFixture
             'picture' => 'Lorem ipsum dolor sit amet',
             'picture_dir' => 'Lorem ipsum dolor sit amet',
             'business_id' => 1,
-            'created' => '2017-09-28 03:00:39',
-            'modified' => '2017-09-28 03:00:39'
+            'created' => '2017-10-08 00:42:25',
+            'modified' => '2017-10-08 00:42:25'
         ],
     ];
 }

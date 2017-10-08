@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller\Admin;
+namespace App\Controller;
 
 use App\Controller\AppController;
 
@@ -27,8 +27,6 @@ class SectorsController extends AppController
 
         $this->set(compact('sectors'));
         $this->set('_serialize', ['sectors']);
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -46,9 +44,6 @@ class SectorsController extends AppController
 
         $this->set('sector', $sector);
         $this->set('_serialize', ['sector']);
-
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -71,9 +66,6 @@ class SectorsController extends AppController
         $businessLines = $this->Sectors->BusinessLines->find('list', ['limit' => 200]);
         $this->set(compact('sector', 'businessLines'));
         $this->set('_serialize', ['sector']);
-
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -100,9 +92,6 @@ class SectorsController extends AppController
         $businessLines = $this->Sectors->BusinessLines->find('list', ['limit' => 200]);
         $this->set(compact('sector', 'businessLines'));
         $this->set('_serialize', ['sector']);
-
-        $this->set('page', 'home-page'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 
     /**

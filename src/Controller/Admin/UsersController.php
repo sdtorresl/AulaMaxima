@@ -44,6 +44,9 @@ class UsersController extends AppController
 
         $this->set('user', $user);
         $this->set('_serialize', ['user']);
+
+        $this->set('page', 'home-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -65,6 +68,9 @@ class UsersController extends AppController
         }
         $this->set(compact('user'));
         $this->set('_serialize', ['user']);
+
+        $this->set('page', 'form-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**
@@ -90,6 +96,9 @@ class UsersController extends AppController
         }
         $this->set(compact('user'));
         $this->set('_serialize', ['user']);
+
+        $this->set('page', 'home-page'); 
+        $this->viewBuilder()->setLayout('admin');
     }
 
     /**

@@ -63,6 +63,7 @@ class BusinessLinesTable extends Table
             ->notEmpty('description');
 
         $validator
+            ->scalar('background')
             ->allowEmpty('background');
 
         $validator
@@ -70,6 +71,7 @@ class BusinessLinesTable extends Table
             ->allowEmpty('background_dir');
 
         $validator
+            ->scalar('main_picture')
             ->allowEmpty('main_picture');
 
         $validator
@@ -77,6 +79,7 @@ class BusinessLinesTable extends Table
             ->allowEmpty('main_picture_dir');
 
         $validator
+            ->scalar('secondary_picture')
             ->allowEmpty('secondary_picture');
 
         $validator

@@ -3,27 +3,40 @@
  * @var \App\View\AppView $this
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="users form large-9 medium-8 columns content">
-    <?= $this->Form->create($user) ?>
-    <fieldset>
-        <legend><?= __('Add User') ?></legend>
-        <?php
-            echo $this->Form->control('first_name', ['label' => __('First name')]);
-            echo $this->Form->control('last_name', ['label' => __('Last name')]);
-            echo $this->Form->control('username', ['label' => __('Username')]);
-            echo $this->Form->control('email', ['label' => __('Email')]);
-            echo $this->Form->control('password', ['label' => __('Password')]);
-            echo $this->Form->control('password_confirmation', ['label' => __('Password confirmation')]);
-            echo $this->Form->control('role', ['options' => ['admin' => __('Administrator')], 'label' => __('Rol')]);
-            // echo $this->Form->control('last_access', ['empty' => true]);
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Add')) ?>
-    <?= $this->Form->end() ?>
-</div>
+
+<!-- Page Header-->
+<header class="page-header">
+    <div class="container-fluid">
+        <h2 class="no-margin-bottom"><?= __('Users') ?></h2>
+    </div>
+</header>
+
+<section class="forms">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <h3 class="h4"><?= __('User') ?></h3>
+                    </div>
+
+                    <div class="card-body">
+                        <?= $this->Form->create($user) ?>
+                        <?php
+                        echo $this->Form->control('username');
+                        echo $this->Form->control('email');
+                        echo $this->Form->control('password');
+                        echo $this->Form->control('first_name');
+                        echo $this->Form->control('last_name');
+                        echo $this->Form->control('role');
+                        echo $this->Form->control('last_access', ['empty' => true]);
+                        ?>
+
+                        <?= $this->Form->button(__('Submit')) ?>
+                        <?= $this->Form->end() ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -27,12 +27,6 @@
                                 <tr>
                                     <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('title') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('background') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('background_dir') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('main_picture') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('main_picture_dir') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('secondary_picture') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('secondary_picture_dir') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                                     <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -43,12 +37,6 @@
                                 <tr>
                                     <td><?= $this->Number->format($businessLine->id) ?></td>
                                     <td><?= h($businessLine->title) ?></td>
-                                    <td><?= h($businessLine->background) ?></td>
-                                    <td><?= h($businessLine->background_dir) ?></td>
-                                    <td><?= h($businessLine->main_picture) ?></td>
-                                    <td><?= h($businessLine->main_picture_dir) ?></td>
-                                    <td><?= h($businessLine->secondary_picture) ?></td>
-                                    <td><?= h($businessLine->secondary_picture_dir) ?></td>
                                     <td><?= h($businessLine->created) ?></td>
                                     <td><?= h($businessLine->modified) ?></td>
                                     <td class="actions">
@@ -84,7 +72,7 @@
                         <div class="row">                 
                             <div class="col ">
                                 <?= $this->Html->link(
-                                    __('New Business Line'),
+                                    __('Add Business Line'),
                                     ['action' => 'add'],
                                     ['class' => 'btn btn-primary']
                                 ); ?>

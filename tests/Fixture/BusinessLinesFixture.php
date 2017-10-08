@@ -55,8 +55,8 @@ class BusinessLinesFixture extends TestFixture
             'main_picture_dir' => 'Lorem ipsum dolor sit amet',
             'secondary_picture' => 'Lorem ipsum dolor sit amet',
             'secondary_picture_dir' => 'Lorem ipsum dolor sit amet',
-            'created' => '2017-10-07 22:39:01',
-            'modified' => '2017-10-07 22:39:01'
+            'created' => '2017-10-08 00:42:36',
+            'modified' => '2017-10-08 00:42:36'
         ],
     ];
 }

@@ -11,6 +11,8 @@
         <li><?= $this->Form->postLink(__('Delete Sector'), ['action' => 'delete', $sector->id], ['confirm' => __('Are you sure you want to delete # {0}?', $sector->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Sectors'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Sector'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Business Lines'), ['controller' => 'BusinessLines', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Business Line'), ['controller' => 'BusinessLines', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="sectors view large-9 medium-8 columns content">
@@ -29,12 +31,12 @@
             <td><?= h($sector->picture_dir) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($sector->id) ?></td>
+            <th scope="row"><?= __('Business Line') ?></th>
+            <td><?= $sector->has('business_line') ? $this->Html->link($sector->business_line->id, ['controller' => 'BusinessLines', 'action' => 'view', $sector->business_line->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Business Id') ?></th>
-            <td><?= $this->Number->format($sector->business_id) ?></td>
+            <th scope="row"><?= __('Id') ?></th>
+            <td><?= $this->Number->format($sector->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

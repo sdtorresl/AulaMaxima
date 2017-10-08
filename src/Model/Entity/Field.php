@@ -9,6 +9,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $title
  * @property string $body
+ * @property string $type
  * @property bool $published
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
@@ -28,6 +29,7 @@ class Field extends Entity
     protected $_accessible = [
         'title' => true,
         'body' => true,
+        'type' => true,
         'published' => true,
         'created' => true,
         'modified' => true

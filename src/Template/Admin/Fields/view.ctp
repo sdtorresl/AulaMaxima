@@ -21,6 +21,10 @@
             <td><?= h($field->title) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Type') ?></th>
+            <td><?= h($field->type) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($field->id) ?></td>
         </tr>

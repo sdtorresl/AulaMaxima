@@ -9,11 +9,11 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $title
  * @property string $description
- * @property $background
+ * @property string $background
  * @property string $background_dir
- * @property $main_picture
+ * @property string $main_picture
  * @property string $main_picture_dir
- * @property $secondary_picture
+ * @property string $secondary_picture
  * @property string $secondary_picture_dir
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified

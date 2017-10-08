@@ -79,11 +79,7 @@ class UsersTable extends Table
         $validator
             ->scalar('role')
             ->requirePresence('role', 'create')
-            ->notEmpty('role')
-            ->add('role', 'inList', [
-                'rule' => ['inList', ['admin']],
-                'message' => 'Please enter a valid role'
-            ]);
+            ->notEmpty('role');
 
         $validator
             ->dateTime('last_access')

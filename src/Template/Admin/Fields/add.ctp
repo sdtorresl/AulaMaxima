@@ -3,22 +3,37 @@
  * @var \App\View\AppView $this
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Fields'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="fields form large-9 medium-8 columns content">
-    <?= $this->Form->create($field) ?>
-    <fieldset>
-        <legend><?= __('Add Field') ?></legend>
-        <?php
-            echo $this->Form->control('title');
-            echo $this->Form->control('body');
-            echo $this->Form->control('published');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
-</div>
+
+<!-- Page Header-->
+<header class="page-header">
+    <div class="container-fluid">
+        <h2 class="no-margin-bottom"><?= __('Fields') ?></h2>
+    </div>
+</header>
+
+<section class="forms">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <h3 class="h4"><?= __('Field') ?></h3>
+                    </div>
+
+                    <div class="card-body">
+                        <?= $this->Form->create($field) ?>
+                        <?php
+                        echo $this->Form->control('title');
+                        echo $this->Form->control('body');
+                        echo $this->Form->control('type');
+                        echo $this->Form->control('published');
+                        ?>
+
+                        <?= $this->Form->button(__('Submit')) ?>
+                        <?= $this->Form->end() ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

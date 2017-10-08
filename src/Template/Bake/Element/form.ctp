@@ -25,39 +25,26 @@ if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
     });
 }
 %>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-<% if (strpos($action, 'add') === false): %>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $<%= $singularVar %>-><%= $primaryKey[0] %>],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $<%= $singularVar %>-><%= $primaryKey[0] %>)]
-            )
-        ?></li>
-<% endif; %>
-        <li><?= $this->Html->link(__('List <%= $pluralHumanName %>'), ['action' => 'index']) ?></li>
-<%
-        $done = [];
-        foreach ($associations as $type => $data) {
-            foreach ($data as $alias => $details) {
-                if ($details['controller'] !== $this->name && !in_array($details['controller'], $done)) {
-%>
-        <li><?= $this->Html->link(__('List <%= $this->_pluralHumanName($alias) %>'), ['controller' => '<%= $details['controller'] %>', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New <%= $this->_singularHumanName($alias) %>'), ['controller' => '<%= $details['controller'] %>', 'action' => 'add']) ?></li>
-<%
-                    $done[] = $details['controller'];
-                }
-            }
-        }
-%>
-    </ul>
-</nav>
-<div class="<%= $pluralVar %> form large-9 medium-8 columns content">
-    <?= $this->Form->create($<%= $singularVar %>) ?>
-    <fieldset>
-        <legend><?= __('<%= Inflector::humanize($action) %> <%= $singularHumanName %>') ?></legend>
-        <?php
+
+<!-- Page Header-->
+<header class="page-header">
+    <div class="container-fluid">
+        <h2 class="no-margin-bottom"><?= __('<%= $pluralHumanName %>') ?></h2>
+    </div>
+</header>
+
+<section class="forms">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <h3 class="h4"><?= __('<%= $singularHumanName %>') ?></h3>
+                    </div>
+
+                    <div class="card-body">
+                        <?= $this->Form->create($<%= $singularVar %>) ?>
+                        <?php
 <%
         foreach ($fields as $field) {
             if (in_array($field, $primaryKey)) {
@@ -67,11 +54,11 @@ if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
                 $fieldData = $schema->column($field);
                 if (!empty($fieldData['null'])) {
 %>
-            echo $this->Form->control('<%= $field %>', ['options' => $<%= $keyFields[$field] %>, 'empty' => true]);
+                        echo $this->Form->control('<%= $field %>', ['options' => $<%= $keyFields[$field] %>, 'empty' => true]);
 <%
                 } else {
 %>
-            echo $this->Form->control('<%= $field %>', ['options' => $<%= $keyFields[$field] %>]);
+                        echo $this->Form->control('<%= $field %>', ['options' => $<%= $keyFields[$field] %>]);
 <%
                 }
                 continue;
@@ -80,11 +67,11 @@ if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
                 $fieldData = $schema->column($field);
                 if (in_array($fieldData['type'], ['date', 'datetime', 'time']) && (!empty($fieldData['null']))) {
 %>
-            echo $this->Form->control('<%= $field %>', ['empty' => true]);
+                        echo $this->Form->control('<%= $field %>', ['empty' => true]);
 <%
                 } else {
 %>
-            echo $this->Form->control('<%= $field %>');
+                        echo $this->Form->control('<%= $field %>');
 <%
                 }
             }
@@ -92,13 +79,18 @@ if (isset($modelObject) && $modelObject->hasBehavior('Tree')) {
         if (!empty($associations['BelongsToMany'])) {
             foreach ($associations['BelongsToMany'] as $assocName => $assocData) {
 %>
-            echo $this->Form->control('<%= $assocData['property'] %>._ids', ['options' => $<%= $assocData['variable'] %>]);
+                        echo $this->Form->control('<%= $assocData['property'] %>._ids', ['options' => $<%= $assocData['variable'] %>]);
 <%
             }
         }
 %>
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
-</div>
+                        ?>
+
+                        <?= $this->Form->button(__('Submit')) ?>
+                        <?= $this->Form->end() ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
