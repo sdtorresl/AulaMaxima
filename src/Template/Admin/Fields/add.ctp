@@ -7,7 +7,7 @@
 <!-- Page Header-->
 <header class="page-header">
     <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= __('Fields') ?></h2>
+        <h2 class="no-margin-bottom"><?= __('Administration') ?></h2>
     </div>
 </header>
 
@@ -17,7 +17,7 @@
             <div class="col-lg-10 offset-lg-1">
                 <div class="card">
                     <div class="card-header d-flex align-items-center">
-                        <h3 class="h4"><?= __('Field') ?></h3>
+                        <h3 class="h4"><?= __('Add Text') ?></h3>
                     </div>
 
                     <div class="card-body">
@@ -25,8 +25,10 @@
                         <?php
                         echo $this->Form->control('title');
                         echo $this->Form->control('body');
-                        echo $this->Form->control('type');
-                        echo $this->Form->control('published');
+                        echo $this->Form->control('type', [
+                            'options' => $fieldsType
+                        ]);
+                        echo $this->Form->control('published', ['label' => __('Publish')]);
                         ?>
 
                         <?= $this->Form->button(__('Submit')) ?>

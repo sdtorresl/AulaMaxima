@@ -7,7 +7,7 @@
 <!-- Page Header-->
 <header class="page-header">
     <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= __('Users') ?></h2>
+        <h2 class="no-margin-bottom"><?= __('Administration') ?></h2>
     </div>
 </header>
 
@@ -17,7 +17,7 @@
             <div class="col-lg-10 offset-lg-1">
                 <div class="card">
                     <div class="card-header d-flex align-items-center">
-                        <h3 class="h4"><?= __('User') ?></h3>
+                        <h3 class="h4"><?= __('Add User') ?></h3>
                     </div>
 
                     <div class="card-body">
@@ -28,11 +28,12 @@
                         echo $this->Form->control('password');
                         echo $this->Form->control('first_name');
                         echo $this->Form->control('last_name');
-                        echo $this->Form->control('role');
-                        echo $this->Form->control('last_access', ['empty' => true]);
+                        echo $this->Form->control('role', [
+                            'options' => ['admin' => __('Administrator')]
+                        ]);
                         ?>
 
-                        <?= $this->Form->button(__('Submit')) ?>
+                        <?= $this->Form->button(__('Add User')) ?>
                         <?= $this->Form->end() ?>
                     </div>
                 </div>

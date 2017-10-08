@@ -12,7 +12,23 @@ use App\Controller\AppController;
  */
 class FieldsController extends AppController
 {
+    private $fieldsType;
 
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->fieldsType = array(
+            'homeMainText' => __('Main text'),
+            'slogan' => __('Slogan'),
+            'contactFormDescription' => __('Contact Form - Description'),
+            'contactFormAddress' => __('Contact Form - Address'),
+            'contactFormPhone' => __('Contact Form - Phone Number')
+        );
+
+        asort($this->fieldsType);
+    }
+    
     /**
      * Index method
      *
@@ -25,6 +41,8 @@ class FieldsController extends AppController
         $this->set(compact('fields'));
         $this->set('_serialize', ['fields']);
         $this->set('page', 'home-page'); 
+        $this->set('fieldsType', $this->fieldsType); 
+        
         $this->viewBuilder()->setLayout('admin');
     }
 
@@ -44,6 +62,8 @@ class FieldsController extends AppController
         $this->set('field', $field);
         $this->set('_serialize', ['field']);
         $this->set('page', 'home-page'); 
+        $this->set('fieldsType', $this->fieldsType); 
+        
         $this->viewBuilder()->setLayout('admin');
     }
 
@@ -64,9 +84,12 @@ class FieldsController extends AppController
             }
             $this->Flash->error(__('The field could not be saved. Please, try again.'));
         }
+        
         $this->set(compact('field'));
         $this->set('_serialize', ['field']);
-        $this->set('page', 'home-page'); 
+        $this->set('page', 'home-page');
+        $this->set('fieldsType', $this->fieldsType); 
+        
         $this->viewBuilder()->setLayout('admin');
     }
 
@@ -91,9 +114,12 @@ class FieldsController extends AppController
             }
             $this->Flash->error(__('The field could not be saved. Please, try again.'));
         }
+
         $this->set(compact('field'));
         $this->set('_serialize', ['field']);
         $this->set('page', 'home-page'); 
+        $this->set('fieldsType', $this->fieldsType); 
+        
         $this->viewBuilder()->setLayout('admin');
     }
 

@@ -39,8 +39,8 @@
                                 <tr>
                                     <td><?= $this->Number->format($field->id) ?></td>
                                     <td><?= h($field->title) ?></td>
-                                    <td><?= h($field->type) ?></td>
-                                    <td><?= h($field->published) ?></td>
+                                    <td><?= $fieldsType[$field->type] ?></td>
+                                    <td><?= ($field->published) ? __('Published') : __('Unpublished') ?></td>
                                     <td><?= h($field->created) ?></td>
                                     <td><?= h($field->modified) ?></td>
                                     <td class="actions">
