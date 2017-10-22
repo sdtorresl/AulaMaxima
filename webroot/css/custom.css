@@ -34,6 +34,9 @@ h2, h3, h4, h5 {
 h2 {
 	text-transform: uppercase;
 }
+.error-message {
+	color: #C1292E;
+}
 
 /*Buttons*/
 .btn-primary {

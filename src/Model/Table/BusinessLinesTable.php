@@ -37,6 +37,125 @@ class BusinessLinesTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->addBehavior('Josegonzalez/Upload.Upload', [
+            'background' => [
+                'fields' => [
+                    'dir' => 'background_dir'
+                ], 
+                'nameCallback' => function ($data, $settings) {
+                    return strtolower($data['name']);
+                },
+                'transformer' =>  function ($table, $entity, $data, $field, $settings) {
+                    $extension = pathinfo($data['name'], PATHINFO_EXTENSION);
+
+                    // Store the thumbnail in a temporary file
+                    $tmp = tempnam(sys_get_temp_dir(), 'upload') . '.' . $extension;
+
+                    // Use the Imagine library to DO THE THING
+                    $size = new \Imagine\Image\Box(200, 200);
+                    $mode = \Imagine\Image\ImageInterface::THUMBNAIL_INSET;
+                    $imagine = new \Imagine\Gd\Imagine();
+
+                    // Save that modified file to our temp file
+                    $imagine->open($data['tmp_name'])
+                        ->thumbnail($size, $mode)
+                        ->save($tmp);
+
+                    // Now return the original *and* the thumbnail
+                    return [
+                        $data['tmp_name'] => $data['name'],
+                        $tmp => 'thumbnail-' . $data['name'],
+                    ];
+                },
+                'deleteCallback' => function ($path, $entity, $field, $settings) {
+                    // When deleting the entity, both the original and the thumbnail will be removed
+                    // when keepFilesOnDelete is set to false
+                    return [
+                        $path . $entity->{$field},
+                        $path . 'thumbnail-' . $entity->{$field}
+                    ];
+                },
+                'keepFilesOnDelete' => false
+            ],
+            'main_picture' => [
+                'fields' => [
+                    'dir' => 'main_picture_dir'
+                ], 
+                'nameCallback' => function ($data, $settings) {
+                    return strtolower($data['name']);
+                },
+                'transformer' =>  function ($table, $entity, $data, $field, $settings) {
+                    $extension = pathinfo($data['name'], PATHINFO_EXTENSION);
+
+                    // Store the thumbnail in a temporary file
+                    $tmp = tempnam(sys_get_temp_dir(), 'upload') . '.' . $extension;
+
+                    // Use the Imagine library to DO THE THING
+                    $size = new \Imagine\Image\Box(200, 200);
+                    $mode = \Imagine\Image\ImageInterface::THUMBNAIL_INSET;
+                    $imagine = new \Imagine\Gd\Imagine();
+
+                    // Save that modified file to our temp file
+                    $imagine->open($data['tmp_name'])
+                        ->thumbnail($size, $mode)
+                        ->save($tmp);
+
+                    // Now return the original *and* the thumbnail
+                    return [
+                        $data['tmp_name'] => $data['name'],
+                        $tmp => 'thumbnail-' . $data['name'],
+                    ];
+                },
+                'deleteCallback' => function ($path, $entity, $field, $settings) {
+                    // When deleting the entity, both the original and the thumbnail will be removed
+                    // when keepFilesOnDelete is set to false
+                    return [
+                        $path . $entity->{$field},
+                        $path . 'thumbnail-' . $entity->{$field}
+                    ];
+                },
+                'keepFilesOnDelete' => false
+            ],
+            'secondary_picture' => [
+                'fields' => [
+                    'dir' => 'secondary_picture_dir'
+                ], 
+                'nameCallback' => function ($data, $settings) {
+                    return strtolower($data['name']);
+                },
+                'transformer' =>  function ($table, $entity, $data, $field, $settings) {
+                    $extension = pathinfo($data['name'], PATHINFO_EXTENSION);
+
+                    // Store the thumbnail in a temporary file
+                    $tmp = tempnam(sys_get_temp_dir(), 'upload') . '.' . $extension;
+
+                    // Use the Imagine library to DO THE THING
+                    $size = new \Imagine\Image\Box(200, 200);
+                    $mode = \Imagine\Image\ImageInterface::THUMBNAIL_INSET;
+                    $imagine = new \Imagine\Gd\Imagine();
+
+                    // Save that modified file to our temp file
+                    $imagine->open($data['tmp_name'])
+                        ->thumbnail($size, $mode)
+                        ->save($tmp);
+
+                    // Now return the original *and* the thumbnail
+                    return [
+                        $data['tmp_name'] => $data['name'],
+                        $tmp => 'thumbnail-' . $data['name'],
+                    ];
+                },
+                'deleteCallback' => function ($path, $entity, $field, $settings) {
+                    // When deleting the entity, both the original and the thumbnail will be removed
+                    // when keepFilesOnDelete is set to false
+                    return [
+                        $path . $entity->{$field},
+                        $path . 'thumbnail-' . $entity->{$field}
+                    ];
+                },
+                'keepFilesOnDelete' => false
+            ]
+        ]);
     }
 
     /**
@@ -63,28 +182,17 @@ class BusinessLinesTable extends Table
             ->notEmpty('description');
 
         $validator
-            ->scalar('background')
-            ->allowEmpty('background');
+            ->requirePresence('background', 'create')
+            ->allowEmpty('background', 'update');
 
         $validator
-            ->scalar('background_dir')
-            ->allowEmpty('background_dir');
+            ->allowEmpty('main_picture')
+            ->requirePresence('main_picture', 'create');
 
         $validator
-            ->scalar('main_picture')
-            ->allowEmpty('main_picture');
+            ->allowEmpty('secondary_picture')
+            ->requirePresence('secondary_picture', 'create');
 
-        $validator
-            ->scalar('main_picture_dir')
-            ->allowEmpty('main_picture_dir');
-
-        $validator
-            ->scalar('secondary_picture')
-            ->allowEmpty('secondary_picture');
-
-        $validator
-            ->scalar('secondary_picture_dir')
-            ->allowEmpty('secondary_picture_dir');
 
         return $validator;
     }

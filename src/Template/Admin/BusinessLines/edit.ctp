@@ -21,18 +21,14 @@
                     </div>
 
                     <div class="card-body">
-                        <?= $this->Form->create($businessLine) ?>
+                        <?= $this->Form->create($businessLine, ['type' => 'file']) ?>
                         <?php
-                        echo $this->Form->control('title');
-                        echo $this->Form->control('description');
-                        echo $this->Form->control('background');
-                        echo $this->Form->control('background_dir');
-                        echo $this->Form->control('main_picture');
-                        echo $this->Form->control('main_picture_dir');
-                        echo $this->Form->control('secondary_picture');
-                        echo $this->Form->control('secondary_picture_dir');
+                            echo $this->Form->control('title');
+                            echo $this->Form->control('description');
+                            echo $this->Form->control('background', ['type' => 'file']);
+                            echo $this->Form->control('main_picture', ['type' => 'file']);
+                            echo $this->Form->control('secondary_picture', ['type' => 'file']);
                         ?>
-
                         <?= $this->Form->button(__('Submit')) ?>
                         <?= $this->Form->end() ?>
                     </div>
