@@ -4,11 +4,11 @@
 		<!-- Logo & Information Panel-->
 		<div class="col-lg-6">
 		  <div class="info d-flex align-items-center">
-			<div class="content">
-				<div class="logo">
-					<h1><?= __('Aula Máxima') ?></h1>
+			<div class="content container-fluid">
+				<div class="logo align-items-center">
+					<?= $this->Html->Image('logo/vertical-logo-pequeno.png') ?>
+					<p class="right"><?= __('Panel Administrativo') ?></p>
 				</div>
-			 	<p><?= __('Administrative Panel') ?></p>
 			</div>
 		  </div>
 		</div>

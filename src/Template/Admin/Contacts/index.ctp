@@ -73,15 +73,11 @@
                     </div>
 
                     <div class="container">
-                        <div class="row">                 
-                            <div class="col ">
-                                <?= $this->Html->link(
-                                    __('New Contact'),
-                                    ['action' => 'add'],
-                                    ['class' => 'btn btn-primary']
-                                ); ?>
-                            </div>
-                        </div>
+                        <?= $this->Html->link(
+                            __('New Contact'),
+                            ['action' => 'add'],
+                            ['class' => 'btn btn-primary']
+                        ); ?>
                     </div>
 
                     <nav class="container-fluid">

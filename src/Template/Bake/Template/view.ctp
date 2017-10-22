@@ -168,17 +168,14 @@ foreach ($relations as $alias => $details):
                             <?php endif; ?>
                         </div>
 <% endforeach; %>
-                        <div class="container">
-                            <div class="row">                 
-                                <div class="col ">
-                                    <?= $this->Html->link(
-                                        __('Edit <%= $singularHumanName%>'),
-                                        ['action' => 'edit', <%= $pk %>],
-                                        ['class' => 'btn btn-primary']
-                                    ); ?>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <?= $this->Html->link(
+                            __('Edit <%= $singularHumanName%>'),
+                            ['action' => 'edit', <%= $pk %>],
+                            ['class' => 'btn btn-primary']
+                        ); ?>
                     </div>
                 </div>
             </div>

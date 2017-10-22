@@ -80,18 +80,19 @@ $users = 'Hola';
                             <!-- Logout    -->
                             <li class="nav-item">
                                 <?= $this->Html->link(
-                                    array(
+                                    [
                                         __('Logout'),
-                                        $this->Html->tag('i', '', array('class' => 'fa fa-sign-out')),
-                                    ),
-                                    array(
+                                        $this->Html->tag('i', '', ['class' => 'fa fa-sign-out']),
+                                    ],
+                                    [
                                         'controller' => 'Users', 
-                                        'action' => 'logout'
-                                    ),
-                                    array(
+                                        'action' => 'logout',
+                                        'prefix' => 'admin'
+                                    ],
+                                    [
                                         'class' => 'nav-link logout',
                                         'escape' => false
-                                    )
+                                    ]
                                 ); ?>
                             </li>
                             </ul>

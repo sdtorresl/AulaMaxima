@@ -52,8 +52,8 @@ class SectorsFixture extends TestFixture
             'picture' => 'Lorem ipsum dolor sit amet',
             'picture_dir' => 'Lorem ipsum dolor sit amet',
             'business_id' => 1,
-            'created' => '2017-10-08 00:12:33',
-            'modified' => '2017-10-08 00:12:33'
+            'created' => '2017-10-08 08:04:05',
+            'modified' => '2017-10-08 08:04:05'
         ],
     ];
 }

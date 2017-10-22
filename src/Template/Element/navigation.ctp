@@ -16,22 +16,20 @@
 	
 	<!-- Sidebar Navidation Menus-->
 	
-	<span class="heading"><?= __('Administration') ?></span>
+	<span class="heading"><?= __('Admin') ?></span>
 	<ul class="list-unstyled">
 		<li>
 			<?= $this->Html->link(
-			array(
-			$this->Html->tag('i', '', array('class' => 'icon-home')),
-			__('Home')
-			),
-			array(
-			'controller' => 'Pages',
-			'action' => 'display',
-			'admin'
-			),
-			array(
-			'escape' => false
-			)
+				[
+					$this->Html->tag('i', '', ['class' => 'icon-home']),
+					__('Home')
+				],
+				[
+					'controller' => 'Admin',
+					'action' => 'home',
+					'prefix' => false
+				],
+				['escape' => false]
 			); ?>
 		</li>
 		<li>
@@ -39,8 +37,8 @@
 				<i class="icon-user"></i><?= __('Users') ?>
 			</a>
 			<ul id="users-menu" class="collapse list-unstyled">
-				<li><?= $this->Html->link(__('List'), ['controller' => 'Users', 'action' => 'index']); ?></li>
-				<li><?= $this->Html->link(__('Add'), ['controller' => 'Users', 'action' => 'add']); ?></li>
+				<li><?= $this->Html->link(__('List'), ['controller' => 'Users', 'action' => 'index', 'prefix' => 'admin']); ?></li>
+				<li><?= $this->Html->link(__('Add'), ['controller' => 'Users', 'action' => 'add', 'prefix' => 'admin']); ?></li>
 			</ul>
 		</li>
 		<li>
@@ -48,8 +46,8 @@
 				<i class="icon-list"></i><?= __('Pages') ?>
 			</a>
 			<ul id="pages-menu" class="collapse list-unstyled">
-				<li><?= $this->Html->link(__('List'), ['controller' => 'Fields', 'action' => 'index']); ?></li>
-				<li><?= $this->Html->link(__('Add'), ['controller' => 'Fields', 'action' => 'add']); ?></li>
+				<li><?= $this->Html->link(__('List'), ['controller' => 'Fields', 'action' => 'index', 'prefix' => 'admin']); ?></li>
+				<li><?= $this->Html->link(__('Add'), ['controller' => 'Fields', 'action' => 'add', 'prefix' => 'admin']); ?></li>
 			</ul>
 		</li>
 	</ul>
@@ -60,8 +58,8 @@
 				<i class="icon-presentation"></i><?= __('Business Lines') ?>
 			</a>
 			<ul id="business-lines-menu" class="collapse list-unstyled">
-				<li><?= $this->Html->link(__('List'), ['controller' => 'BusinessLines', 'action' => 'index']); ?></li>
-				<li><?= $this->Html->link(__('Add'), ['controller' => 'BusinessLines', 'action' => 'add']); ?></li>
+				<li><?= $this->Html->link(__('List'), ['controller' => 'BusinessLines', 'action' => 'index', 'prefix' => 'admin']); ?></li>
+				<li><?= $this->Html->link(__('Add'), ['controller' => 'BusinessLines', 'action' => 'add', 'prefix' => 'admin']); ?></li>
 			</ul>
 		</li>
 		<li>
@@ -69,8 +67,8 @@
 				<i class="icon-list"></i><?= __('Sectors') ?>
 			</a>
 			<ul id="sectors-menu" class="collapse list-unstyled">
-				<li><?= $this->Html->link(__('List'), ['controller' => 'Sectors', 'action' => 'index']); ?></li>
-				<li><?= $this->Html->link(__('Add'), ['controller' => 'Sectors', 'action' => 'add']); ?></li>
+				<li><?= $this->Html->link(__('List'), ['controller' => 'Sectors', 'action' => 'index', 'prefix' => 'admin']); ?></li>
+				<li><?= $this->Html->link(__('Add'), ['controller' => 'Sectors', 'action' => 'add', 'prefix' => 'admin']); ?></li>
 			</ul>
 		</li>
 	</ul>
@@ -78,17 +76,12 @@
 	<ul class="list-unstyled">
 		<li>
 			<?= $this->Html->link(
-			array(
-			$this->Html->tag('i', '', array('class' => 'icon-mail')),
-			__('Contacts')
-			),
-			array(
-			'controller' => 'Contacts',
-			'action' => 'index'
-			),
-			array(
-			'escape' => false
-			)
+			[
+				$this->Html->tag('i', '', ['class' => 'icon-mail']),
+				__('Contacts')
+			],
+			['controller' => 'Contacts', 'action' => 'index', 'prefix' => 'admin'],
+			['escape' => false]
 			); ?>
 		</li>
 	</ul>

@@ -59,8 +59,9 @@ class AppController extends Controller
                 'prefix' => 'admin'
             ],
             'loginRedirect' => [
-                'controller' => 'Users',
-                'action' => 'index'
+                'controller' => 'Admin',
+                'action' => 'home',
+                'prefix' => false
             ],
             'logoutRedirect' => [
                 'controller' => 'Users',
@@ -90,7 +91,8 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-        if (empty($this->request->params['prefix']) || $this->request->params['prefix'] !== 'admin') {
+        if ((empty($this->request->params['prefix']) || $this->request->params['prefix'] !== 'admin') 
+            && $this->request->params['controller'] != 'Admin') {
             $this->Auth->allow();
         }
 

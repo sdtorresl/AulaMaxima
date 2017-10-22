@@ -46,8 +46,8 @@ class FieldsFixture extends TestFixture
             'body' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
             'type' => 'Lorem ipsum dolor sit amet',
             'published' => 1,
-            'created' => '2017-10-08 00:42:52',
-            'modified' => '2017-10-08 00:42:52'
+            'created' => '2017-10-08 08:05:07',
+            'modified' => '2017-10-08 08:05:07'
         ],
     ];
 }

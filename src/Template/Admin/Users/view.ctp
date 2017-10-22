@@ -48,18 +48,14 @@
                                 <td><?= h($user->last_access) ?></td>
                             </tr>
                         </table>
+                    </div>
 
-                        <div class="container">
-                            <div class="row">                 
-                                <div class="col ">
-                                    <?= $this->Html->link(
-                                        __('Edit User'),
-                                        ['action' => 'edit', $user->id],
-                                        ['class' => 'btn btn-primary']
-                                    ); ?>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="container">
+                        <?= $this->Html->link(
+                            __('Edit User'),
+                            ['action' => 'edit', $user->id],
+                            ['class' => 'btn btn-primary']
+                        ); ?>
                     </div>
                 </div>
             </div>

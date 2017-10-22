@@ -126,15 +126,11 @@ $pk = '$' . $singularVar . '->' . $primaryKey[0];
                     </div>
 
                     <div class="container">
-                        <div class="row">                 
-                            <div class="col ">
-                                <?= $this->Html->link(
-                                    __('New <%= $singularHumanName %>'),
-                                    ['action' => 'add'],
-                                    ['class' => 'btn btn-primary']
-                                ); ?>
-                            </div>
-                        </div>
+                        <?= $this->Html->link(
+                            __('New <%= $singularHumanName %>'),
+                            ['action' => 'add'],
+                            ['class' => 'btn btn-primary']
+                        ); ?>
                     </div>
 
                     <nav class="container-fluid">

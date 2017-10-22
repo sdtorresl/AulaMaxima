@@ -1,1 +1,88 @@
-/* your styles go here */
+/*
+Red: C1292E
+Blue : 293038
+Beige: DFBF77
+Yellow: D7DB2F
+*/
+
+/*Fonts*/
+@font-face {
+    font-family: 'Champagne';
+    src: url('../fonts/champagne_limousines/Champagne & Limousines.ttf');
+}
+@font-face {
+    font-family: 'Offerings';
+    src: url('../fonts/offerings/Offerings Regular.otf');
+}
+@font-face {
+    font-family: 'AgencyFB';
+    src: url('../fonts/agency_fb.ttf');
+}
+
+/*Texts*/
+body, p {
+	font-family: 'Champagne';
+	font-size: 1em;
+}
+h1 {
+	font-family: 'Offerings';
+}
+
+h2, h3, h4, h5 {
+	font-family: 'AgencyFB';
+}
+h2 {
+	text-transform: uppercase;
+}
+
+/*Buttons*/
+.btn-primary {
+    background-color: #293038;
+    border-color: #293038;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #C1292E;
+    border-color: #C1292E;
+}
+.btn-secondary {
+    background-color: #C1292E;
+    border-color: #C1292E;
+}
+.btn-secondary:hover {
+    background-color: #D7DB2F;
+    border-color: #D7DB2F;
+}
+
+/*Login Page*/
+.login-page .form-holder .info {
+	background: #C1292E;
+}
+.login-page .logo img {
+	max-width: 100%;
+}
+.login-page .logo p {
+	text-align: right;
+	font-size: 1.4em;
+	/*font-style: italic;*/
+	font-family: 'Offerings';
+}
+
+/*Navigation*/
+nav.navbar {
+	background: #293038;
+}
+nav.side-navbar ul a:hover {
+	background: #C1292E;
+	border-color: #8A030D;
+}
+
+/*Tables*/
+section.tables .container {
+	width: 100%;
+	padding: 0 20px 20px 0;
+}
+
+section.tables .btn {
+	float: right;
+}

@@ -55,17 +55,14 @@
                             <h4><?= __('Description') ?></h4>
                             <?= $this->Text->autoParagraph(h($sector->description)); ?>
                         </div>
-                        <div class="container">
-                            <div class="row">                 
-                                <div class="col ">
-                                    <?= $this->Html->link(
-                                        __('Edit Sector'),
-                                        ['action' => 'edit', $sector->id],
-                                        ['class' => 'btn btn-primary']
-                                    ); ?>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <?= $this->Html->link(
+                            __('Edit Sector'),
+                            ['action' => 'edit', $sector->id],
+                            ['class' => 'btn btn-primary']
+                        ); ?>
                     </div>
                 </div>
             </div>

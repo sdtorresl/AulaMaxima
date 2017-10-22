@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"deb",
+				"debug"
+			],
+			[
+				"redirect",
+				"redirect"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"fields",
+				"fieldsType"
+			],
+			[
+				"as",
+				"asort"
+			],
+			[
+				"fiel",
+				"fieldsType"
+			],
+			[
 				"ro",
 				"rounded-circle"
 			],
@@ -52,10 +84,6 @@
 				"background_dir"
 			],
 			[
-				"fiel",
-				"fields"
-			],
-			[
 				"fo",
 				"font-weight"
 			],
@@ -82,10 +110,6 @@
 			[
 				"op",
 				"opacity"
-			],
-			[
-				"fun",
-				"function"
 			],
 			[
 				"tras",
@@ -223,6 +247,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "config/routes.php",
+			"settings":
+			{
+				"buffer_size": 3227,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Controller/AdminController.php",
+			"settings":
+			{
+				"buffer_size": 310,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Controller/AppController.php",
+			"settings":
+			{
+				"buffer_size": 3372,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -339,42 +390,52 @@
 	[
 		"/home/sdtorresl/Programming/Web/AulaMaxima",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Element",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Template"
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller"
 	],
 	"file_history":
 	[
 		"/home/sdtorresl/Programming/Web/AulaMaxima/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/home.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Element/navigation.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/config/routes.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/AppController.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/AdminController.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Layout/admin.ctp",
+		"/home/sdtorresl/Downloads/bootstrap-4-material-admin/index.html",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/index.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Template/index.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Template/view.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Users/view.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Users/index.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/webroot/css/custom.css",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Sectors/view.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/config/bootstrap.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Users/add.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Users/edit.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin/FieldsController.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/config/app.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Fields/index.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Fields/add.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/FieldsController.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/BusinessLines/add.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Sectors/index.ctp",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/BusinessLines/index.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Element/form.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Sectors/add.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin/SectorsController.php",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Template/index.ctp",
 		"/home/sdtorresl/Downloads/bootstrap-4-material-admin/forms.html",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin/UsersController.php",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Element/navigation.ctp",
 		"/home/sdtorresl/Downloads/bootstrap-4-material-admin/tables.html",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Users/index.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Template/add.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Form/form.ctp",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/BusinessLines/add.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin/ContactsController.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin/BusinessLinesController.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Contacts/index.ctp",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Users/view.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Bake/Template/login.ctp",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Layout/admin.ctp",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/BusinessLines/index.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/vendor/cakephp/cakephp/src/View/Helper/PaginatorHelper.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/vendor/cakephp/cakephp/src/Datasource/Paginator.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Layout/login.ctp",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/AppController.php",
-		"/home/sdtorresl/Downloads/bootstrap-4-material-admin/index.html",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Element/Flash/success.ctp",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/config/app.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/config/app.default.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Element/Flash/error.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/webroot/css/style.default.css",
@@ -386,9 +447,7 @@
 		"/home/sdtorresl/Downloads/bootstrap-4-material-admin/login.html",
 		"/home/sdtorresl/Downloads/bootstrap-4-material-admin/readme.txt",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Model/Table/UsersTable.php",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/config/routes.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Model/Entity/User.php",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/config/bootstrap.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/BusinessLines/edit.ctp",
 		"/home/sdtorresl/Documents/Comentarios Foro",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/BusinessLines/add.ctp",
@@ -436,7 +495,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -451,6 +510,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"submitCon",
+			"array(",
+			"_h",
+			"$this->set('fieldsType', $fieldsType); ",
+			"checkb",
 			"createFo",
 			"create",
 			"file",
@@ -516,6 +580,8 @@
 		"replace_history":
 		[
 			"[",
+			"$this->set($fieldsType); ",
+			"[",
 			"advantages-item",
 			"advantages",
 			"figcaption",
@@ -533,8 +599,109 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "config/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2122,
+								2122
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Controller/AdminController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Controller/AppController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3015,
+								3015
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -581,7 +748,7 @@
 	"project": "AulaMaxima.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
