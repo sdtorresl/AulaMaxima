@@ -71,6 +71,10 @@ h2 {
 	font-family: 'Offerings';
 }
 
+/*Upper panel*/
+.logo-horizontal img {
+	max-height: 42px;
+}
 /*Navigation*/
 nav.navbar {
 	background: #293038;

@@ -30,7 +30,7 @@ $users = 'Hola';
         <?= $this->Html->meta('icon') ?>
         <!-- CSS-->
         <?= $this->Html->css('bootstrap.min.css'); ?>
-        <?= $this->Html->css('style.default.css', ['id' => 'theme-stylesheet']); ?>
+        <?= $this->Html->css('style.red.css', ['id' => 'theme-stylesheet']); ?>
         <?= $this->Html->css('custom.css'); ?>
         <!-- <?= $this->Html->css('base.css') ?> -->
         <!-- <?= $this->Html->css('cake.css') ?> -->
@@ -64,10 +64,13 @@ $users = 'Hola';
                         <div class="navbar-header">
                             <!-- Navbar Brand -->
                             <a href="index.html" class="navbar-brand">
-                                <div class="brand-text brand-big hidden-lg-down">
+                                <div class="brand-text brand-big hidden-lg-down logo-horizontal">
+                                    <?= $this->Html->Image('logo/logo-icon-white.png') ?>
                                     <span><?= __('Aula Máxima') ?></span><strong><?= __('Dashboard') ?></strong>
                                 </div>
-                                <div class="brand-text brand-small"><strong>BD</strong></div>
+                                <div class="brand-text brand-small logo-horizontal">
+                                    <?= $this->Html->Image('logo/logo-icon-white.png') ?>
+                                </div>
                             </a>
                             <!-- Toggle Button-->
                             <a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>

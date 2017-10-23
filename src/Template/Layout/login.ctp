@@ -31,7 +31,7 @@ $cakeDescription = __('Aula Maxima - Administrative Panel');
 
     <!-- CSS-->
     <?= $this->Html->css('bootstrap.min.css'); ?>
-    <?= $this->Html->css('style.default.css', ['id' => 'theme-stylesheet']); ?>
+    <?= $this->Html->css('style.red.css', ['id' => 'theme-stylesheet']); ?>
     <?= $this->Html->css('custom.css'); ?>
     <!-- <?= $this->Html->css('base.css') ?> -->
     <!-- <?= $this->Html->css('cake.css') ?> -->

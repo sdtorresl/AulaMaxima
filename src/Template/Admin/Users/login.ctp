@@ -48,10 +48,10 @@
 
 				<?= $this->Form->end() ?>
 
-			  <a href="#" class="forgot-pass"><?= __('Forgot your password?') ?></a>
+			  <a href="mailto:soporte@innovaciones.co?subject=Olvidé mi contraseña&body=Hola, olvidé mi contraseña de administrador en Aula Máxima. Mi usuario es: " class="forgot-pass"><?= __('Forgot your password?') ?></a>
 			  <br>
-			  <small><?= __('Don\'t have an account?') ?></small>
-			  <a href="register.html" class="signup"><?=__('Request for one') ?></a>
+			  <small><?= __('Don\'t have an account?') ?>
+			  <a href="mailto:soporte@innovaciones.co?subject=Requerir contraseña&body=Hola, necesito una cuenta de administrador para el panel de Aula Máxima. Mis datos de contacto son: %0D%0A%0D%0AUsuario:%0D%0ACorreo:%0D%0ATeléfono:" class="signup"><?=__('Request for one') ?></a> </small>
 			</div>
 		  </div>
 		</div>
