@@ -189,6 +189,7 @@ body {
 }
 .description {
 	text-align: justify;
+	margin: 10px;
 }
 .description.a {
 	margin: 5px;
