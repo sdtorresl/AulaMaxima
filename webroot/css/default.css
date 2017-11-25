@@ -147,6 +147,32 @@ body {
 	margin-top: 50px;
 }
 
+.content {
+	display: inline-block;
+	max-width: 100%;
+}
+.page-header {
+	background: #C1292E;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.page-header .icon {
+	border-right: 2px solid white;
+	padding-right: 10px;
+}
+
+.page-header .page-title {
+	padding-left: 10px;
+	margin: 5px 0;
+}
+
+
 footer {
 	align-items: center;
 	background: #293038;
