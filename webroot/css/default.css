@@ -149,6 +149,7 @@ body {
 
 .content {
 	display: inline-block;
+	width: 100%;
 	max-width: 100%;
 }
 .page-header {

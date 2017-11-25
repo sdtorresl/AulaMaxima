@@ -8,7 +8,7 @@
 <!-- Page Header-->
 <header class="page-header">
     <figure class="icon">
-        <?= $this->Html->image("home.png", ['alt' => __("Home")]) ?>
+        <?= $this->Html->image("icons/icon-home.png", ['alt' => __("Home")]) ?>
     </figure>
     <h2 class="page-title"><?= __('Home') ?></h2>
 </header>
@@ -20,7 +20,7 @@
 <section class="main">
     <?php foreach ($businessLines as $businessLine): ?>
     <article class="business-lines">
-        <figure><img src="<?= $businessLine->background_dir . $businessLine->main_picture ?>" alt="<?= h($businessLine->title) ?>"></figure>
+        <figure><img src="<?= $businessLine->background_dir . $businessLine->background ?>" alt="<?= h($businessLine->title) ?>"></figure>
         <div class="title">
             <h2><?= h($businessLine->title) ?></h2>
         </div>
