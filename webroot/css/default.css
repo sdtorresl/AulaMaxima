@@ -165,6 +165,8 @@ body {
 .page-header .icon {
 	border-right: 2px solid white;
 	padding-right: 10px;
+	width: 60px;
+	margin:10px;
 }
 
 .page-header .page-title {
