@@ -163,8 +163,8 @@ body {
 }
 
 .page-header .icon {
-	width: 60px;
-	margin:10px;
+	width: 80px;
+	padding:10px;
 	border-right: 2px solid white;
 	padding-right: 10px;
 
@@ -175,6 +175,13 @@ body {
 	margin: 5px 0;
 }
 
+.tittle {
+
+
+}
+.description {
+
+}
 
 footer {
 	align-items: center;
