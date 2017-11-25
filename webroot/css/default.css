@@ -174,21 +174,25 @@ body {
 	padding-left: 10px;
 	margin: 5px 0;
 }
+.item {
 
-.tittle {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	align-content: space-between;
-	padding-left: 20px;
-
-
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 300px;
+}
+.tittle {
+	margin right: 30px;
 
 }
 .description {
-
-
+	text-align: justify;
+}
+.description.a {
+	margin: 5px;
+	padding: 1px solid black;
 }
 
 footer {
