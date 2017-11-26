@@ -185,6 +185,8 @@ img {
 .page-header .page-title {
 	padding-left: 10px;
 	margin: 5px 0;
+	font-size: 2.2rem;
+	font-family: 'AGENCYB';
 }
 .quote {
 	background-image: url('../img/web/home-frase.png');
