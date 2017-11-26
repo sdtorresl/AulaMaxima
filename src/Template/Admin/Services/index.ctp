@@ -1,14 +1,14 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Sector[]|\Cake\Collection\CollectionInterface $sectors
+ * @var \App\Model\Entity\Service[]|\Cake\Collection\CollectionInterface $services
  */
 ?>
 
 <!-- Page Header-->
 <header class="page-header">
     <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= __('Sectors') ?></h2>
+        <h2 class="no-margin-bottom"><?= __('Services') ?></h2>
     </div>
 </header>
 
@@ -18,7 +18,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header d-flex align-items-center">
-                        <h3 class="h4"><?= __('Sectors') ?></h3>
+                        <h3 class="h4"><?= __('Services') ?></h3>
                     </div>
 
                     <div class="card-body">
@@ -26,45 +26,39 @@
                             <thead>
                                 <tr>
                                     <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('title') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('picture') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('picture_dir') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('business_id') ?></th>
+                                    <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                                     <th scope="col" class="actions"><?= __('Actions') ?></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($sectors as $sector): ?>
+                                <?php foreach ($services as $service): ?>
                                 <tr>
-                                    <td><?= $this->Number->format($sector->id) ?></td>
-                                    <td><?= h($sector->title) ?></td>
-                                    <td><?= h($sector->picture) ?></td>
-                                    <td><?= h($sector->picture_dir) ?></td>
-                                    <td><?= $sector->has('business_line') ? $this->Html->link($sector->business_line->id, ['controller' => 'BusinessLines', 'action' => 'view', $sector->business_line->id]) : '' ?></td>
-                                    <td><?= h($sector->created) ?></td>
-                                    <td><?= h($sector->modified) ?></td>
+                                    <td><?= $this->Number->format($service->id) ?></td>
+                                    <td><?= h($service->name) ?></td>
+                                    <td><?= h($service->created) ?></td>
+                                    <td><?= h($service->modified) ?></td>
                                     <td class="actions">
                                         <!-- View -->
                                         <?= $this->Html->link(
                                             [$this->Html->tag('i', '', ['class' => 'icon-search'])],
-                                            ['action' => 'view', $sector->id],
+                                            ['action' => 'view', $service->id],
                                             ['escape' => false]
                                         ); ?>
                                         <!-- Edit -->
                                         <?= $this->Html->link(
                                             [$this->Html->tag('i', '', ['class' => 'icon-form'])],
-                                            ['action' => 'edit', $sector->id],
+                                            ['action' => 'edit', $service->id],
                                             ['escape' => false]
                                         ); ?>
                                         <!-- Delete -->
                                         <?= $this->Form->postLink(
                                             [$this->Html->tag('i', '', ['class' => 'icon-close'])],
-                                            ['action' => 'delete', $sector->id],
+                                            ['action' => 'delete', $service->id],
                                             [
                                                 'escape' => false,
-                                                'confirm' => __('Are you sure you want to delete # {0}?', $sector->id)
+                                                'confirm' => __('Are you sure you want to delete # {0}?', $service->id)
                                             ]
                                         ); ?>
                                     </td>
@@ -76,7 +70,7 @@
 
                     <div class="container">
                         <?= $this->Html->link(
-                            __('New Sector'),
+                            __('New Service'),
                             ['action' => 'add'],
                             ['class' => 'btn btn-primary']
                         ); ?>

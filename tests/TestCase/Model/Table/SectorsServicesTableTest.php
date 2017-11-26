@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\SectorsTable;
+use App\Model\Table\SectorsServicesTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\SectorsTable Test Case
+ * App\Model\Table\SectorsServicesTable Test Case
  */
-class SectorsTableTest extends TestCase
+class SectorsServicesTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\SectorsTable
+     * @var \App\Model\Table\SectorsServicesTable
      */
-    public $Sectors;
+    public $SectorsServices;
 
     /**
      * Fixtures
@@ -24,10 +24,10 @@ class SectorsTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
+        'app.sectors_services',
         'app.sectors',
         'app.business_lines',
-        'app.services',
-        'app.sectors_services'
+        'app.services'
     ];
 
     /**
@@ -38,8 +38,8 @@ class SectorsTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Sectors') ? [] : ['className' => SectorsTable::class];
-        $this->Sectors = TableRegistry::get('Sectors', $config);
+        $config = TableRegistry::exists('SectorsServices') ? [] : ['className' => SectorsServicesTable::class];
+        $this->SectorsServices = TableRegistry::get('SectorsServices', $config);
     }
 
     /**
@@ -49,7 +49,7 @@ class SectorsTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Sectors);
+        unset($this->SectorsServices);
 
         parent::tearDown();
     }
@@ -60,16 +60,6 @@ class SectorsTableTest extends TestCase
      * @return void
      */
     public function testInitialize()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test validationDefault method
-     *
-     * @return void
-     */
-    public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

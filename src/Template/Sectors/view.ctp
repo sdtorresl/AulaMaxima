@@ -7,65 +7,42 @@
 
 <!-- Page Header-->
 <header class="page-header">
-    <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= h('Sectors') ?></h2>
-    </div>
+    <figure class="icon">
+        <?= $this->Html->image("icons/icon-services.png", ['alt' => __("Services")]) ?>
+    </figure>
+    <h2 class="page-title"><?= h($sector->business_line->title) ?></h2>
 </header>
 
-<section class="tables">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="card">
-                    <div class="card-header d-flex align-items-center">
-                        <h3 class="h4"><?= h($sector->title) ?></h3>
-                    </div>
-                    <div class="card-body">
-                        <table class="table table-striped table-hover">
-                            <tr>
-                                <th scope="row"><?= __('Title') ?></th>
-                                <td><?= h($sector->title) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Picture') ?></th>
-                                <td><?= h($sector->picture) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Picture Dir') ?></th>
-                                <td><?= h($sector->picture_dir) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Business Line') ?></th>
-                                <td><?= $sector->has('business_line') ? $this->Html->link($sector->business_line->id, ['controller' => 'BusinessLines', 'action' => 'view', $sector->business_line->id]) : '' ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Id') ?></th>
-                                <td><?= $this->Number->format($sector->id) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Created') ?></th>
-                                <td><?= h($sector->created) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Modified') ?></th>
-                                <td><?= h($sector->modified) ?></td>
-                            </tr>
-                        </table>
-                        <div class="row">
-                            <h4><?= __('Description') ?></h4>
-                            <?= $this->Text->autoParagraph(h($sector->description)); ?>
-                        </div>
-                    </div>
-                    
-                    <div class="container">
-                        <?= $this->Html->link(
-                            __('Edit Sector'),
-                            ['action' => 'edit', $sector->id],
-                            ['class' => 'btn btn-primary']
-                        ); ?>
-                    </div>
-                </div>
-            </div>
+<section id="sector" class="main">
+    <aside class="sector-picture">
+        <figure>
+            <img src="" alt="">
+        </figure>
+    </aside>
+
+    <article class="info">
+        <div class="title">
+            <h3><?= h($sector->title) ?></h3>
         </div>
-    </div>
+
+        <div class="descripion">
+            <p><?= h($sector->description) ?></p>
+        </div>
+
+        <div class="related-services">
+            <?php foreach ($sector->services as $service): ?> 
+            <div class="service">
+                <?= h($service->title) ?>
+            </div>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="related-sectors">
+            <?php foreach ($relatedSectors as $sector): ?> 
+            <div class="sector">
+                <?= h($sector->title) ?>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </article>
 </section>

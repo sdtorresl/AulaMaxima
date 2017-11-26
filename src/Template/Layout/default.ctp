@@ -44,9 +44,12 @@ $cakeDescription = __('Aula Maxima - Servicios para el sector educativo');
 
         <nav class="topnavbar">
 
-            <a href="/">
-                <figure><?= $this->Html->Image('logo/horizontal-logo-pequeno.png', ['class' => 'logo']) ?></figure>
-            </a>
+            <figure>
+                <?= $this->Html->Image('logo/horizontal-logo-pequeno.png', [
+                    'class' => 'logo',
+                    'url' => ['controller' => 'BusinessLines', 'action' => 'index']
+                ])?>        
+            </figure>
 
             <a href="#menu" id="toggle"><span></span></a>
 

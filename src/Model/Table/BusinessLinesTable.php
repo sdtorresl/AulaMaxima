@@ -156,6 +156,11 @@ class BusinessLinesTable extends Table
                 'keepFilesOnDelete' => false
             ]
         ]);
+
+        $this->hasMany('Sectors')
+        ->setForeignKey([
+            'business_id'
+        ]);
     }
 
     /**

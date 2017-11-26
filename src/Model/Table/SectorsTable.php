@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Sectors Model
  *
  * @property \App\Model\Table\BusinessLinesTable|\Cake\ORM\Association\BelongsTo $BusinessLines
+ * @property \App\Model\Table\ServicesTable|\Cake\ORM\Association\BelongsToMany $Services
  *
  * @method \App\Model\Entity\Sector get($primaryKey, $options = [])
  * @method \App\Model\Entity\Sector newEntity($data = null, array $options = [])
@@ -40,9 +41,56 @@ class SectorsTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->addBehavior('Josegonzalez/Upload.Upload', [
+            'picture' => [
+                'fields' => [
+                    'dir' => 'picture_dir'
+                ], 
+                'nameCallback' => function ($data, $settings) {
+                    return strtolower($data['name']);
+                },
+                'transformer' =>  function ($table, $entity, $data, $field, $settings) {
+                    $extension = pathinfo($data['name'], PATHINFO_EXTENSION);
+
+                    // Store the thumbnail in a temporary file
+                    $tmp = tempnam(sys_get_temp_dir(), 'upload') . '.' . $extension;
+
+                    // Use the Imagine library to DO THE THING
+                    $size = new \Imagine\Image\Box(200, 200);
+                    $mode = \Imagine\Image\ImageInterface::THUMBNAIL_INSET;
+                    $imagine = new \Imagine\Gd\Imagine();
+
+                    // Save that modified file to our temp file
+                    $imagine->open($data['tmp_name'])
+                        ->thumbnail($size, $mode)
+                        ->save($tmp);
+
+                    // Now return the original *and* the thumbnail
+                    return [
+                        $data['tmp_name'] => $data['name'],
+                        $tmp => 'thumbnail-' . $data['name'],
+                    ];
+                },
+                'deleteCallback' => function ($path, $entity, $field, $settings) {
+                    // When deleting the entity, both the original and the thumbnail will be removed
+                    // when keepFilesOnDelete is set to false
+                    return [
+                        $path . $entity->{$field},
+                        $path . 'thumbnail-' . $entity->{$field}
+                    ];
+                },
+                'keepFilesOnDelete' => false
+            ]
+        ]);
+
         $this->belongsTo('BusinessLines', [
             'foreignKey' => 'business_id',
             'joinType' => 'INNER'
+        ]);
+        $this->belongsToMany('Services', [
+            'foreignKey' => 'sector_id',
+            'targetForeignKey' => 'service_id',
+            'joinTable' => 'sectors_services'
         ]);
     }
 
