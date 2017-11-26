@@ -12,23 +12,6 @@ use App\Controller\AppController;
  */
 class SectorsController extends AppController
 {
-
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|void
-     */
-    public function index()
-    {
-        $this->paginate = [
-            'contain' => ['BusinessLines']
-        ];
-        $sectors = $this->paginate($this->Sectors);
-
-        $this->set(compact('sectors'));
-        $this->set('_serialize', ['sectors']);
-    }
-
     /**
      * View method
      *
@@ -42,7 +25,11 @@ class SectorsController extends AppController
             'contain' => ['BusinessLines', 'Services']
         ]);
 
+        $relatedSectors = $this->Sectors->find()
+            ->where(['id !=' => $id]);
+
         $this->set('sector', $sector);
+        $this->set('relatedSectors', $relatedSectors);
         $this->set('_serialize', ['sector']);
     }
 
