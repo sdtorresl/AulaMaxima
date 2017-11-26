@@ -184,16 +184,32 @@ body {
     padding: 20px 300px
 }
 .title {
-	margin right: 30px;
 
+	margin-right: 10px;
+    padding: 15px;
 }
 .description {
+
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+}
+}
+.description .p {
+
 	text-align: justify;
-	margin: 10px;
+    margin: 10px;
+    border-left: 4px solid black;
+    padding-left: 20px
 }
 .description.a {
-	margin: 5px;
-	padding: 1px solid black;
+
+	padding: 10px;
+    margin-left: 35px;
+    border: 1px solid black;
+    text-transform: uppercase;
 }
 
 footer {
