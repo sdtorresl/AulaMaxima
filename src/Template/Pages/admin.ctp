@@ -4,6 +4,11 @@
         <h2 class="no-margin-bottom">Dashboard</h2>
     </div>
 </header>
+
+<iframe src="https://www.w3schools.com">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
 <!-- Dashboard Counts Section-->
 <section class="dashboard-counts no-padding-bottom">
     <div class="container-fluid">

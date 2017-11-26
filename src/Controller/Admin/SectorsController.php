@@ -13,6 +13,13 @@ use App\Controller\AppController;
 class SectorsController extends AppController
 {
 
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->set('page', 'sectors'); 
+    }
+
     /**
      * Index method
      *

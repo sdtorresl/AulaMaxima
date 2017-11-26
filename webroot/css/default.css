@@ -152,6 +152,14 @@ body {
 	margin-top: 50px;
 }
 
+figure {
+	max-width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
 .content {
 	display: inline-block;
 	width: 100%;
@@ -169,12 +177,11 @@ body {
 }
 
 .page-header .icon {
-
 	border-right: 2px solid white;
-	padding: 10px 20px;
-
+	padding: 5px;
+	width: 60px;
+	margin: 7px 0;
 }
-
 .page-header .page-title {
 	padding-left: 10px;
 	margin: 5px 0;
@@ -185,12 +192,15 @@ body {
 	height: 330px;
 	border-bottom: 10px solid #DDBE76;
 	margin-bottom: 10px;
-.quote h2 {
 }
+
+.quote h2 {
+
 	text-align: center;
 	color: white;
 	padding: 150px;
 	font-family: 'Offerings Regular';
+	font-size: 2.5rem;
 }
 .item {
 	display: flex;
@@ -257,4 +267,5 @@ figure, p {
 img.logo {
 	height: 40px;
 	align-items: left
+	width: auto;
 }

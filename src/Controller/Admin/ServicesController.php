@@ -12,6 +12,12 @@ use App\Controller\AppController;
  */
 class ServicesController extends AppController
 {
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->set('page', 'services'); 
+    }
 
     /**
      * Index method

@@ -73,7 +73,7 @@
 		</li>
 		<li>
 			<a href="#services-menu" aria-expanded="false" data-toggle="collapse">
-				<i class="icon-list"></i><?= __('Services') ?>
+				<i class="icon-list-1"></i><?= __('Services') ?>
 			</a>
 			<ul id="services-menu" class="collapse list-unstyled">
 				<li><?= $this->Html->link(__('List'), ['controller' => 'Services', 'action' => 'index', 'prefix' => 'admin']); ?></li>

@@ -20,7 +20,7 @@
 <section class="main">
     <?php foreach ($businessLines as $businessLine): ?>
     <article class="business-lines">
-        <figure><img src="<?= '../' . $businessLine->background_dir . $businessLine->background ?>" alt="<?= h($businessLine->title) ?>"></figure>
+        <figure><img src="<?= $businessLine->background_dir . $businessLine->background ?>" alt="<?= h($businessLine->title) ?>"></figure>
         
         <div class="item">
             <div class="title">

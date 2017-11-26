@@ -38,7 +38,7 @@
                                 <tr>
                                     <td><?= $this->Number->format($sector->id) ?></td>
                                     <td><?= h($sector->title) ?></td>
-                                    <td><?= $sector->has('business_line') ? $this->Html->link($sector->business_line->id, ['controller' => 'BusinessLines', 'action' => 'view', $sector->business_line->id]) : '' ?></td>
+                                    <td><?= $sector->has('business_line') ? $this->Html->link($sector->business_line->title, ['controller' => 'BusinessLines', 'action' => 'view', $sector->business_line->id]) : '' ?></td>
                                     <td><?= h($sector->created) ?></td>
                                     <td><?= h($sector->modified) ?></td>
                                     <td class="actions">
