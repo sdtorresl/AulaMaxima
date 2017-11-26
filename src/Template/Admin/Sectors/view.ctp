@@ -21,19 +21,12 @@
                         <h3 class="h4"><?= h($sector->title) ?></h3>
                     </div>
                     <div class="card-body">
+                        <div class="description">
+                            <h4><?= __('Description') ?></h4>
+                            <?= $this->Text->autoParagraph(h($sector->description)); ?>
+                        </div>
+
                         <table class="table table-striped table-hover">
-                            <tr>
-                                <th scope="row"><?= __('Title') ?></th>
-                                <td><?= h($sector->title) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Picture') ?></th>
-                                <td><?= h($sector->picture) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Picture Dir') ?></th>
-                                <td><?= h($sector->picture_dir) ?></td>
-                            </tr>
                             <tr>
                                 <th scope="row"><?= __('Business Line') ?></th>
                                 <td><?= $sector->has('business_line') ? $this->Html->link($sector->business_line->id, ['controller' => 'BusinessLines', 'action' => 'view', $sector->business_line->id]) : '' ?></td>
@@ -51,35 +44,13 @@
                                 <td><?= h($sector->modified) ?></td>
                             </tr>
                         </table>
-                        <div class="row">
-                            <h4><?= __('Description') ?></h4>
-                            <?= $this->Text->autoParagraph(h($sector->description)); ?>
-                        </div>
+                        
                         <div class="related">
-                            <h4><?= __('Related Services') ?></h4>
                             <?php if (!empty($sector->services)): ?>
-                            <table cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <th scope="col"><?= __('Id') ?></th>
-                                    <th scope="col"><?= __('Name') ?></th>
-                                    <th scope="col"><?= __('Created') ?></th>
-                                    <th scope="col"><?= __('Modified') ?></th>
-                                    <th scope="col" class="actions"><?= __('Actions') ?></th>
-                                </tr>
-                                <?php foreach ($sector->services as $services): ?>
-                                <tr>
-                                    <td><?= h($services->id) ?></td>
-                                    <td><?= h($services->name) ?></td>
-                                    <td><?= h($services->created) ?></td>
-                                    <td><?= h($services->modified) ?></td>
-                                    <td class="actions">
-                                        <?= $this->Html->link(__('View'), ['controller' => 'Services', 'action' => 'view', $services->id]) ?>
-                                        <?= $this->Html->link(__('Edit'), ['controller' => 'Services', 'action' => 'edit', $services->id]) ?>
-                                        <?= $this->Form->postLink(__('Delete'), ['controller' => 'Services', 'action' => 'delete', $services->id], ['confirm' => __('Are you sure you want to delete # {0}?', $services->id)]) ?>
-                                    </td>
-                                </tr>
-                                <?php endforeach; ?>
-                            </table>
+                            <h4><?= __('Services') ?></h4>
+                            <?php foreach ($sector->services as $service): ?>
+                                <?= $this->Html->link($service->name, ['controller' => 'Services', 'action' => 'view', $service->id]) ?>
+                            <?php endforeach; ?>
                             <?php endif; ?>
                         </div>
                     </div>

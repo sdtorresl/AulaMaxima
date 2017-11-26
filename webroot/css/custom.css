@@ -75,6 +75,14 @@ h2 {
 .logo-horizontal img {
 	max-height: 42px;
 }
+
+.web-container .card {
+	padding: 10px;
+}
+
+.web-container iframe {
+	box-shadow: 1px 1px 1px #ccc!important;
+}
 /*Navigation*/
 nav.navbar {
 	background: #293038;

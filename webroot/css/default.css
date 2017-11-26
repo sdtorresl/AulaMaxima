@@ -152,6 +152,14 @@ body {
 	margin-top: 50px;
 }
 
+figure {
+	max-width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
 .content {
 	display: inline-block;
 	width: 100%;
@@ -169,12 +177,11 @@ body {
 }
 
 .page-header .icon {
-
 	border-right: 2px solid white;
-	padding: 10px 20px;
-
+	padding: 5px;
+	width: 60px;
+	margin: 7px 0;
 }
-
 .page-header .page-title {
 	padding-left: 10px;
 	margin: 5px 0;
@@ -260,4 +267,5 @@ figure, p {
 img.logo {
 	height: 40px;
 	align-items: left
+	width: auto;
 }
