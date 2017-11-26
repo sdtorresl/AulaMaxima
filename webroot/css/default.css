@@ -185,12 +185,15 @@ body {
 	height: 330px;
 	border-bottom: 10px solid #DDBE76;
 	margin-bottom: 10px;
-.quote h2 {
 }
+
+.quote h2 {
+
 	text-align: center;
 	color: white;
 	padding: 150px;
 	font-family: 'Offerings Regular';
+	font-size: 2.5rem;
 }
 .item {
 	display: flex;
