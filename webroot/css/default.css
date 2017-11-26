@@ -210,19 +210,20 @@ img {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    padding: 20px 300px
+    padding: 20px 250px
 }
 .title {
 
 	margin-right: 10px;
-    padding: 10px;
-    text-align: right;   
+    padding: 10px;    
+    width: 30%;   
 }
 .title h2 {
 
 	font-family: 'AGENCYB';
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-align: right;
 
 }
 .description {
@@ -232,6 +233,7 @@ img {
     flex-wrap: nowrap;
     justify-content: center;
     align-content: stretch;
+    width: 70%;
 }
 
 .description p {
