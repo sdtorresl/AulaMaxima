@@ -7,6 +7,14 @@ Cambio
 */
 
 /*Menu Styles*/
+@font-face {
+	font-family: 'AGENCYB';
+	font-family: 'Offerings Regular';
+	src: url('../font/AGENCYB.eot');
+	src: url('../font/Offerings Regular.odt');
+	src: local('AGENCYB'), url('../font/AGENCYB.woff') format('woff'), url('../font/AGENCYB.ttf') format('truetype');
+	src: local('Offerings Regular'), url('../font/Offerings Regular.odt') format('odt') format('truetype');
+}
 
 #toggle {
 	display: block;
@@ -164,10 +172,9 @@ body {
 }
 
 .page-header .icon {
-	width: 80px;
-	padding:10px;
+
 	border-right: 2px solid white;
-	padding-right: 10px;
+	padding: 10px 20px;
 
 }
 
@@ -175,13 +182,67 @@ body {
 	padding-left: 10px;
 	margin: 5px 0;
 }
+.quote {
+	background-image: url('../img/web/home-frase.png');
+	width:100%;
+	height: 330px;
+	border-bottom: 10px solid #DDBE76;
+	margin-bottom: 10px;
+}
+.quote h2 {
+	text-align: center;
+	color: white;
+	padding: 150px;
+	font-family: 'Offerings Regular';
+}
+.item {
 
-.tittle {
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 300px
+}
+.title {
 
+	margin-right: 10px;
+    padding: 10px;
+    text-align: right;   
+}
+.title h2 {
+
+	font-family: 'AGENCYB';
+    text-transform: uppercase;
+    font-size: 3rem;
 
 }
 .description {
 
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.description p {
+
+	text-align: justify;
+    margin: 10px;
+    border-left: 4px solid black;
+    padding-left: 20px;
+}
+.description a {
+
+    padding: 10px;
+    margin-left: 35px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: 'AGENCYB';
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
 }
 
 footer {
