@@ -36,7 +36,7 @@ class BusinessLinesController extends AppController
     public function view($id = null)
     {
         $businessLine = $this->BusinessLines->get($id, [
-            'contain' => []
+            'contain' => ['Sectors']
         ]);
 
         // In a controller or table method.
