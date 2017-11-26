@@ -39,6 +39,9 @@ class BusinessLinesController extends AppController
             'contain' => []
         ]);
 
+        // In a controller or table method.
+        // $query = $articles->find('all')->contain(['Comments']);
+
         $this->set('businessLine', $businessLine);
         $this->set('_serialize', ['businessLine']);
     }

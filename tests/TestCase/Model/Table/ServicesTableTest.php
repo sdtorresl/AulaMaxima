@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\SectorsTable;
+use App\Model\Table\ServicesTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\SectorsTable Test Case
+ * App\Model\Table\ServicesTable Test Case
  */
-class SectorsTableTest extends TestCase
+class ServicesTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\SectorsTable
+     * @var \App\Model\Table\ServicesTable
      */
-    public $Sectors;
+    public $Services;
 
     /**
      * Fixtures
@@ -24,10 +24,9 @@ class SectorsTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.sectors',
-        'app.business_lines',
         'app.services',
-        'app.sectors_services'
+        'app.sectors',
+        'app.business_lines'
     ];
 
     /**
@@ -38,8 +37,8 @@ class SectorsTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Sectors') ? [] : ['className' => SectorsTable::class];
-        $this->Sectors = TableRegistry::get('Sectors', $config);
+        $config = TableRegistry::exists('Services') ? [] : ['className' => ServicesTable::class];
+        $this->Services = TableRegistry::get('Services', $config);
     }
 
     /**
@@ -49,7 +48,7 @@ class SectorsTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Sectors);
+        unset($this->Services);
 
         parent::tearDown();
     }

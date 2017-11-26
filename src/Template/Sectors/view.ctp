@@ -55,6 +55,33 @@
                             <h4><?= __('Description') ?></h4>
                             <?= $this->Text->autoParagraph(h($sector->description)); ?>
                         </div>
+                        <div class="related">
+                            <h4><?= __('Related Services') ?></h4>
+                            <?php if (!empty($sector->services)): ?>
+                            <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <th scope="col"><?= __('Id') ?></th>
+                                    <th scope="col"><?= __('Name') ?></th>
+                                    <th scope="col"><?= __('Created') ?></th>
+                                    <th scope="col"><?= __('Modified') ?></th>
+                                    <th scope="col" class="actions"><?= __('Actions') ?></th>
+                                </tr>
+                                <?php foreach ($sector->services as $services): ?>
+                                <tr>
+                                    <td><?= h($services->id) ?></td>
+                                    <td><?= h($services->name) ?></td>
+                                    <td><?= h($services->created) ?></td>
+                                    <td><?= h($services->modified) ?></td>
+                                    <td class="actions">
+                                        <?= $this->Html->link(__('View'), ['controller' => 'Services', 'action' => 'view', $services->id]) ?>
+                                        <?= $this->Html->link(__('Edit'), ['controller' => 'Services', 'action' => 'edit', $services->id]) ?>
+                                        <?= $this->Form->postLink(__('Delete'), ['controller' => 'Services', 'action' => 'delete', $services->id], ['confirm' => __('Are you sure you want to delete # {0}?', $services->id)]) ?>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </table>
+                            <?php endif; ?>
+                        </div>
                     </div>
                     
                     <div class="container">

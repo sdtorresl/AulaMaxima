@@ -7,7 +7,7 @@
 <!-- Page Header-->
 <header class="page-header">
     <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= __('Sectors') ?></h2>
+        <h2 class="no-margin-bottom"><?= __('Sectors Services') ?></h2>
     </div>
 </header>
 
@@ -17,17 +17,12 @@
             <div class="col-lg-10 offset-lg-1">
                 <div class="card">
                     <div class="card-header d-flex align-items-center">
-                        <h3 class="h4"><?= __('Sector') ?></h3>
+                        <h3 class="h4"><?= __('Sectors Service') ?></h3>
                     </div>
 
                     <div class="card-body">
-                        <?= $this->Form->create($sector, ['type' => 'file']) ?>
+                        <?= $this->Form->create($sectorsService) ?>
                         <?php
-                        echo $this->Form->control('title');
-                        echo $this->Form->control('description');
-                        echo $this->Form->control('picture', ['type' => 'file']);
-                        echo $this->Form->control('business_id', ['options' => $businessLines]);
-                        echo $this->Form->control('services._ids', ['options' => $services]);
                         ?>
 
                         <?= $this->Form->button(__('Submit')) ?>
