@@ -7,6 +7,11 @@ Cambio
 */
 
 /*Menu Styles*/
+@font-face {
+	font-family: 'AGENCYB';
+	src: url('../font/AGENCYB.eot');
+	src: local('AGENCYB'), url('../font/AGENCYB.woff') format('woff'), url('../font/AGENCYB.ttf') format('truetype');
+}
 
 #toggle {
 	display: block;
@@ -186,7 +191,15 @@ body {
 .title {
 
 	margin-right: 10px;
-    padding: 15px;
+    padding: 10px;
+    text-align: right;   
+}
+.title h2 {
+
+	font-family: 'AGENCYB';
+    text-transform: uppercase;
+    font-size: 3rem;
+
 }
 .description {
 
@@ -196,20 +209,24 @@ body {
     justify-content: center;
     align-content: stretch;
 }
-}
-.description .p {
+
+.description p {
 
 	text-align: justify;
     margin: 10px;
     border-left: 4px solid black;
-    padding-left: 20px
+    padding-left: 20px;
 }
-.description.a {
+.description a {
 
-	padding: 10px;
+    padding: 10px;
     margin-left: 35px;
     border: 1px solid black;
     text-transform: uppercase;
+    font-family: 'AGENCYB';
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
 }
 
 footer {
