@@ -9,11 +9,8 @@ Cambio
 /*Menu Styles*/
 @font-face {
 	font-family: 'AGENCYB';
-	font-family: 'Offerings Regular';
 	src: url('../font/AGENCYB.eot');
-	src: url('../font/Offerings Regular.odt');
 	src: local('AGENCYB'), url('../font/AGENCYB.woff') format('woff'), url('../font/AGENCYB.ttf') format('truetype');
-	src: local('Offerings Regular'), url('../font/Offerings Regular.odt') format('odt') format('truetype');
 }
 
 #toggle {
@@ -188,15 +185,14 @@ body {
 	height: 330px;
 	border-bottom: 10px solid #DDBE76;
 	margin-bottom: 10px;
-}
 .quote h2 {
+}
 	text-align: center;
 	color: white;
 	padding: 150px;
 	font-family: 'Offerings Regular';
 }
 .item {
-
 	display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
