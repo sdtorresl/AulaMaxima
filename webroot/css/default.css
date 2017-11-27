@@ -176,6 +176,7 @@ img {
 	max-width: 100%;
 }
 .page-header {
+
 	background: #C1292E;
 	color: white;
 	text-align: center;
@@ -196,11 +197,8 @@ img {
 	padding-left: 10px;
 	margin: 5px 0;
 	font-size: 2.2rem;
-<<<<<<< HEAD
-	font-family: 'AGENCYB';
-=======
 	font-family: 'Agency';
->>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
+
 }
 .quote {
 	background-image: url('../img/web/home-frase.png');
@@ -218,10 +216,7 @@ img {
 	text-align: center;
 	color: white;
 	background-color: #293038;	
-<<<<<<< HEAD
 	font-family: 'Offerings Regular';
-=======
->>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
 	font-size: 2.5rem;
 }
 .intro {
@@ -238,12 +233,8 @@ img {
     margin-top: 20px;
 }
 .intro h2 {
-<<<<<<< HEAD
 
-	font-family: 'AGENCYB';
-=======
 	font-family: 'Agency';
->>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
     text-transform: uppercase;
     font-size: 2.5rem;
     text-align: center;
@@ -251,10 +242,7 @@ img {
 }
 .intro p {
 	text-align: justify;
-<<<<<<< HEAD
 	font-family: 'Offerings Regular';
-=======
->>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
 	font-weight: bold;
 	font-size: 1.2rem;
     line-height: normal;
@@ -298,14 +286,11 @@ img {
 }
 
 .description p {
+
 	text-align: justify;
     margin: 10px;
-<<<<<<< HEAD
     font-family: 'Offerings Regular';
     font-weight: bold;
-=======
-    /*font-weight: bold;*/
->>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
     font-size: 1.2rem;
     line-height: normal;
     border-left: 4px solid black;
