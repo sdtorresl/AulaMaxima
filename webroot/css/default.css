@@ -194,23 +194,61 @@ img {
 	height: 330px;
 	border-bottom: 10px solid #DDBE76;
 	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: center;
 }
 
 .quote h2 {
 
 	text-align: center;
 	color: white;
-	padding: 150px;
+	background-color: #293038;	
 	font-family: 'Offerings Regular';
 	font-size: 2.5rem;
 }
+.intro {
+
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.intro h2 {
+
+	font-family: 'AGENCYB';
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+.intro p {
+	text-align: justify;
+	font-family: 'Offerings Regular';
+	font-weight: bold;
+	font-size: 1.2rem;
+    line-height: normal;
+}
+
 .item {
 	display: flex;
-    flex-wrap: nowrap;
+	width: 65%;
+	flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    padding: 20px 250px
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
 }
 .title {
 
@@ -240,6 +278,10 @@ img {
 
 	text-align: justify;
     margin: 10px;
+    font-family: 'Offerings Regular';
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: normal;
     border-left: 4px solid black;
     padding-left: 20px;
 }
@@ -247,7 +289,7 @@ img {
 
     padding: 10px;
     margin-left: 35px;
-    border: 1px solid black;
+    border: 1.5px solid black;
     text-transform: uppercase;
     font-family: 'AGENCYB';
     text-transform: uppercase;
@@ -269,7 +311,7 @@ figure, p {
 }
 
 img.logo {
-	height: 40px;
-	align-items: left
+	height: 40px ;
+	align-items: left;
 	width: auto;
 }
