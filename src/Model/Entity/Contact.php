@@ -8,8 +8,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $email
- * @property string $first_name
- * @property string $last_name
+ * @property string $name
  * @property string $message
  * @property bool $viewed
  * @property \Cake\I18n\FrozenTime $created
@@ -28,8 +27,7 @@ class Contact extends Entity
      */
     protected $_accessible = [
         'email' => true,
-        'first_name' => true,
-        'last_name' => true,
+        'name' => true,
         'message' => true,
         'viewed' => true,
         'created' => true

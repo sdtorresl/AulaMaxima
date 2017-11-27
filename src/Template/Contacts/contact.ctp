@@ -6,31 +6,46 @@
 
 <!-- Page Header-->
 <header class="page-header">
-    <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= __('Contacts') ?></h2>
-    </div>
+    <figure class="icon">
+        <?= $this->Html->image('icons/icon-contact.png', ['alt' => __('Contact Icon')]) ?>
+    </figure>
+
+    <h2 class="page-title"><?= __('Contact') ?></h2>
 </header>
 
-<section class="forms">
+<section id="contact" class="forms">
+    
+    <div id="contact-picture" class="parallax"></div>
+
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="card">
-                    <div class="card-header d-flex align-items-center">
-                        <h3 class="h4"><?= __('Contact') ?></h3>
+        <div class="d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5 bg-black">
+                        <figure class="contact-icon">
+                            <?= $this->Html->image('icons/icon-contact.png', ['alt' => __('Contact Icon')]) ?>
+                        </figure>
                     </div>
 
-                    <div class="card-body">
+                    <div class="col-lg-7">
+
+                        <div class="contact-info">
+                            <p>Telefóno: 72264166 - 321 258 2585</p>
+                            <p>Dirección: Carrera 101 #147C - 34 correo: contacto@aulamaxima.co</p>
+                            <p>Deja tu mensaje y nos pondremos en contacto contigo.</p>
+                        </div>
+
                         <?= $this->Form->create($contact) ?>
                         <?php
-                        echo $this->Form->control('email');
-                        echo $this->Form->control('first_name');
-                        echo $this->Form->control('last_name');
-                        echo $this->Form->control('message');
-                        echo $this->Form->control('viewed');
+                        echo $this->Form->control('email', ['placeholder' => __('Email'), 'label' => false]);
+                        echo $this->Form->control('name', ['placeholder' => __('Name'), 'label' => false]);
+                        echo $this->Form->control('message', ['placeholder' => __('Message'), 'label' => false]);
+                        // echo $this->Form->control('viewed');
                         ?>
-
-                        <?= $this->Form->button(__('Submit')) ?>
+                        
+                        <div class="float-right">
+                            <?= $this->Form->button(__('Submit'), ['class' => 'float-right']) ?>
+                        </div>
                         <?= $this->Form->end() ?>
                     </div>
                 </div>

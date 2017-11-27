@@ -12,6 +12,7 @@ use App\Controller\AppController;
  */
 class ContactsController extends AppController
 {
+
     /**
      * Add method
      *
