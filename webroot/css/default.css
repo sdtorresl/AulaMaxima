@@ -3,16 +3,26 @@ Red: C1292E
 Blue : 293038
 Beige: DFBF77
 Yellow: D7DB2F
-Cambio
 */
 
-/*Menu Styles*/
+/*Fonts*/
 @font-face {
-	font-family: 'AGENCYB';
-	src: url('../font/AGENCYB.eot');
-	src: local('AGENCYB'), url('../font/AGENCYB.woff') format('woff'), url('../font/AGENCYB.ttf') format('truetype');
+    font-family: 'Champagne';
+    src: url('../fonts/Champagne_Limousines/Champagne & Limousines.ttf');
+}
+@font-face {
+    font-family: 'Offerings';
+    src: url('../fonts/Offerings/Offerings Regular.otf');
+}
+@font-face {
+    font-family: 'Agency';
+    src: url('../fonts/Agency/agency_fb.ttf');
 }
 
+* {
+	font-family: 'Offerings';
+}
+/*Menu Styles*/
 #toggle {
 	display: block;
 	width: 30px;
@@ -186,7 +196,11 @@ img {
 	padding-left: 10px;
 	margin: 5px 0;
 	font-size: 2.2rem;
+<<<<<<< HEAD
 	font-family: 'AGENCYB';
+=======
+	font-family: 'Agency';
+>>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
 }
 .quote {
 	background-image: url('../img/web/home-frase.png');
@@ -201,11 +215,13 @@ img {
 }
 
 .quote h2 {
-
 	text-align: center;
 	color: white;
 	background-color: #293038;	
+<<<<<<< HEAD
 	font-family: 'Offerings Regular';
+=======
+>>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
 	font-size: 2.5rem;
 }
 .intro {
@@ -222,8 +238,12 @@ img {
     margin-top: 20px;
 }
 .intro h2 {
+<<<<<<< HEAD
 
 	font-family: 'AGENCYB';
+=======
+	font-family: 'Agency';
+>>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
     text-transform: uppercase;
     font-size: 2.5rem;
     text-align: center;
@@ -231,7 +251,10 @@ img {
 }
 .intro p {
 	text-align: justify;
+<<<<<<< HEAD
 	font-family: 'Offerings Regular';
+=======
+>>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
 	font-weight: bold;
 	font-size: 1.2rem;
     line-height: normal;
@@ -258,7 +281,7 @@ img {
 }
 .title h2 {
 
-	font-family: 'AGENCYB';
+	font-family: 'Agency';
     text-transform: uppercase;
     font-size: 2.5rem;
     text-align: right;
@@ -275,11 +298,14 @@ img {
 }
 
 .description p {
-
 	text-align: justify;
     margin: 10px;
+<<<<<<< HEAD
     font-family: 'Offerings Regular';
     font-weight: bold;
+=======
+    /*font-weight: bold;*/
+>>>>>>> d69357936f9791d89f8497d878eee0d97ba00ab7
     font-size: 1.2rem;
     line-height: normal;
     border-left: 4px solid black;
@@ -291,7 +317,7 @@ img {
     margin-left: 35px;
     border: 1.5px solid black;
     text-transform: uppercase;
-    font-family: 'AGENCYB';
+    font-family: 'Agency';
     text-transform: uppercase;
     text-align: center;
     color: black;
@@ -314,4 +340,64 @@ img.logo {
 	height: 40px ;
 	align-items: left;
 	width: auto;
+}
+
+.parallax {
+    /* The image used */
+    /*background-image: url("../img/photos/contact.jpg");*/
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 1rem;
+}
+
+#contact #contact-picture {
+    background-image: url("../img/photos/contact.jpg");
+}
+
+#contact .container-fluid {
+	background: #293038;
+	margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+#contact .contact-icon {
+	padding: 50px;
+	border: 2px solid white;
+	border-radius: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+}
+#contact .contact-icon img {
+	max-width: 100px;
+}
+#contact .contact-info {
+	color: white;
+	margin-bottom: 20px;
+}
+
+#contact .btn {
+	border: 2px solid #D7DB2F;
+	background: #293038;
+	padding: 5px 25px;
+	transition: 0.5s;
+}
+
+#contact .btn:hover {
+	border: 2px solid #C1292E;
+	background: #C1292E;
+	padding: 5px 25px;
+	cursor: pointer;
 }

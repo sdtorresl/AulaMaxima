@@ -14,8 +14,13 @@
 </header>
 
 <aside class="quote">
-    <h2>Saber y saber a hacer, es aprender a vivir y compartir</h2>
+    <h2>Saber y saber hacer, es aprender a vivir y compartir</h2>
 </aside>
+
+<article class="intro">
+    <h2>Aula Máxima</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vero ducimus asperiores! Iste quibusdam, doloribus laboriosam sunt recusandae fugiat dignissimos libero eveniet repellendus, atque accusamus modi rem repudiandae magnam labore.</p>
+</article>
 
 <section class="main">
     <?php foreach ($businessLines as $businessLine): ?>

@@ -21,6 +21,12 @@
     </aside>
 
     <article class="info">
+        <div class="sector-picture">
+            <figure class="thumbnail">
+                <?= $this->Html->Image('../' . $sector->picture_dir . '/' . $sector->picture, ['fullBase' => true]); ?>
+            </figure>
+        </div>
+
         <div class="title">
             <h3><?= h($sector->title) ?></h3>
         </div>
@@ -32,7 +38,7 @@
         <div class="related-services">
             <?php foreach ($sector->services as $service): ?> 
             <div class="service">
-                <?= h($service->title) ?>
+                <?= h($service->name) ?>
             </div>
             <?php endforeach; ?>
         </div>

@@ -37,6 +37,7 @@ class BusinessLinesTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        
         $this->addBehavior('Josegonzalez/Upload.Upload', [
             'background' => [
                 'fields' => [

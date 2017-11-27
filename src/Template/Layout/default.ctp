@@ -33,7 +33,7 @@ $cakeDescription = __('Aula Maxima - Servicios para el sector educativo');
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <!-- <?= $this->Html->css('bootstrap.min.css'); ?> -->
         <?= $this->Html->css('default.css'); ?>
-        <?= $this->Html->css('tablet.css'); ?>
+        <?= $this->Html->css('tablets.css'); ?>
         <?= $this->Html->css('phones.css'); ?>
         
         <?= $this->fetch('meta') ?>

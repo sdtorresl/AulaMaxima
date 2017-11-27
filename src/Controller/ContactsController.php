@@ -14,41 +14,11 @@ class ContactsController extends AppController
 {
 
     /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|void
-     */
-    public function index()
-    {
-        $contacts = $this->paginate($this->Contacts);
-
-        $this->set(compact('contacts'));
-        $this->set('_serialize', ['contacts']);
-    }
-
-    /**
-     * View method
-     *
-     * @param string|null $id Contact id.
-     * @return \Cake\Http\Response|void
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function view($id = null)
-    {
-        $contact = $this->Contacts->get($id, [
-            'contain' => []
-        ]);
-
-        $this->set('contact', $contact);
-        $this->set('_serialize', ['contact']);
-    }
-
-    /**
      * Add method
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
+    public function contact()
     {
         $contact = $this->Contacts->newEntity();
         if ($this->request->is('post')) {
