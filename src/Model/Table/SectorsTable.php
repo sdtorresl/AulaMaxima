@@ -116,8 +116,8 @@ class SectorsTable extends Table
             ->allowEmpty('description');
 
         $validator
-            ->scalar('picture')
-            ->allowEmpty('picture');
+            ->requirePresence('picture', 'create')
+            ->allowEmpty('picture', 'update');
 
         $validator
             ->scalar('picture_dir')

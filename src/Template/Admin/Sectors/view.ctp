@@ -44,6 +44,15 @@
                                 <td><?= h($sector->modified) ?></td>
                             </tr>
                         </table>
+
+                        <h4><?= __('Background Image') ?></h4>
+                        <?php if ($sector->picture): ?>
+                            <figure class="thumbnail">
+                                <?= $this->Html->Image('../' . $sector->picture_dir . '/thumbnail-' . $sector->picture, ['fullBase' => true]); ?>
+                            </figure>
+                        <?php else: ?>
+                            <p><?= __('No image has been updated') ?></p>
+                        <?php endif;?>
                         
                         <div class="related">
                             <?php if (!empty($sector->services)): ?>

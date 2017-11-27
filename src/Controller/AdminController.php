@@ -12,7 +12,7 @@ class AdminController extends AppController
      */
 	public function home()
 	{
-		$this->set('page', 'home-page'); 
+		$this->set('page', 'admin-page'); 
         $this->viewBuilder()->setLayout('admin');
 	}
 }
