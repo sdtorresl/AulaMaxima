@@ -223,7 +223,7 @@ img {
 
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 60%;
 	flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
@@ -250,7 +250,7 @@ img {
 
 .item {
 	display: flex;
-	width: 65%;
+	width: 70%;
 	flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
