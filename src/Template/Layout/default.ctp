@@ -83,8 +83,45 @@ $cakeDescription = __('Aula Maxima - Servicios para el sector educativo');
 
         <!-- Page Footer-->
         <footer class="main-footer">
-            <p><?= __('Aula Máxima') ?> &copy; 2017. <?= __('All rights reserved.') ?></p>
-            <p><?= __('Developed by') ?> <a href="https://innovaciones.co" class="external">Innovaciones</a> &copy; 2017.</p>
+            <div class="col-lg-2">
+                <figure>
+                    <?= $this->Html->Image('logo/vertical-logo-pequeno.png', [
+                        'class' => 'logo',
+                        'url' => ['controller' => 'BusinessLines', 'action' => 'index']
+                    ])?> 
+                </figure>
+            </div>
+
+            <div class="col-lg-8">
+                <p><?= __('Aula Máxima') ?> &copy; 2017. <?= __('All rights reserved.') ?></p>
+                <p><?= __('Developed by') ?> <a href="https://innovaciones.co" class="external">Innovaciones</a> &copy; 2017.</p>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <?= $this->Html->Image('icons/red-facebook.png', [
+                                'url' => '#'
+                            ])?> 
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <?= $this->Html->Image('icons/red-google.png', [
+                                'url' => '#'
+                            ])?> 
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <?= $this->Html->Image('icons/red-twitter.png', [
+                                'url' => '#'
+                            ])?> 
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </div>
