@@ -24,11 +24,11 @@ class ContactsController extends AppController
         if ($this->request->is('post')) {
             $contact = $this->Contacts->patchEntity($contact, $this->request->getData());
             if ($this->Contacts->save($contact)) {
-                $this->Flash->success(__('The contact has been saved.'));
+                $this->Flash->success(__('Your information has been sent successfully.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['action' => 'contact']);
             }
-            $this->Flash->error(__('The contact could not be saved. Please, try again.'));
+            $this->Flash->error(__('Your information couldn\'t be sent.'));
         }
         $this->set(compact('contact'));
         $this->set('_serialize', ['contact']);

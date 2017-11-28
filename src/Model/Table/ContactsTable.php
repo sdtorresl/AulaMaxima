@@ -67,9 +67,9 @@ class ContactsTable extends Table
             ->notEmpty('message');
 
         $validator
-            ->boolean('viewed')
-            ->requirePresence('viewed', 'create')
-            ->notEmpty('viewed');
+            ->boolean('viewed');
+            // ->requirePresence('viewed', 'create')
+            // ->notEmpty('viewed');
 
         return $validator;
     }
@@ -83,7 +83,7 @@ class ContactsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['email']));
+        // $rules->add($rules->isUnique(['email']));
 
         return $rules;
     }
