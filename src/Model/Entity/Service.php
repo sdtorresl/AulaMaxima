@@ -4,21 +4,16 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Sector Entity
+ * Service Entity
  *
  * @property int $id
- * @property string $title
- * @property string $description
- * @property string $picture
- * @property string $picture_dir
- * @property int $business_id
+ * @property string $name
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
- * @property \App\Model\Entity\BusinessLine $business_line
- * @property \App\Model\Entity\Service[] $services
+ * @property \App\Model\Entity\Sector $sector
  */
-class Sector extends Entity
+class Service extends Entity
 {
 
     /**
@@ -31,14 +26,9 @@ class Sector extends Entity
      * @var array
      */
     protected $_accessible = [
-        'title' => true,
-        'description' => true,
-        'picture' => true,
-        'picture_dir' => true,
-        'business_id' => true,
+        'name' => true,
         'created' => true,
         'modified' => true,
-        'business_line' => true,
-        'services' => true
+        'sector' => true
     ];
 }

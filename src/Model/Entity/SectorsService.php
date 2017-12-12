@@ -4,16 +4,15 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Contact Entity
+ * SectorsService Entity
  *
- * @property int $id
- * @property string $email
- * @property string $name
- * @property string $message
- * @property bool $viewed
- * @property \Cake\I18n\FrozenTime $created
+ * @property int $sector_id
+ * @property int $service_id
+ *
+ * @property \App\Model\Entity\Sector $sector
+ * @property \App\Model\Entity\Service $service
  */
-class Contact extends Entity
+class SectorsService extends Entity
 {
 
     /**
@@ -26,10 +25,7 @@ class Contact extends Entity
      * @var array
      */
     protected $_accessible = [
-        'email' => true,
-        'name' => true,
-        'message' => true,
-        'viewed' => true,
-        'created' => true
+        'sector' => true,
+        'service' => true
     ];
 }
