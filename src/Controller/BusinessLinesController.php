@@ -36,8 +36,11 @@ class BusinessLinesController extends AppController
     public function view($id = null)
     {
         $businessLine = $this->BusinessLines->get($id, [
-            'contain' => []
+            'contain' => ['Sectors']
         ]);
+
+        // In a controller or table method.
+        // $query = $articles->find('all')->contain(['Comments']);
 
         $this->set('businessLine', $businessLine);
         $this->set('_serialize', ['businessLine']);

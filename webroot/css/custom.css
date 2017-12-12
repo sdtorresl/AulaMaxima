@@ -8,15 +8,15 @@ Yellow: D7DB2F
 /*Fonts*/
 @font-face {
     font-family: 'Champagne';
-    src: url('../fonts/champagne_limousines/Champagne & Limousines.ttf');
+    src: url('../fonts/Champagne_Limousines/Champagne & Limousines.ttf');
 }
 @font-face {
     font-family: 'Offerings';
-    src: url('../fonts/offerings/Offerings Regular.otf');
+    src: url('../fonts/Offerings/Offerings Regular.otf');
 }
 @font-face {
     font-family: 'AgencyFB';
-    src: url('../fonts/agency_fb.ttf');
+    src: url('../fonts/Agency/agency_fb.ttf');
 }
 
 /*Texts*/
@@ -74,6 +74,14 @@ h2 {
 /*Upper panel*/
 .logo-horizontal img {
 	max-height: 42px;
+}
+
+.web-container .card {
+	padding: 10px;
+}
+
+.web-container iframe {
+	box-shadow: 1px 1px 1px #ccc!important;
 }
 /*Navigation*/
 nav.navbar {

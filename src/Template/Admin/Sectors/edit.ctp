@@ -21,13 +21,13 @@
                     </div>
 
                     <div class="card-body">
-                        <?= $this->Form->create($sector) ?>
+                        <?= $this->Form->create($sector, ['type' => 'file']) ?>
                         <?php
                         echo $this->Form->control('title');
                         echo $this->Form->control('description');
-                        echo $this->Form->control('picture');
-                        echo $this->Form->control('picture_dir');
+                        echo $this->Form->control('picture', ['type' => 'file']);
                         echo $this->Form->control('business_id', ['options' => $businessLines]);
+                        echo $this->Form->control('services._ids', ['options' => $services]);
                         ?>
 
                         <?= $this->Form->button(__('Submit')) ?>

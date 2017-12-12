@@ -71,6 +71,15 @@
 				<li><?= $this->Html->link(__('Add'), ['controller' => 'Sectors', 'action' => 'add', 'prefix' => 'admin']); ?></li>
 			</ul>
 		</li>
+		<li>
+			<a href="#services-menu" aria-expanded="false" data-toggle="collapse">
+				<i class="icon-list-1"></i><?= __('Services') ?>
+			</a>
+			<ul id="services-menu" class="collapse list-unstyled">
+				<li><?= $this->Html->link(__('List'), ['controller' => 'Services', 'action' => 'index', 'prefix' => 'admin']); ?></li>
+				<li><?= $this->Html->link(__('Add'), ['controller' => 'Services', 'action' => 'add', 'prefix' => 'admin']); ?></li>
+			</ul>
+		</li>
 	</ul>
 	<span class="heading"><?= __('Forms') ?></span>
 	<ul class="list-unstyled">

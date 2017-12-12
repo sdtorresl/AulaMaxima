@@ -21,19 +21,12 @@
                         <h3 class="h4"><?= h($sector->title) ?></h3>
                     </div>
                     <div class="card-body">
+                        <div class="description">
+                            <h4><?= __('Description') ?></h4>
+                            <?= $this->Text->autoParagraph(h($sector->description)); ?>
+                        </div>
+
                         <table class="table table-striped table-hover">
-                            <tr>
-                                <th scope="row"><?= __('Title') ?></th>
-                                <td><?= h($sector->title) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Picture') ?></th>
-                                <td><?= h($sector->picture) ?></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><?= __('Picture Dir') ?></th>
-                                <td><?= h($sector->picture_dir) ?></td>
-                            </tr>
                             <tr>
                                 <th scope="row"><?= __('Business Line') ?></th>
                                 <td><?= $sector->has('business_line') ? $this->Html->link($sector->business_line->id, ['controller' => 'BusinessLines', 'action' => 'view', $sector->business_line->id]) : '' ?></td>
@@ -51,21 +44,32 @@
                                 <td><?= h($sector->modified) ?></td>
                             </tr>
                         </table>
-                        <div class="row">
-                            <h4><?= __('Description') ?></h4>
-                            <?= $this->Text->autoParagraph(h($sector->description)); ?>
+
+                        <h4><?= __('Background Image') ?></h4>
+                        <?php if ($sector->picture): ?>
+                            <figure class="thumbnail">
+                                <?= $this->Html->Image('../' . $sector->picture_dir . '/thumbnail-' . $sector->picture, ['fullBase' => true]); ?>
+                            </figure>
+                        <?php else: ?>
+                            <p><?= __('No image has been updated') ?></p>
+                        <?php endif;?>
+                        
+                        <div class="related">
+                            <?php if (!empty($sector->services)): ?>
+                            <h4><?= __('Services') ?></h4>
+                            <?php foreach ($sector->services as $service): ?>
+                                <?= $this->Html->link($service->name, ['controller' => 'Services', 'action' => 'view', $service->id]) ?>
+                            <?php endforeach; ?>
+                            <?php endif; ?>
                         </div>
-                        <div class="container">
-                            <div class="row">                 
-                                <div class="col ">
-                                    <?= $this->Html->link(
-                                        __('Edit Sector'),
-                                        ['action' => 'edit', $sector->id],
-                                        ['class' => 'btn btn-primary']
-                                    ); ?>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <?= $this->Html->link(
+                            __('Edit Sector'),
+                            ['action' => 'edit', $sector->id],
+                            ['class' => 'btn btn-primary']
+                        ); ?>
                     </div>
                 </div>
             </div>

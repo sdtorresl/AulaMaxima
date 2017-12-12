@@ -119,4 +119,10 @@ class BusinessLinesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function isAuthorized($user)
+    {
+        // By default deny access.
+        return true;
+    }
 }

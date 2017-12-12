@@ -13,6 +13,13 @@ use App\Controller\AppController;
 class SectorsController extends AppController
 {
 
+    public function initialize()
+    {
+        parent::initialize();
+
+        $this->set('page', 'sectors'); 
+    }
+
     /**
      * Index method
      *
@@ -27,7 +34,7 @@ class SectorsController extends AppController
 
         $this->set(compact('sectors'));
         $this->set('_serialize', ['sectors']);
-        $this->set('page', 'home-page'); 
+
         $this->viewBuilder()->setLayout('admin');
     }
 
@@ -41,13 +48,12 @@ class SectorsController extends AppController
     public function view($id = null)
     {
         $sector = $this->Sectors->get($id, [
-            'contain' => ['BusinessLines']
+            'contain' => ['BusinessLines', 'Services']
         ]);
 
         $this->set('sector', $sector);
         $this->set('_serialize', ['sector']);
 
-        $this->set('page', 'home-page'); 
         $this->viewBuilder()->setLayout('admin');
     }
 
@@ -69,10 +75,10 @@ class SectorsController extends AppController
             $this->Flash->error(__('The sector could not be saved. Please, try again.'));
         }
         $businessLines = $this->Sectors->BusinessLines->find('list', ['limit' => 200]);
-        $this->set(compact('sector', 'businessLines'));
+        $services = $this->Sectors->Services->find('list', ['limit' => 200]);
+        $this->set(compact('sector', 'businessLines', 'services'));
         $this->set('_serialize', ['sector']);
 
-        $this->set('page', 'home-page'); 
         $this->viewBuilder()->setLayout('admin');
     }
 
@@ -86,7 +92,7 @@ class SectorsController extends AppController
     public function edit($id = null)
     {
         $sector = $this->Sectors->get($id, [
-            'contain' => []
+            'contain' => ['Services']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $sector = $this->Sectors->patchEntity($sector, $this->request->getData());
@@ -98,10 +104,10 @@ class SectorsController extends AppController
             $this->Flash->error(__('The sector could not be saved. Please, try again.'));
         }
         $businessLines = $this->Sectors->BusinessLines->find('list', ['limit' => 200]);
-        $this->set(compact('sector', 'businessLines'));
+        $services = $this->Sectors->Services->find('list', ['limit' => 200]);
+        $this->set(compact('sector', 'businessLines', 'services'));
         $this->set('_serialize', ['sector']);
 
-        $this->set('page', 'home-page'); 
         $this->viewBuilder()->setLayout('admin');
     }
 
@@ -121,6 +127,8 @@ class SectorsController extends AppController
         } else {
             $this->Flash->error(__('The sector could not be deleted. Please, try again.'));
         }
+
+        $this->viewBuilder()->setLayout('admin');
 
         return $this->redirect(['action' => 'index']);
     }
