@@ -3,6 +3,71 @@
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
+  	.quote {
+  		height: 200px;
+  	}
+  	.quote h2{
+  		font-size: 1.5rem;
+  		padding: 5px;
+  	}
+  	.intro{
+  		width: 85%;  		
+  	}
+  	.intro p {
+  		font-size: 1rem;
+  	}
+  	.intro h2{
+  		font-size: 2rem;
+  	}
+  	.item{
+  		width: 85%;
+  		flex-direction: column;
+  		margin-bottom: 5px;
+  		margin-top: 5px;
+
+  	}
+  	.title{
+  		margin: auto;
+  		width: 100%;
+  	}
+  	.title h2{
+  		font-size: 2rem;
+  		text-align: center;
+  		padding-bottom: 5px;
+    	border-bottom: 2px solid black;
+  	}
+  	.description{
+  		width: 100%;
+  	}
+  	.description p{
+  		padding-left: 0;
+  		border-left: 0;
+  		margin: 5px;
+
+  	}
+  	.description a{
+  		margin-left: 0;
+  		margin-bottom: 5px;
+  	}
+  	nav.topnavbar{
+  		height: 35px;
+  		margin-top: -30px;
+  	}
+  	img.logo{
+  		height: 25px;
+  	}
+  	.page-header{
+  		margin: 4px 0;
+  	}
+  	.page-header.icon{
+  		border-right: 1px solid withe;
+  		padding: 3px;
+  		width: 40px;
+  		margin: 3px 0;
+  	}
+  	.page-header .page-title{
+  		font-size: 1.7rem;
+  	}
 
 }
 

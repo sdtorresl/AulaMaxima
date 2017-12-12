@@ -214,6 +214,7 @@ img {
 	text-align: center;
 	color: white;
 	background-color: #293038;	
+	font-family: 'Offerings Regular';
 	font-size: 2.5rem;
 }
 .intro {
@@ -221,6 +222,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+	/*width: 60%;*/
 	flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
@@ -231,21 +233,24 @@ img {
 }
 .intro h2 {
 	font-family: 'Agency';
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    text-align: center;
+    	text-transform: uppercase;
+    	font-size: 2.5rem;
+    	text-align: center;
 
 }
 .intro p {
 	text-align: justify;
+	font-family: 'Offerings Regular';
 	font-weight: bold;
 	font-size: 1.2rem;
-    line-height: normal;
+	line-height: normal;
 }
 
 .item {
 	display: flex;
+
 	width: 65%;
+	
 	flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
@@ -284,6 +289,10 @@ img {
 	text-align: justify;
     margin: 10px;
     /*font-weight: bold;*/
+	text-align: justify;
+    margin: 10px;
+    font-family: 'Offerings Regular';
+    font-weight: bold;
     font-size: 1.2rem;
     line-height: normal;
     border-left: 4px solid black;
