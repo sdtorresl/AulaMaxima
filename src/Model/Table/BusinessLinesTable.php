@@ -33,7 +33,7 @@ class BusinessLinesTable extends Table
         parent::initialize($config);
 
         $this->setTable('business_lines');
-        $this->setDisplayField('id');
+        $this->setDisplayField('title');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');

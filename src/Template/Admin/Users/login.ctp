@@ -7,7 +7,7 @@
 			<div class="content container-fluid">
 				<div class="logo align-items-center">
 					<?= $this->Html->Image('logo/vertical-logo-pequeno.png') ?>
-					<p class="right"><?= __('Panel Administrativo') ?></p>
+					<p class="right"><?= __('Control Panel') ?></p>
 				</div>
 			</div>
 		  </div>

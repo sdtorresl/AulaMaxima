@@ -27,6 +27,7 @@ class Service extends Entity
      */
     protected $_accessible = [
         'name' => true,
+        'description' => true,
         'created' => true,
         'modified' => true,
         'sector' => true

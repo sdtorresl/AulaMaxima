@@ -3,6 +3,22 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\BusinessLine[]|\Cake\Collection\CollectionInterface $businessLines
  */
+
+$slogan = "";
+$mainTitle = "";
+$mainDescription = "";
+
+foreach ($fields as $field) {
+    if ($field->type == 'homeMainTitle' && $field->published == true) {
+        $mainTitle = $field->body;
+    }
+    if ($field->type == 'homeDescription' && $field->published == true) {
+        $mainDescription = $field->body;
+    }
+    if ($field->type == 'homeSlogan' && $field->published == true) {
+        $slogan = $field->body;
+    }
+}
 ?>
 
 <!-- Page Header-->
@@ -14,12 +30,12 @@
 </header>
 
 <aside class="quote">
-    <h2>Saber y saber hacer, es aprender a vivir y compartir</h2>
+    <h2><?= $slogan ?></h2>
 </aside>
 
 <article class="intro">
-    <h2>Aula Máxima</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vero ducimus asperiores! Iste quibusdam, doloribus laboriosam sunt recusandae fugiat dignissimos libero eveniet repellendus, atque accusamus modi rem repudiandae magnam labore.</p>
+    <h2><?= $mainTitle ?></h2>
+    <p><?= $mainDescription ?></p>
 </article>
 
 <section class="main">
@@ -27,7 +43,6 @@
     <article class="business-lines">
 
         <div class="parallax" style="background-image: url(<?= './' . $businessLine->background_dir . $businessLine->background ?>)"></div>
-        <!-- <figure><img src="<?= $businessLine->background_dir . $businessLine->background ?>" alt="<?= h($businessLine->title) ?>"></figure> -->
         
         <div class="item">
             <div class="title">
@@ -35,7 +50,10 @@
             </div>
             <div class="description">
                 <p><?= h($businessLine->description) ?></p>
-                <?= $this->Html->link(__("Read about our projects"), ['action' => 'view', $businessLine->id]); ?>
+                
+                <div class="link">
+                    <?= $this->Html->link(__("Read more"), ['action' => 'view', $businessLine->id]); ?>
+                </div>
             </div>
         </div>
     </article>

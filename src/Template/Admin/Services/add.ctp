@@ -24,6 +24,7 @@
                         <?= $this->Form->create($service) ?>
                         <?php
                         echo $this->Form->control('name');
+                        echo $this->Form->control('description');
                         ?>
 
                         <?= $this->Form->button(__('Submit')) ?>

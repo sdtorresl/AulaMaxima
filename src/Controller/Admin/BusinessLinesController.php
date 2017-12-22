@@ -43,7 +43,6 @@ class BusinessLinesController extends AppController
 
         $this->set('businessLine', $businessLine);
         $this->set('_serialize', ['businessLine']);
-
         $this->set('page', 'home-page'); 
         $this->viewBuilder()->setLayout('admin');
     }

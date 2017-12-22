@@ -13,25 +13,19 @@
     <h2 class="page-title"><?= h($sector->business_line->title) ?></h2>
 </header>
 
-<section id="sector" class="main">
-    <aside class="sector-picture">
+<section id="sector">
+    <aside id="sector-picture">
         <figure>
-            <img src="" alt="">
+            <?= $this->Html->Image('../' . $sector->picture_dir . '/' . $sector->picture, ['fullBase' => true, 'alt' => $sector->title]); ?>
         </figure>
     </aside>
 
     <article class="info">
-        <div class="sector-picture">
-            <figure class="thumbnail">
-                <?= $this->Html->Image('../' . $sector->picture_dir . '/' . $sector->picture, ['fullBase' => true]); ?>
-            </figure>
-        </div>
-
         <div class="title">
             <h3><?= h($sector->title) ?></h3>
         </div>
 
-        <div class="descripion">
+        <div class="description">
             <p><?= h($sector->description) ?></p>
         </div>
 

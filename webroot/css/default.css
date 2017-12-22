@@ -77,7 +77,7 @@ Yellow: D7DB2F
 	transform: rotate(-45deg);
 }
 #toggle.on + #menu {
-		opacity: 1;
+	opacity: 1;
 	visibility: visible;
 	top: 0;
 }
@@ -112,37 +112,49 @@ li.menu-item, li.menu-item > a {
 	color: white;
 }
 li.menu-item > a {
-	padding: 5px;
+	padding: 10px;
 	text-decoration: none;
 	transition: all .2s;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	width: 200px;
+	font-family: 'Agency';
+	position: relative;
 }
-li.menu-item > a:hover,
-li.menu-item > a:focus {
-	background: #1ABC9C;
-	color: #fff;
-	border: 5px solid white;
+li.menu-item > a::before {
+	content: '';
+	position: absolute;
+	bottom: 2.9rem;
+	left: 10px;
+	right: 10px;
+	height: 3px;
+	background: white;
+	transition: 0.3s linear;
+}
+li.menu-item > a:hover::before {
+	background: #DFBF77;
 }
 li.menu-item > a {
-	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
-	border-radius: 1000px;
-	width: 200px;
-	height: 200px;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
 }
 li.menu-item > a > figure {
-	border-bottom: 3px solid white;
-	padding: 0 20px 20px 20px;
-	margin-bottom: 15px;
+	border: 3px solid white;
+	padding: 20px; margin-bottom: 15px; height: 150px;
+	width: 150px;
+	border-radius: 150px;
+	background: #293038cc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s linear;
+}
+li.menu-item > a:hover > figure {
+	background: #C1292Ecc;
 }
 li.menu-item > a > figure > img {
-	width: 50px;
+	width: 100px;
 }
 
 nav.topnavbar {
@@ -160,6 +172,7 @@ nav.topnavbar {
 
 body {
 	margin-top: 50px;
+	/*display: inline-grid;*/
 }
 
 figure {
@@ -171,7 +184,7 @@ img {
 }
 
 .content {
-	display: inline-block;
+	/*display: inline-block;*/
 	width: 100%;
 	max-width: 100%;
 }
@@ -214,15 +227,12 @@ img {
 	text-align: center;
 	color: white;
 	background-color: #293038;	
-	font-family: 'Offerings Regular';
 	font-size: 2.5rem;
 }
 .intro {
-
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	/*width: 60%;*/
 	flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
@@ -233,25 +243,22 @@ img {
 }
 .intro h2 {
 	font-family: 'Agency';
-    	text-transform: uppercase;
-    	font-size: 2.5rem;
-    	text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
 
 }
 .intro p {
 	text-align: justify;
-	font-family: 'Offerings Regular';
 	font-weight: bold;
 	font-size: 1.2rem;
-	line-height: normal;
+    line-height: normal;
 }
 
 .item {
 	display: flex;
-
-	width: 65%;
-	
-	flex-wrap: nowrap;
+	width: 80%;
+	flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-content: center;
@@ -263,9 +270,11 @@ img {
 }
 .title {
 
-	margin-right: 10px;
-    padding: 10px;    
-    width: 30%;   
+	display: flex;
+    padding: 1rem;    
+    width: 35%;   
+	align-items: center;
+	justify-content: right;
 }
 .title h2 {
 
@@ -275,39 +284,25 @@ img {
     text-align: right;
 
 }
-.description {
 
-	display: flex;
+.business-lines .description {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: stretch;
-    width: 70%;
-}
-
-.description p {
-	text-align: justify;
-    margin: 10px;
-    /*font-weight: bold;*/
-	text-align: justify;
-    margin: 10px;
-    font-family: 'Offerings Regular';
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: normal;
+    width: 65%;
     border-left: 4px solid black;
-    padding-left: 20px;
+    padding: 1rem 10% 1.5rem 1rem;
+    display: flex;
+	flex-direction: column;
 }
-.description a {
-
-    padding: 10px;
-    margin-left: 35px;
-    border: 1.5px solid black;
-    text-transform: uppercase;
-    font-family: 'Agency';
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
+.business-lines .description p {
+	text-align: justify;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: grey;
+    line-height: normal;
+    width: 100%;
 }
 
 footer {
@@ -343,6 +338,74 @@ img.logo {
     background-size: cover;
 
     margin-bottom: 1rem;
+}
+
+#business-line, #sector {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-direction: row;
+	overflow: hidden;
+}
+#business-line aside, #sector aside {
+	overflow: hidden;
+	width: 50%;
+	/*height: 100%;*/
+}
+#business-picture, #sector-picture {
+	border-right: 5px solid #DFBF77;
+}
+#business-line figure img,  #sector figure img {
+	height: 100vh;
+	width: auto;
+	max-width: none;
+	border-top: 1px solid #DFBF77;
+}
+.info {
+	padding: 1rem 3rem;
+	width: 50%;
+	height: 100%;
+}
+.info .title {
+	border-left: 3px solid black;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	font-size: 3rem!important;
+	padding: 0 0 0 1rem;
+	font-family: 'Agency';
+}
+.info .title h3 {
+	font-size: 3rem;
+}
+.info .description {
+	margin: 1.5rem 0;
+}
+.info .description p {
+	width: 100%;
+	font-size: 1.2rem;
+}
+.link {
+	border: 2px solid black;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: 0.2s linear;
+	margin-top: 1rem;
+}
+.link:hover {
+	border: 2px solid #C1292E;
+	background: #C1292E;
+}
+.link:hover a {
+	color: white;
+}
+.link a {
+	display: block;
+	padding: 1rem;
+	color: black;
+	width: 100%;
+	font-family: 'Agency';
+	font-size: 1.2rem;
 }
 
 #contact #contact-picture {
@@ -387,4 +450,45 @@ img.logo {
 	background: #C1292E;
 	padding: 5px 25px;
 	cursor: pointer;
+}
+.related-services {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+	margin: 0 -10px;
+}
+.service {
+	padding: 1.3rem;
+	background: #293038;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.5rem; 
+	font-family: 'Agency';
+	text-align: center;
+	margin: 10px;
+	width: 30%;
+	transition: 0.3s linear;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.service::before {
+	content: "";
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	bottom: 1rem;
+	right: 1rem;
+	border: 2.5px solid white;
+	transition: 0.3s linear;
+}
+.service:hover {
+	background: #C1292E;
+}
+.service:hover::before {
+	border-color: #D7DB2F;
 }

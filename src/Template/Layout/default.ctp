@@ -18,20 +18,16 @@ $cakeDescription = __('Aula Maxima - Servicios para el sector educativo');
 <html>
     <head>
         <?= $this->Html->charset() ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="robots" content="all,follow">
         
-        <title>
-            <?= $cakeDescription ?>:
-            <?= $this->fetch('title') ?>
-        </title>
+        <title><?= $cakeDescription ?> - <?= $this->fetch('title') ?></title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="<?= $cakeDescription ?>">
+        <meta name="robots" content="all,follow">
         <?= $this->Html->meta('icon') ?>
 
         <!-- CSS-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <!-- <?= $this->Html->css('bootstrap.min.css'); ?> -->
         <?= $this->Html->css('default.css'); ?>
         <?= $this->Html->css('tablets.css'); ?>
         <?= $this->Html->css('phones.css'); ?>
@@ -40,8 +36,8 @@ $cakeDescription = __('Aula Maxima - Servicios para el sector educativo');
         <?= $this->fetch('css') ?>
         <?= $this->fetch('script') ?>
     </head>
+    
     <body>
-
         <nav class="topnavbar">
 
             <figure>
@@ -67,7 +63,7 @@ $cakeDescription = __('Aula Maxima - Servicios para el sector educativo');
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="contact">
+                    <a href="contacts/contact">
                         <figure><?= $this->Html->Image('icons/icon-contact.png') ?></figure>
                         <?= __('Contact') ?>
                     </a>

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-10-07 03:01+0000\n"
+"POT-Creation-Date: 2017-12-16 16:25-0500\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,460 +14,921 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/Admin/BusinessLinesController.php:57;82
+#: Controller/ContactsController.php:27
+msgid "Your information has been sent successfully."
+msgstr "Su información ha sido enviada satisfactoriamente"
+
+#: Controller/ContactsController.php:31
+msgid "Your information couldn't be sent."
+msgstr "Su información no pudo ser enviada"
+
+#: Controller/Admin/BusinessLinesController.php:62;90
 msgid "The business line has been saved."
-msgstr ""
+msgstr "La linea de negocio ha sido guardada"
 
-#: Controller/Admin/BusinessLinesController.php:61;86
+#: Controller/Admin/BusinessLinesController.php:66;94
 msgid "The business line could not be saved. Please, try again."
-msgstr ""
+msgstr "La linea de negocio no pudo ser guardada. Por favor intente nuevamente"
 
-#: Controller/Admin/BusinessLinesController.php:104
+#: Controller/Admin/BusinessLinesController.php:115
 msgid "The business line has been deleted."
-msgstr ""
+msgstr "La linea de negocio ha sido borrada"
 
-#: Controller/Admin/BusinessLinesController.php:106
+#: Controller/Admin/BusinessLinesController.php:117
 msgid "The business line could not be deleted. Please, try again."
-msgstr ""
+msgstr "La linea de negocio no pudo ser borrada. Por favor intente nuevamente"
 
-#: Controller/Admin/FieldsController.php:57;82
+#: Controller/Admin/ContactsController.php:61;89
+msgid "The contact has been saved."
+msgstr "El contacto ha sido guardado."
+
+#: Controller/Admin/ContactsController.php:65;93
+msgid "The contact could not be saved. Please, try again."
+msgstr "El contacto no pudo ser guardado. Por favor intenta nuevamente."
+
+#: Controller/Admin/ContactsController.php:113
+msgid "The contact has been deleted."
+msgstr "El contacto ha sido borrado."
+
+#: Controller/Admin/ContactsController.php:115
+msgid "The contact could not be deleted. Please, try again."
+msgstr "El contactno no pudo ser borrado. Por favor intente nuevamente"
+
+#: Controller/Admin/FieldsController.php:22
+msgid "Main text"
+msgstr "Texto principal"
+
+#: Controller/Admin/FieldsController.php:22
+msgid "Main description"
+msgstr "Descripción principal"
+
+#: Controller/Admin/FieldsController.php:22
+msgid "Main title"
+msgstr "Título principal"
+
+#: Controller/Admin/FieldsController.php:23
+msgid "Slogan"
+msgstr "Slogan"
+
+#: Controller/Admin/FieldsController.php:24
+msgid "Contact Form - Description"
+msgstr "Formulario de Contacto - Descripción"
+
+#: Controller/Admin/FieldsController.php:25
+msgid "Contact Form - Address"
+msgstr "Formulario de Contacto - Dirección"
+
+#: Controller/Admin/FieldsController.php:26
+msgid "Contact Form - Phone number"
+msgstr "Formulario de Contacto - Número de teléfono"
+
+#: Controller/Admin/FieldsController.php:81;111
 msgid "The field has been saved."
-msgstr ""
+msgstr "El campo ha sido guardado."
 
-#: Controller/Admin/FieldsController.php:61;86
+#: Controller/Admin/FieldsController.php:85;115
 msgid "The field could not be saved. Please, try again."
-msgstr ""
+msgstr "El campo no pudo ser guardado. Por favor intente nuevamente."
 
-#: Controller/Admin/FieldsController.php:104
+#: Controller/Admin/FieldsController.php:138
 msgid "The field has been deleted."
-msgstr ""
+msgstr "El campo ha sido borrado."
 
-#: Controller/Admin/FieldsController.php:106
+#: Controller/Admin/FieldsController.php:140
 msgid "The field could not be deleted. Please, try again."
-msgstr ""
+msgstr "El campo no pudo ser guardado. Por favor intente nuevamente."
 
-#: Controller/Admin/SectorsController.php:60;86
+#: Controller/Admin/SectorsController.php:71;100
 msgid "The sector has been saved."
-msgstr ""
+msgstr "El sector ha sido guardado."
 
-#: Controller/Admin/SectorsController.php:64;90
+#: Controller/Admin/SectorsController.php:75;104
 msgid "The sector could not be saved. Please, try again."
-msgstr ""
+msgstr "El sector no pudo ser guardado. Por favor intente nuevamente."
 
-#: Controller/Admin/SectorsController.php:109
+#: Controller/Admin/SectorsController.php:126
 msgid "The sector has been deleted."
-msgstr ""
+msgstr "El sector ha sido borrado."
 
-#: Controller/Admin/SectorsController.php:111
+#: Controller/Admin/SectorsController.php:128
 msgid "The sector could not be deleted. Please, try again."
-msgstr ""
+msgstr "El sector no pudo ser guardado. Por favor intente nuevamente."
 
-#: Controller/Admin/UsersController.php:58;83
+#: Controller/Admin/SectorsServicesController.php:64;93
+msgid "The sectors service has been saved."
+msgstr "La relación ha sido guardada."
+
+#: Controller/Admin/SectorsServicesController.php:68;97
+msgid "The sectors service could not be saved. Please, try again."
+msgstr "La relación no pudo ser guardada. Por favor intente nuevamente."
+
+#: Controller/Admin/SectorsServicesController.php:119
+msgid "The sectors service has been deleted."
+msgstr "La relación ha sido borrada."
+
+#: Controller/Admin/SectorsServicesController.php:121
+msgid "The sectors service could not be deleted. Please, try again."
+msgstr "La relación no pudo ser guardada. Por favor intente nuevamente."
+
+#: Controller/Admin/ServicesController.php:70;98
+msgid "The service has been saved."
+msgstr "El servicio ha sido guardado."
+
+#: Controller/Admin/ServicesController.php:74;102
+msgid "The service could not be saved. Please, try again."
+msgstr "El servicio no pudo ser guardado. Por favor intente nuevamente."
+
+#: Controller/Admin/ServicesController.php:123
+msgid "The service has been deleted."
+msgstr "El servicio ha sido borrado."
+
+#: Controller/Admin/ServicesController.php:125
+msgid "The service could not be deleted. Please, try again."
+msgstr "El servicio no pudo ser guardado. Por favor intente nuevamente."
+
+#: Controller/Admin/UsersController.php:63;91
 msgid "The user has been saved."
-msgstr ""
+msgstr "El usuario ha sido guardado."
 
-#: Controller/Admin/UsersController.php:62;87
+#: Controller/Admin/UsersController.php:67;95
 msgid "The user could not be saved. Please, try again."
-msgstr ""
+msgstr "El usuario no pudo ser guardado. Por favor intente nuevamente."
 
-#: Controller/Admin/UsersController.php:105
+#: Controller/Admin/UsersController.php:116
 msgid "The user has been deleted."
-msgstr ""
+msgstr "El usuario ha sido borrado."
 
-#: Controller/Admin/UsersController.php:107
+#: Controller/Admin/UsersController.php:118
 msgid "The user could not be deleted. Please, try again."
-msgstr ""
+msgstr "El usuario no pudo ser borrado. Por favor intente nuevamente."
 
-#: Controller/Admin/UsersController.php:133
+#: Controller/Admin/UsersController.php:144
 msgid "Invalid username or password, try again"
-msgstr ""
+msgstr "Usuario o contraseña inválidos, intente nuevamente"
 
-#: Template/Admin/BusinessLines/add.ctp:8
-#: Template/Admin/BusinessLines/edit.ctp:8
-#: Template/Admin/BusinessLines/index.ctp:9;28
-#: Template/Admin/BusinessLines/view.ctp:9
-#: Template/Admin/Fields/add.ctp:8
-#: Template/Admin/Fields/edit.ctp:8
-#: Template/Admin/Fields/index.ctp:9;23
-#: Template/Admin/Fields/view.ctp:9
-#: Template/Admin/Sectors/add.ctp:8
-#: Template/Admin/Sectors/edit.ctp:8
-#: Template/Admin/Sectors/index.ctp:9;25
-#: Template/Admin/Sectors/view.ctp:9
-#: Template/Admin/Users/add.ctp:8
-#: Template/Admin/Users/edit.ctp:8
-#: Template/Admin/Users/index.ctp:9;28
-#: Template/Admin/Users/view.ctp:9
-msgid "Actions"
-msgstr ""
-
-#: Template/Admin/BusinessLines/add.ctp:9
-#: Template/Admin/BusinessLines/edit.ctp:15
-#: Template/Admin/BusinessLines/view.ctp:12
-msgid "List Business Lines"
-msgstr ""
-
-#: Template/Admin/BusinessLines/add.ctp:15
-msgid "Add Business Line"
-msgstr ""
-
-#: Template/Admin/BusinessLines/add.ctp:25
-#: Template/Admin/BusinessLines/edit.ctp:33
-#: Template/Admin/Fields/add.ctp:22
-#: Template/Admin/Fields/edit.ctp:28
-#: Template/Admin/Sectors/add.ctp:24
-#: Template/Admin/Sectors/edit.ctp:30
-#: Template/Admin/Users/edit.ctp:32
-msgid "Submit"
-msgstr ""
-
+#: Template/Admin/BusinessLines/add.ctp:10
 #: Template/Admin/BusinessLines/edit.ctp:10
-#: Template/Admin/BusinessLines/index.ctp:47
-#: Template/Admin/Fields/edit.ctp:10
-#: Template/Admin/Fields/index.ctp:37
-#: Template/Admin/Sectors/edit.ctp:10
-#: Template/Admin/Sectors/index.ctp:41
-#: Template/Admin/Users/edit.ctp:10
-#: Template/Admin/Users/index.ctp:47
-msgid "Delete"
-msgstr ""
-
-#: Template/Admin/BusinessLines/edit.ctp:12
-#: Template/Admin/BusinessLines/index.ctp:47
-#: Template/Admin/BusinessLines/view.ctp:11
-#: Template/Admin/Fields/edit.ctp:12
-#: Template/Admin/Fields/index.ctp:37
-#: Template/Admin/Fields/view.ctp:11
-#: Template/Admin/Sectors/edit.ctp:12
-#: Template/Admin/Sectors/index.ctp:41
-#: Template/Admin/Sectors/view.ctp:11
-#: Template/Admin/Users/edit.ctp:12
-#: Template/Admin/Users/index.ctp:47
-#: Template/Admin/Users/view.ctp:11
-msgid "Are you sure you want to delete # {0}?"
-msgstr ""
-
-#: Template/Admin/BusinessLines/edit.ctp:21
-#: Template/Admin/BusinessLines/view.ctp:10
-msgid "Edit Business Line"
-msgstr ""
-
-#: Template/Admin/BusinessLines/index.ctp:10
-#: Template/Admin/BusinessLines/view.ctp:13
-msgid "New Business Line"
-msgstr ""
-
-#: Template/Admin/BusinessLines/index.ctp:14
+#: Template/Admin/BusinessLines/index.ctp:11;21
+#: Template/Element/navigation.ctp:58
 msgid "Business Lines"
-msgstr ""
+msgstr "Lineas de negocio"
 
-#: Template/Admin/BusinessLines/index.ctp:45
-#: Template/Admin/Fields/index.ctp:35
-#: Template/Admin/Sectors/index.ctp:39
-#: Template/Admin/Users/index.ctp:45
-msgid "View"
-msgstr ""
+#: Template/Admin/BusinessLines/add.ctp:20
+#: Template/Admin/BusinessLines/edit.ctp:20
+#: Template/Admin/Sectors/view.ctp:31
+msgid "Business Line"
+msgstr "Linea de negocio"
 
-#: Template/Admin/BusinessLines/index.ctp:46
-#: Template/Admin/Fields/index.ctp:36
-#: Template/Admin/Sectors/index.ctp:40
-#: Template/Admin/Users/index.ctp:46
-msgid "Edit"
-msgstr ""
+#: Template/Admin/BusinessLines/add.ctp:32
+#: Template/Admin/BusinessLines/edit.ctp:32
+#: Template/Admin/Contacts/add.ctp:33
+#: Template/Admin/Contacts/edit.ctp:33
+#: Template/Admin/Fields/add.ctp:34
+#: Template/Admin/Fields/edit.ctp:32
+#: Template/Admin/Sectors/add.ctp:33
+#: Template/Admin/Sectors/edit.ctp:33
+#: Template/Admin/SectorsServices/add.ctp:28
+#: Template/Admin/Services/add.ctp:30
+#: Template/Admin/Services/edit.ctp:30
+#: Template/Bake/Element/form.ctp:89
+#: Template/Contacts/contact.ctp:47
+#: View/Helper/FormHelper.php:1920
+msgid "Submit"
+msgstr "Enviar"
 
-#: Template/Admin/BusinessLines/index.ctp:55
-#: Template/Admin/Fields/index.ctp:45
-#: Template/Admin/Sectors/index.ctp:49
-#: Template/Admin/Users/index.ctp:55
-msgid "first"
-msgstr ""
-
-#: Template/Admin/BusinessLines/index.ctp:56
-#: Template/Admin/Fields/index.ctp:46
-#: Template/Admin/Sectors/index.ctp:50
-#: Template/Admin/Users/index.ctp:56
-msgid "previous"
-msgstr ""
-
-#: Template/Admin/BusinessLines/index.ctp:58
-#: Template/Admin/Fields/index.ctp:48
-#: Template/Admin/Sectors/index.ctp:52
-#: Template/Admin/Users/index.ctp:58
-msgid "next"
-msgstr ""
-
-#: Template/Admin/BusinessLines/index.ctp:59
-#: Template/Admin/Fields/index.ctp:49
-#: Template/Admin/Sectors/index.ctp:53
-#: Template/Admin/Users/index.ctp:59
-msgid "last"
-msgstr ""
+#: Template/Admin/BusinessLines/index.ctp:32
+#: Template/Admin/Contacts/index.ctp:34
+#: Template/Admin/Fields/index.ctp:34
+#: Template/Admin/Fields/view.ctp:9
+#: Template/Admin/Sectors/index.ctp:33
+#: Template/Admin/Services/index.ctp:32
+#: Template/Admin/Users/index.ctp:35
+#: Template/Bake/Template/index.ctp:65
+#: Template/Bake/Template/view.ctp:152
+msgid "Actions"
+msgstr "Acciones"
 
 #: Template/Admin/BusinessLines/index.ctp:61
-#: Template/Admin/Fields/index.ctp:51
-#: Template/Admin/Sectors/index.ctp:55
-#: Template/Admin/Users/index.ctp:61
-msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
-msgstr "Página {{page}} de {{pages}}, mostrando {{current}} registro(s) de {{count}}"
+#: Template/Admin/Contacts/index.ctp:65
+#: Template/Admin/Fields/index.ctp:65
+#: Template/Admin/Fields/view.ctp:11
+#: Template/Admin/Sectors/index.ctp:63
+#: Template/Admin/Services/index.ctp:61
+#: Template/Admin/Users/index.ctp:66
+#: Template/Bake/Template/index.ctp:118
+#: Template/Bake/Template/view.ctp:163
+msgid "Are you sure you want to delete # {0}?"
+msgstr "¿Está seguro que desea borrar # {0}?"
 
-#: Template/Admin/BusinessLines/view.ctp:11
-msgid "Delete Business Line"
-msgstr ""
+#: Template/Admin/BusinessLines/index.ctp:75
+msgid "Add Business Line"
+msgstr "Crear Linea de Negocio"
 
-#: Template/Admin/BusinessLines/view.ctp:20
-#: Template/Admin/Fields/view.ctp:20
-#: Template/Admin/Sectors/view.ctp:20
-msgid "Title"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:26
+#: Template/Admin/Sectors/view.ctp:25
+#: Template/Admin/Services/view.ctp:30
+msgid "Description"
+msgstr "Descripción"
 
-#: Template/Admin/BusinessLines/view.ctp:24
-msgid "Background"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:31
+#: Template/Admin/Contacts/view.ctp:38
+#: Template/Admin/Fields/view.ctp:28
+#: Template/Admin/Sectors/view.ctp:35
+#: Template/Admin/Services/view.ctp:34
+#: Template/Services/view.ctp:30
+msgid "Id"
+msgstr "ID"
 
-#: Template/Admin/BusinessLines/view.ctp:28
-msgid "Background Dir"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:35
+#: Template/Admin/Contacts/view.ctp:42
+#: Template/Admin/Fields/view.ctp:32
+#: Template/Admin/Sectors/view.ctp:39
+#: Template/Admin/Services/view.ctp:38
+#: Template/Admin/Users/view.ctp:39
+#: Template/Services/view.ctp:34
+msgid "Created"
+msgstr "Creado"
 
-#: Template/Admin/BusinessLines/view.ctp:32
-msgid "Main Picture"
-msgstr ""
-
-#: Template/Admin/BusinessLines/view.ctp:36
-msgid "Main Picture Dir"
-msgstr ""
-
-#: Template/Admin/BusinessLines/view.ctp:40
-msgid "Secondary Picture"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:39
+#: Template/Admin/Fields/view.ctp:36
+#: Template/Admin/Sectors/view.ctp:43
+#: Template/Admin/Services/view.ctp:42
+#: Template/Admin/Users/view.ctp:43
+#: Template/Services/view.ctp:38
+msgid "Modified"
+msgstr "Modificado"
 
 #: Template/Admin/BusinessLines/view.ctp:44
-msgid "Secondary Picture Dir"
-msgstr ""
+#: Template/Admin/Sectors/view.ctp:48
+msgid "Background Image"
+msgstr "Imagen de Fondo"
 
-#: Template/Admin/BusinessLines/view.ctp:48
-#: Template/Admin/Fields/view.ctp:24
-#: Template/Admin/Sectors/view.ctp:32
-#: Template/Admin/Users/view.ctp:44
-msgid "Id"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:50;59;68
+#: Template/Admin/Sectors/view.ctp:54
+msgid "No image has been updated"
+msgstr "Ninguna imagen ha sido cargada"
 
-#: Template/Admin/BusinessLines/view.ctp:52
-#: Template/Admin/Fields/view.ctp:28
-#: Template/Admin/Sectors/view.ctp:40
-#: Template/Admin/Users/view.ctp:52
-msgid "Created"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:53
+msgid "Main Picture"
+msgstr "Imagen principal"
 
-#: Template/Admin/BusinessLines/view.ctp:56
-#: Template/Admin/Fields/view.ctp:32
-#: Template/Admin/Sectors/view.ctp:44
-#: Template/Admin/Users/view.ctp:56
-msgid "Modified"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:62
+msgid "Secondary Picture"
+msgstr "Imagen secundaria"
 
-#: Template/Admin/BusinessLines/view.ctp:61
-#: Template/Admin/Sectors/view.ctp:49
-msgid "Description"
-msgstr ""
+#: Template/Admin/BusinessLines/view.ctp:74
+msgid "Edit Business Line"
+msgstr "Editar Linea de Negocio"
 
-#: Template/Admin/Fields/add.ctp:9
-#: Template/Admin/Fields/edit.ctp:15
-#: Template/Admin/Fields/view.ctp:12
-msgid "List Fields"
-msgstr ""
+#: Template/Admin/Contacts/add.ctp:10
+#: Template/Admin/Contacts/edit.ctp:10
+#: Template/Admin/Contacts/index.ctp:11;21
+#: Template/Element/navigation.ctp:90
+msgid "Contacts"
+msgstr "Contactos"
 
-#: Template/Admin/Fields/add.ctp:15
-msgid "Add Field"
-msgstr ""
+#: Template/Admin/Contacts/add.ctp:20
+#: Template/Admin/Contacts/edit.ctp:20
+#: Template/Contacts/contact.ctp:13
+#: Template/Layout/default.ctp:71
+msgid "Contact"
+msgstr "Contacto"
 
-#: Template/Admin/Fields/edit.ctp:21
-#: Template/Admin/Fields/view.ctp:10
-msgid "Edit Field"
-msgstr ""
+#: Template/Admin/Contacts/index.ctp:77
+msgid "New Contact"
+msgstr "Crear Contacto"
 
-#: Template/Admin/Fields/index.ctp:10
-#: Template/Admin/Fields/view.ctp:13
-msgid "New Field"
-msgstr ""
-
-#: Template/Admin/Fields/index.ctp:14
-msgid "Fields"
-msgstr ""
-
-#: Template/Admin/Fields/view.ctp:11
-msgid "Delete Field"
-msgstr ""
-
-#: Template/Admin/Fields/view.ctp:36
-msgid "Published"
-msgstr ""
-
-#: Template/Admin/Fields/view.ctp:37
-msgid "Yes"
-msgstr ""
-
-#: Template/Admin/Fields/view.ctp:37
-msgid "No"
-msgstr ""
-
-#: Template/Admin/Fields/view.ctp:41
-msgid "Body"
-msgstr ""
-
-#: Template/Admin/Sectors/add.ctp:9
-#: Template/Admin/Sectors/edit.ctp:15
-#: Template/Admin/Sectors/view.ctp:12
-msgid "List Sectors"
-msgstr ""
-
-#: Template/Admin/Sectors/add.ctp:15
-msgid "Add Sector"
-msgstr ""
-
-#: Template/Admin/Sectors/edit.ctp:21
-#: Template/Admin/Sectors/view.ctp:10
-msgid "Edit Sector"
-msgstr ""
-
-#: Template/Admin/Sectors/index.ctp:10
-#: Template/Admin/Sectors/view.ctp:13
-msgid "New Sector"
-msgstr ""
-
-#: Template/Admin/Sectors/index.ctp:14
-msgid "Sectors"
-msgstr ""
-
-#: Template/Admin/Sectors/view.ctp:11
-msgid "Delete Sector"
-msgstr ""
-
-#: Template/Admin/Sectors/view.ctp:24
-msgid "Picture"
-msgstr ""
-
-#: Template/Admin/Sectors/view.ctp:28
-msgid "Picture Dir"
-msgstr ""
-
-#: Template/Admin/Sectors/view.ctp:36
-msgid "Business Id"
-msgstr ""
-
-#: Template/Admin/Users/add.ctp:9
-#: Template/Admin/Users/edit.ctp:15
-#: Template/Admin/Users/view.ctp:12
-msgid "List Users"
-msgstr ""
-
-#: Template/Admin/Users/add.ctp:15
-msgid "Add User"
-msgstr "Crear Usuario"
-
-#: Template/Admin/Users/add.ctp:17
-msgid "First name"
-msgstr "Nombre"
-
-#: Template/Admin/Users/add.ctp:18
-msgid "Last name"
-msgstr "Apellido"
-
-#: Template/Admin/Users/add.ctp:19
-#: Template/Admin/Users/login.ctp:26
-#: Template/Admin/Users/view.ctp:20
-msgid "Username"
-msgstr "Nombre de Usuario"
-
-#: Template/Admin/Users/add.ctp:20
-#: Template/Admin/Users/view.ctp:24
+#: Template/Admin/Contacts/view.ctp:26
+#: Template/Admin/Users/view.ctp:31
+#: Template/Contacts/contact.ctp:40
 msgid "Email"
 msgstr "Correo"
 
-#: Template/Admin/Users/add.ctp:21
+#: Template/Admin/Contacts/view.ctp:30
+msgid "First Name"
+msgstr "Nombre"
+
+#: Template/Admin/Contacts/view.ctp:34
+msgid "Last Name"
+msgstr "Apellido"
+
+#: Template/Admin/Contacts/view.ctp:46
+msgid "Viewed"
+msgstr "Visto"
+
+#: Template/Admin/Contacts/view.ctp:47
+#: Template/Admin/Fields/view.ctp:41
+#: Template/Bake/Template/view.ctp:125
+msgid "Yes"
+msgstr "Si"
+
+#: Template/Admin/Contacts/view.ctp:47
+#: Template/Admin/Fields/view.ctp:41
+#: Template/Bake/Template/view.ctp:125
+msgid "No"
+msgstr "No"
+
+#: Template/Admin/Contacts/view.ctp:51
+#: Template/Contacts/contact.ctp:42
+msgid "Message"
+msgstr "Mensaje"
+
+#: Template/Admin/Contacts/view.ctp:58
+msgid "Edit Contact"
+msgstr "Editar Contacto"
+
+#: Template/Admin/Fields/add.ctp:10
+#: Template/Admin/Users/add.ctp:10
+#: Template/Admin/Users/edit.ctp:10
+#: Template/Admin/Users/view.ctp:11
+msgid "Administration"
+msgstr "Administración"
+
+#: Template/Admin/Fields/add.ctp:20
+msgid "Add Text"
+msgstr "Crear Texto"
+
+#: Template/Admin/Fields/add.ctp:31
+msgid "Publish"
+msgstr "Publicar"
+
+#: Template/Admin/Fields/edit.ctp:10
+#: Template/Admin/Fields/index.ctp:11;21
+msgid "Fields"
+msgstr "Campos"
+
+#: Template/Admin/Fields/edit.ctp:20
+msgid "Field"
+msgstr "Campo"
+
+#: Template/Admin/Fields/index.ctp:43
+#: Template/Admin/Fields/view.ctp:40
+msgid "Published"
+msgstr "Publicado"
+
+#: Template/Admin/Fields/index.ctp:43
+msgid "Unpublished"
+msgstr "Despublicado"
+
+#: Template/Admin/Fields/index.ctp:79
+#: Template/Admin/Fields/view.ctp:13
+msgid "Add Field"
+msgstr "Crear Campo"
+
+#: Template/Admin/Fields/view.ctp:10
+msgid "Edit Field"
+msgstr "Editar Campo"
+
+#: Template/Admin/Fields/view.ctp:11
+msgid "Delete Field"
+msgstr "Borrar Campo"
+
+#: Template/Admin/Fields/view.ctp:12
+msgid "List Fields"
+msgstr "Listar Campos"
+
+#: Template/Admin/Fields/view.ctp:20
+msgid "Title"
+msgstr "Título"
+
+#: Template/Admin/Fields/view.ctp:24
+msgid "Type"
+msgstr "Tipo"
+
+#: Template/Admin/Fields/view.ctp:45
+msgid "Body"
+msgstr "Contenido"
+
+#: Template/Admin/Sectors/add.ctp:10
+#: Template/Admin/Sectors/edit.ctp:10
+#: Template/Admin/Sectors/index.ctp:11;21
+#: Template/Element/navigation.ctp:67
+msgid "Sectors"
+msgstr "Sectores"
+
+#: Template/Admin/Sectors/add.ctp:20
+#: Template/Admin/Sectors/edit.ctp:20
+msgid "Sector"
+msgstr "Sector"
+
+#: Template/Admin/Sectors/index.ctp:75
+msgid "New Sector"
+msgstr "Crear Sector"
+
+#: Template/Admin/Sectors/view.ctp:59
+#: Template/Admin/Services/add.ctp:10
+#: Template/Admin/Services/edit.ctp:10
+#: Template/Admin/Services/index.ctp:11;21
+#: Template/BusinessLines/view.ctp:11
+#: Template/Element/navigation.ctp:76
+#: Template/Layout/default.ctp:65
+#: Template/Sectors/view.ctp:11
+msgid "Services"
+msgstr "Servicios"
+
+#: Template/Admin/Sectors/view.ctp:69
+msgid "Edit Sector"
+msgstr "Editar Sector"
+
+#: Template/Admin/SectorsServices/add.ctp:10
+msgid "Sectors Services"
+msgstr "Sectores - Servicios"
+
+#: Template/Admin/SectorsServices/add.ctp:20
+msgid "Sectors Service"
+msgstr ""
+
+#: Template/Admin/Services/add.ctp:20
+#: Template/Admin/Services/edit.ctp:20
+msgid "Service"
+msgstr "Servicio"
+
+#: Template/Admin/Services/index.ctp:73
+msgid "New Service"
+msgstr "Crear Servicio"
+
+#: Template/Admin/Services/view.ctp:26
+#: Template/Contacts/contact.ctp:41
+#: Template/Services/view.ctp:26
+msgid "Name"
+msgstr "Nombre"
+
+#: Template/Admin/Services/view.ctp:50
+#: Template/Services/view.ctp:46
+msgid "Edit Service"
+msgstr "Editar Servicio"
+
+#: Template/Admin/Users/add.ctp:20;36
+#: Template/Admin/Users/index.ctp:78
+msgid "Add User"
+msgstr "Crear Usuario"
+
+#: Template/Admin/Users/add.ctp:32
+#: Template/Admin/Users/edit.ctp:32
+#: Template/Element/navigation.ctp:12
+msgid "Administrator"
+msgstr "Administrador"
+
+#: Template/Admin/Users/edit.ctp:36
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: Template/Admin/Users/index.ctp:11;21
+#: Template/Element/navigation.ctp:37
+msgid "Users"
+msgstr "Usuarios"
+
+#: Template/Admin/Users/login.ctp:10
+msgid "Control Panel"
+msgstr "Panel Administrativo"
+
+#: Template/Admin/Users/login.ctp:26
+#: Template/Admin/Users/view.ctp:27
+msgid "Username"
+msgstr "Nombre de usuario"
+
 #: Template/Admin/Users/login.ctp:37
-#: Template/Admin/Users/view.ctp:28
 msgid "Password"
 msgstr "Contraseña"
 
-#: Template/Admin/Users/add.ctp:22
-msgid "Password confirmation"
-msgstr ""
-
-#: Template/Admin/Users/add.ctp:23
-msgid "Administrator"
-msgstr ""
-
-#: Template/Admin/Users/add.ctp:23
-msgid "Rol"
-msgstr ""
-
-#: Template/Admin/Users/add.ctp:27
-msgid "Add"
-msgstr ""
-
-#: Template/Admin/Users/edit.ctp:21
-#: Template/Admin/Users/view.ctp:10
-msgid "Edit User"
-msgstr ""
-
-#: Template/Admin/Users/index.ctp:10
-#: Template/Admin/Users/view.ctp:13
-msgid "New User"
-msgstr ""
-
-#: Template/Admin/Users/index.ctp:14
-msgid "Users"
-msgstr ""
-
-#: Template/Admin/Users/login.ctp:9
-msgid "Aula Máxima"
-msgstr ""
-
-#: Template/Admin/Users/login.ctp:11
-msgid "Administrative Panel"
-msgstr ""
-
 #: Template/Admin/Users/login.ctp:44
+#: Template/Bake/Template/login.ctp:29
 msgid "Login"
-msgstr ""
+msgstr "Iniciar Sesión"
 
 #: Template/Admin/Users/login.ctp:51
 msgid "Forgot your password?"
-msgstr "¿Olvidaste tu contraseña?"
+msgstr "¿Olvidaste tu Contraseña?"
 
 #: Template/Admin/Users/login.ctp:53
 msgid "Don't have an account?"
-msgstr ""
+msgstr "¿No tienes una cuenta?"
 
 #: Template/Admin/Users/login.ctp:54
 msgid "Request for one"
-msgstr ""
+msgstr "Solicita una"
 
-#: Template/Admin/Users/view.ctp:11
-msgid "Delete User"
-msgstr ""
-
-#: Template/Admin/Users/view.ctp:32
-msgid "First Name"
-msgstr ""
-
-#: Template/Admin/Users/view.ctp:36
-msgid "Last Name"
-msgstr ""
-
-#: Template/Admin/Users/view.ctp:40
+#: Template/Admin/Users/view.ctp:35
 msgid "Role"
+msgstr "Rol"
+
+#: Template/Admin/Users/view.ctp:47
+msgid "Last Access"
+msgstr "Último acceso"
+
+#: Template/Admin/Users/view.ctp:55
+msgid "Edit User"
+msgstr "Editar Usuario"
+
+#: Template/Bake/Element/form.ctp:32
+#: Template/Bake/Template/index.ctp:45;55
+msgid "<%= $pluralHumanName %>"
 msgstr ""
 
-#: Template/Admin/Users/view.ctp:48
-msgid "Last Access"
+#: Template/Bake/Element/form.ctp:42
+msgid "<%= $singularHumanName %>"
 msgstr ""
+
+#: Template/Bake/Template/index.ctp:130
+msgid "New <%= $singularHumanName %>"
+msgstr ""
+
+#: Template/Bake/Template/login.ctp:25
+msgid "Please enter your username and password"
+msgstr "Por favor ingrese su usuario y contraseña"
+
+#: Template/Bake/Template/view.ctp:86
+msgid "<%= Inflector::humanize($details["
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:91;108;124;133;150
+msgid "<%= Inflector::humanize($field) %>"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:100
+msgid "<%= Inflector::humanize(Inflector::singularize(Inflector::underscore($alias))) %>"
+msgstr ""
+
+#: Template/Bake/Template/view.ctp:145
+msgid "Related <%= $otherPluralHumanName %>"
+msgstr "<%= $otherPluralHumanName %> relacionados"
+
+#: Template/Bake/Template/view.ctp:161
+#: View/Helper/PaginatorHelper.php:1214
+msgid "View"
+msgstr "Ver"
+
+#: Template/Bake/Template/view.ctp:162
+msgid "Edit"
+msgstr "Editar"
+
+#: Template/Bake/Template/view.ctp:163
+msgid "Delete"
+msgstr "Borrar"
+
+#: Template/Bake/Template/view.ctp:175
+msgid "Edit <%= $singularHumanName%>"
+msgstr "Editar <%= $singularHumanName%>"
+
+#: Template/BusinessLines/index.ctp:6;12;14
+#: Template/Element/navigation.ctp:25
+#: Template/Layout/default.ctp:59
+#: View/Helper/HtmlHelper.php:795
+msgid "Home"
+msgstr "Inicio"
+
+#: Template/BusinessLines/index.ctp:38
+msgid "Read more"
+msgstr "Leer más"
+
+#: Template/BusinessLines/view.ctp:21
+msgid "Aim:"
+msgstr "Propósito:"
+
+#: Template/Contacts/contact.ctp:10;26
+msgid "Contact Icon"
+msgstr "Icono de contacto"
+
+#: Template/Element/navigation.ctp:19
+msgid "Admin"
+msgstr "Admin"
+
+#: Template/Element/navigation.ctp:40;49;61;70;79
+msgid "List"
+msgstr "Listar"
+
+#: Template/Element/navigation.ctp:41;50;62;71;80
+msgid "Add"
+msgstr "Crear"
+
+#: Template/Element/navigation.ctp:46
+msgid "Pages"
+msgstr "Páginas"
+
+#: Template/Element/navigation.ctp:54
+msgid "Content"
+msgstr "Contenido"
+
+#: Template/Element/navigation.ctp:84
+msgid "Forms"
+msgstr "Formularios"
+
+#: Template/Layout/admin.ctp:15
+#: Template/Layout/login.ctp:16
+msgid "Aula Maxima - Administrative Panel"
+msgstr "Aula Máxima - Panel Administrativo"
+
+#: Template/Layout/admin.ctp:67;120
+#: Template/Layout/default.ctp:95
+msgid "Aula Máxima"
+msgstr "Aula Máxima"
+
+#: Template/Layout/admin.ctp:67
+msgid "Dashboard"
+msgstr "Panel"
+
+#: Template/Layout/admin.ctp:85
+msgid "Logout"
+msgstr "Cerrar Sesión"
+
+#: Template/Layout/admin.ctp:123
+msgid "Design by"
+msgstr "Diseñado por"
+
+#: Template/Layout/admin.ctp:124
+#: Template/Layout/default.ctp:96
+msgid "Developed by"
+msgstr "Desarrollado por"
+
+#: Template/Layout/default.ctp:15
+msgid "Aula Maxima - Servicios para el sector educativo"
+msgstr "Aula Maxima - Servicios para el sector educativo"
+
+#: Template/Layout/default.ctp:95
+msgid "All rights reserved."
+msgstr "Todos los derechos reservados."
 
 #: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
 msgid "Error"
 msgstr ""
 
 #: Template/Layout/error.ctp:43
 msgid "Back"
+msgstr "Atrás"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr "La dirección {0} no se encontró."
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr "Un error interno ha ocurrido."
+
+#: Controller/Component/AuthComponent.php:496
+msgid "You are not authorized to access that location."
+msgstr "No está autorizado para acceder a esta ubicación."
+
+#: Controller/Component/CsrfComponent.php:157
+#: Http/Middleware/CsrfProtectionMiddleware.php:190
+msgid "Missing CSRF token cookie"
 msgstr ""
+
+#: Controller/Component/CsrfComponent.php:161
+#: Http/Middleware/CsrfProtectionMiddleware.php:194
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:258
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: Error/ExceptionRenderer.php:260
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2389
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2400
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr "Este valor ya se encuentra en uso"
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr "Este valor no existe"
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:902
+msgid "and"
+msgstr "y"
+
+#: Validation/Validator.php:111
+msgid "This field is required"
+msgstr "Este campo es requerido"
+
+#: Validation/Validator.php:112
+msgid "This field cannot be left empty"
+msgstr "Este campo no puede ser vacio"
+
+#: Validation/Validator.php:1885
+msgid "The provided value is invalid"
+msgstr "El valor es inválido"
+
+#: View/Helper/FormHelper.php:1040
+msgid "New %s"
+msgstr "Nuevo %s"
+
+#: View/Helper/FormHelper.php:1043
+msgid "Edit %s"
+msgstr "Editar %s"
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr "Enero"
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr "Febrero"
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr "Marzo"
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr "Abril"
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr "Mayo"
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr "Junio"
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr "Julio"
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr "Agosto"
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr "Septiembre"
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr "Octubre"
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr "Noviembre"
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr "Diciembre"
 

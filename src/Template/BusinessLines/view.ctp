@@ -13,10 +13,22 @@
     <h2 class="page-title"><?= h($businessLine->title) ?></h2>
 </header>
 
-<section class="business-line">
-    <figure><img src="<?= '../../' . $businessLine->background_dir . $businessLine->background ?>" alt="<?= h($businessLine->title) ?>"></figure>
+<section id="business-line">
+    <aside id="business-picture">
+        <figure>
+            <?= $this->Html->Image('../' . $businessLine->background_dir . '/' . $businessLine->background, ['fullBase' => true, 'alt' => h($businessLine->title)]); ?>
+        </figure>
+    </aside>
 
-    <aside class="sectors-list">
+    <article class="info">
+        <div class="title">
+            <h3><?= __('Aim:') ?></h3>
+        </div>
+
+        <div class="description">
+            <p><?= __($businessLine->description) ?></p>
+        </div>
+
         <?php foreach ($businessLine->sectors as $sector): ?>
         <div class="link">
             <?= $this->Html->link(
@@ -25,5 +37,5 @@
             ); ?>
         </div>
         <?php endforeach; ?>
-    </aside>
+    </article>
 </section>

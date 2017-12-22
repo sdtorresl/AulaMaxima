@@ -76,7 +76,7 @@
                         <div class="row">                 
                             <div class="col ">
                                 <?= $this->Html->link(
-                                    __('New Field'),
+                                    __('Add Field'),
                                     ['action' => 'add'],
                                     ['class' => 'btn btn-primary']
                                 ); ?>

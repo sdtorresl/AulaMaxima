@@ -18,18 +18,18 @@ $cakeDescription = __('Aula Maxima - Administrative Panel');
 <html>
     <head>
         <?= $this->Html->charset() ?>
+        <title><?= $cakeDescription ?>: <?= $this->fetch('title') ?></title>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="robots" content="all,follow">
-        <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
-        </title>
         <?= $this->Html->meta('icon') ?>
+
         <!-- CSS-->
         <?= $this->Html->css('bootstrap.min.css'); ?>
         <?= $this->Html->css('style.red.css', ['id' => 'theme-stylesheet']); ?>
         <?= $this->Html->css('custom.css'); ?>
+
         <!-- <?= $this->Html->css('base.css') ?> -->
         <!-- <?= $this->Html->css('cake.css') ?> -->
         <!-- Google fonts - Roboto -->
@@ -43,59 +43,52 @@ $cakeDescription = __('Aula Maxima - Administrative Panel');
         <?= $this->fetch('css') ?>
         <?= $this->fetch('script') ?>
     </head>
-    <body>
 
+    <body>
         <div <?= 'class="page ' . $page . '"'; ?>>
             <!-- Main Navbar-->
             <header class="header">
                 <nav class="navbar">
-                    <!-- Search Box-->
-                    <div class="search-box">
-                        <button class="dismiss"><i class="icon-close"></i></button>
-                        <form id="searchForm" action="#" role="search">
-                            <input type="search" placeholder="What are you looking for..." class="form-control">
-                        </form>
-                    </div>
                     <div class="container-fluid">
-                    <div class="navbar-holder d-flex align-items-center justify-content-between">
-                        <!-- Navbar Header-->
-                        <div class="navbar-header">
-                            <!-- Navbar Brand -->
-                            <a href="index.html" class="navbar-brand">
-                                <div class="brand-text brand-big hidden-lg-down logo-horizontal">
-                                    <?= $this->Html->Image('logo/logo-icon-white.png') ?>
-                                    <span><?= __('Aula Máxima') ?></span><strong><?= __('Dashboard') ?></strong>
-                                </div>
-                                <div class="brand-text brand-small logo-horizontal">
-                                    <?= $this->Html->Image('logo/logo-icon-white.png') ?>
-                                </div>
-                            </a>
-                            <!-- Toggle Button-->
-                            <a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
-                        </div>
-                        <!-- Navbar Menu -->
-                        <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                            <!-- Search-->
-                            <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+                        <div class="navbar-holder d-flex align-items-center justify-content-between">
+                            <!-- Navbar Header-->
+                            <div class="navbar-header">
+                                <!-- Navbar Brand -->
+                                <a href="index.html" class="navbar-brand">
+                                    <div class="brand-text brand-big hidden-lg-down logo-horizontal">
+                                        <?= $this->Html->Image('logo/logo-icon-white.png') ?>
+                                        <span><?= __('Aula Máxima') ?></span><strong><?= __('Dashboard') ?></strong>
+                                    </div>
+                                    <div class="brand-text brand-small logo-horizontal">
+                                        <?= $this->Html->Image('logo/logo-icon-white.png') ?>
+                                    </div>
+                                </a>
+                                <!-- Toggle Button-->
+                                <a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+                            </div>
+                            <!-- Navbar Menu -->
+                            <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                                <!-- Search-->
+                                <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
 
-                            <!-- Logout    -->
-                            <li class="nav-item">
-                                <?= $this->Html->link(
-                                    [
-                                        __('Logout'),
-                                        $this->Html->tag('i', '', ['class' => 'fa fa-sign-out']),
-                                    ],
-                                    [
-                                        'controller' => 'Users', 
-                                        'action' => 'logout',
-                                        'prefix' => 'admin'
-                                    ],
-                                    [
-                                        'class' => 'nav-link logout',
-                                        'escape' => false
-                                    ]
-                                ); ?>
-                            </li>
+                                <!-- Logout    -->
+                                <li class="nav-item">
+                                    <?= $this->Html->link(
+                                        [
+                                            __('Logout'),
+                                            $this->Html->tag('i', '', ['class' => 'fa fa-sign-out']),
+                                        ],
+                                        [
+                                            'controller' => 'Users', 
+                                            'action' => 'logout',
+                                            'prefix' => 'admin'
+                                        ],
+                                        [
+                                            'class' => 'nav-link logout',
+                                            'escape' => false
+                                        ]
+                                    ); ?>
+                                </li>
                             </ul>
                         </div>
                     </div>

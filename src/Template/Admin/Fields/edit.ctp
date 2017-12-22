@@ -25,7 +25,9 @@
                         <?php
                         echo $this->Form->control('title');
                         echo $this->Form->control('body');
-                        echo $this->Form->control('type');
+                        echo $this->Form->control('type', [
+                            'options' => $fieldsType
+                        ]);
                         echo $this->Form->control('published');
                         ?>
 

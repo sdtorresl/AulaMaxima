@@ -27,6 +27,10 @@
                                 <td><?= h($service->name) ?></td>
                             </tr>
                             <tr>
+                                <th scope="row"><?= __('Description') ?></th>
+                                <td><?= h($service->description) ?></td>
+                            </tr>
+                            <tr>
                                 <th scope="row"><?= __('Id') ?></th>
                                 <td><?= $this->Number->format($service->id) ?></td>
                             </tr>

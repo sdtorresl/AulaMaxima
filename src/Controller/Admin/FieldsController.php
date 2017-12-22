@@ -19,11 +19,13 @@ class FieldsController extends AppController
         parent::initialize();
 
         $this->fieldsType = array(
+            'homeDescription' => __('Main description'),
+            'homeMainTitle' => __('Main title'),
             'homeMainText' => __('Main text'),
-            'slogan' => __('Slogan'),
+            'homeSlogan' => __('Slogan'),
             'contactFormDescription' => __('Contact Form - Description'),
             'contactFormAddress' => __('Contact Form - Address'),
-            'contactFormPhone' => __('Contact Form - Phone Number')
+            'contactFormPhone' => __('Contact Form - Phone number')
         );
 
         asort($this->fieldsType);
@@ -87,7 +89,6 @@ class FieldsController extends AppController
         
         $this->set(compact('field'));
         $this->set('_serialize', ['field']);
-        $this->set('page', 'home-page');
         $this->set('fieldsType', $this->fieldsType); 
         
         $this->viewBuilder()->setLayout('admin');
@@ -117,7 +118,6 @@ class FieldsController extends AppController
 
         $this->set(compact('field'));
         $this->set('_serialize', ['field']);
-        $this->set('page', 'home-page'); 
         $this->set('fieldsType', $this->fieldsType); 
         
         $this->viewBuilder()->setLayout('admin');

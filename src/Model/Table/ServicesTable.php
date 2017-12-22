@@ -65,6 +65,10 @@ class ServicesTable extends Table
             ->notEmpty('name')
             ->add('name', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
+        $validator
+            ->scalar('description')
+            ->allowEmpty('description');
+
         return $validator;
     }
 
