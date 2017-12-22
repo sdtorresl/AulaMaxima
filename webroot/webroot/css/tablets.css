@@ -4,14 +4,18 @@
 		width: 90%;
 	}
 	.item {
-		width: 90%;  		
+		width: 100%;  		
 	}
 	.title{
 		width: min-content;
 		padding: 20px;
+<<<<<<< HEAD
+=======
+		width: 90%;
+>>>>>>> 9f9affd2c788a6fc2ec27d10bfedab18b2619362
 	}
 	.quote h2{
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	#business-picture, #sector-picture {
 		display: none;
@@ -19,9 +23,13 @@
 	.business-lines .description {
 		width: 60%;
 		padding: 20px;
+<<<<<<< HEAD
 
 	}
 
+=======
+	}
+>>>>>>> 9f9affd2c788a6fc2ec27d10bfedab18b2619362
 	.info {
 		padding: 1rem ;
 		width: 100%;
@@ -51,8 +59,11 @@
 	align-items:center;
 	
 	}
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9f9affd2c788a6fc2ec27d10bfedab18b2619362
 }
 
 /* Portrait */

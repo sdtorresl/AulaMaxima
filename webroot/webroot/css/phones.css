@@ -1,12 +1,15 @@
 /* Portrait and Landscape */
-@media screen and (min-device-width: 400px) and (max-device-width: 800px) and (-webkit-device-pixel-ratio: 2) {
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
 
 	.quote {
 		height: 200px;
 	}
 	.quote h2{
-		font-size: 1.8rem;
-		padding: 2px;
+		font-size: 1.5rem;
+		padding: 5px;
 	}
 	.intro{
 		width: 90%;  
@@ -45,7 +48,8 @@
 	.business-lines .description p {
 		padding-left: 0;
 		border-left: 0;
-		margin: 5px 0;
+		margin: 5px;
+
 	}
 	.description a{
 		margin-left: 0;
@@ -74,18 +78,101 @@
 	#business-picture, #sector-picture {
 		display: none;
 	}
+	.quote {
+		height: 200px;
+	}
+	.quote h2{
+		font-size: 1.5rem;
+		padding: 5px;
+	}
+	.intro{
+		width: 90%;  
+		padding: 10px;		
+	}
+	.intro p {
+		font-size: 1rem;
+		width: 100%;	
+	}
+	.intro h2{
+		font-size: 2rem;
+	}
+	.item{
+		width: 85%;
+		flex-direction: column;
+		margin-bottom: 5px;
+		margin-top: 5px;
+
+	}
+	.title{
+		margin: auto;
+		width: 100%;
+		padding: 0.3rem;
+	}
+	.title h2{
+		font-size: 2rem;
+		text-align: left;
+		padding-bottom: 5px;
+		border-bottom: 2px solid black;
+	}
+	.business-lines .description {
+		width: 100%;
+		border-left: 0;
+		padding: 0.5rem;
+	}
+	.business-lines .description p {
+		padding-left: 0;
+		border-left: 0;
+		margin: 5px;
+
+	}
+	.description a{
+		margin-left: 0;
+		margin-bottom: 5px;
+		padding: 0.5rem;
+	}
+	nav.topnavbar{
+		height: 59px;
+	}
+	img.logo{
+		height: 40px;
+		margin: 0.5rem;
+	}
+	.page-header{
+		margin: 4px 0;
+	}
+	.page-header.icon{
+		border-right: 1px solid withe;
+		padding: 3px;
+		width: 40px;
+		margin: 3px 0;
+	}
+	.page-header .page-title{
+		font-size: 1.7rem;
+	}
+	#business-picture, #sector-picture {
+		display: none;
+	}
+
 	.info {
 		padding: 1rem ;
 		width: 100%;
 		height: 100%;
 	}
 	.info .title {
+<<<<<<< HEAD
+	border-left: 2px solid black;
+=======
 		border-left: 2px solid black;
+>>>>>>> 9f9affd2c788a6fc2ec27d10bfedab18b2619362
 	}
 	.service {
 		width: 90%;
 		margin: 5px;
 	}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9f9affd2c788a6fc2ec27d10bfedab18b2619362
 	.link {
 		margin: 0;
 		width: 100%;
@@ -95,7 +182,10 @@
 		padding: 0.5rem;
 	}
 	#contact #contact-picture {
-	    background-image: none;
+<<<<<<< HEAD
+    background-image: none;
+=======
+		background-image: none;
 	}
 	.related-services {
 		flex-direction: column;
@@ -123,17 +213,78 @@
 	#contact .container-fluid {
 		background: #293038;
 		margin-bottom: 1rem;
-	    padding: 0.8rem;
+		padding: 0.8rem;
 	}
+
 	#contact .contact-icon {
 		padding: 20px;
 		margin-bottom: 20px;
 		width: 150px;
 		height: 150px;
 	}
+
 	#contact .contact-icon img {
 		max-width: 80px;
 	}
+
+	footer {
+		display: flex;
+    		flex-direction: column;
+		flex-wrap: nowrap;
+	    	justify-content: center;
+   		align-content: stretch;
+    		width: 100%;
+    	    	
+	}
+
+	img {
+		width: 70%;
+	}
+>>>>>>> 9f9affd2c788a6fc2ec27d10bfedab18b2619362
+}
+
+	.related-services {
+	
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	align-items:center;
+	
+	}
+	#business-line, #sector {
+	flex-direction: column;
+	overflow: hidden;
+	}
+	#business-line aside, #sector aside {
+		overflow: hidden;
+		width: 50%;
+		/*height: 100%;*/
+	}
+	#business-picture, #sector-picture {
+		border-bottom: 3px solid #DFBF77;
+	}
+	#business-line figure img,  #sector figure img {
+	height: 10%;
+	width: auto;
+	}
+
+	#contact .container-fluid {
+	background: #293038;
+	margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+	#contact .contact-icon {
+
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+}
+
+	#contact .contact-icon img {
+	max-width: 80px;
+}
 
 	footer {
 		display: flex;
@@ -146,9 +297,9 @@
 	}
 
 	img {
-		width: 70%;
-	}
+	width: 70%;
 }
+
 
 /* Portrait */
 @media screen 
