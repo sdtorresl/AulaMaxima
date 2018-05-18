@@ -1,12 +1,14 @@
 /* Portrait and Landscape */
-@media screen and (min-device-width: 400px) and (max-device-width: 800px) and (-webkit-device-pixel-ratio: 2) {
+@media screen 
+  and (min-width: 320px) 
+  and (max-width: 700px) {
 
 	.quote {
 		height: 200px;
 	}
 	.quote h2{
-		font-size: 1.8rem;
-		padding: 2px;
+		font-size: 1.5rem;
+		padding: 5px;
 	}
 	.intro{
 		width: 90%;  
@@ -37,6 +39,10 @@
 		padding-bottom: 5px;
 		border-bottom: 2px solid black;
 	}
+	.business-lines .title {
+	    width: 100%;
+	    justify-content: center;
+	}
 	.business-lines .description {
 		width: 100%;
 		border-left: 0;
@@ -45,7 +51,8 @@
 	.business-lines .description p {
 		padding-left: 0;
 		border-left: 0;
-		margin: 5px 0;
+		margin: 5px;
+
 	}
 	.description a{
 		margin-left: 0;
@@ -74,18 +81,20 @@
 	#business-picture, #sector-picture {
 		display: none;
 	}
+
 	.info {
 		padding: 1rem ;
 		width: 100%;
 		height: 100%;
 	}
 	.info .title {
-		border-left: 2px solid black;
+	border-left: 2px solid black;
 	}
 	.service {
 		width: 90%;
 		margin: 5px;
 	}
+
 	.link {
 		margin: 0;
 		width: 100%;
@@ -95,17 +104,20 @@
 		padding: 0.5rem;
 	}
 	#contact #contact-picture {
-	    background-image: none;
-	}
+    background-image: none;
+}
+
 	.related-services {
-		flex-direction: column;
-		width: 100%;
-		margin: 0;
-		align-items:center;
+	
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	align-items:center;
+	
 	}
 	#business-line, #sector {
-		flex-direction: column;
-		overflow: hidden;
+	flex-direction: column;
+	overflow: hidden;
 	}
 	#business-line aside, #sector aside {
 		overflow: hidden;
@@ -116,24 +128,27 @@
 		border-bottom: 3px solid #DFBF77;
 	}
 	#business-line figure img,  #sector figure img {
-		height: 10%;
-		width: auto;
+	height: 10%;
+	width: auto;
 	}
 
 	#contact .container-fluid {
-		background: #293038;
-		margin-bottom: 1rem;
-	    padding: 0.8rem;
-	}
+	background: #293038;
+	margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
 	#contact .contact-icon {
-		padding: 20px;
-		margin-bottom: 20px;
-		width: 150px;
-		height: 150px;
-	}
+
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	height: 150px;
+}
+
 	#contact .contact-icon img {
-		max-width: 80px;
-	}
+	max-width: 80px;
+}
 
 	footer {
 		display: flex;
@@ -146,9 +161,9 @@
 	}
 
 	img {
-		width: 70%;
-	}
+	width: 70%;
 }
+
 
 /* Portrait */
 @media screen 

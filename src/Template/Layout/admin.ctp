@@ -54,7 +54,7 @@ $cakeDescription = __('Aula Maxima - Administrative Panel');
                             <!-- Navbar Header-->
                             <div class="navbar-header">
                                 <!-- Navbar Brand -->
-                                <a href="index.html" class="navbar-brand">
+                                <a href="http://aulamaxima.innovaciones.co" target="_blank" class="navbar-brand">
                                     <div class="brand-text brand-big hidden-lg-down logo-horizontal">
                                         <?= $this->Html->Image('logo/logo-icon-white.png') ?>
                                         <span><?= __('Aula Máxima') ?></span><strong><?= __('Dashboard') ?></strong>

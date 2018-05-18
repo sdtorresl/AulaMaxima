@@ -4,7 +4,7 @@
 	<div class="sidebar-header d-flex align-items-center">
 		<div class="avatar">
 			<!-- <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"> -->
-			<?= $this->Html->image('project-1.jpg', ['class' => 'img-fluid rounded-circle']); ?>
+			<img class="img-fluid rounded-circle" src="<?= 'https://www.gravatar.com/avatar/' . md5(strtolower(trim($userData['email']))) ?>" alt="">
 		</div>
 		<div class="title">
 			<h1 class="h4"><?= $userData['first_name'] . ' ' . $userData['last_name'] ?></h1>

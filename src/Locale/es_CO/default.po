@@ -18,6 +18,12 @@ msgstr ""
 msgid "Your information has been sent successfully."
 msgstr "Su información ha sido enviada satisfactoriamente"
 
+msgid "New contact on web page"
+msgstr "Nuevo contacto en la página web"
+
+msgid "Your information has been sent"
+msgstr "Su información ha sido enviada"
+
 #: Controller/ContactsController.php:31
 msgid "Your information couldn't be sent."
 msgstr "Su información no pudo ser enviada"
@@ -932,3 +938,5 @@ msgstr "Noviembre"
 msgid "December"
 msgstr "Diciembre"
 
+msgid "Preview"
+msgstr "Vista previa"
