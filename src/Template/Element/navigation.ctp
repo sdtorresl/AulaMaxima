@@ -4,7 +4,7 @@
 	<div class="sidebar-header d-flex align-items-center">
 		<div class="avatar">
 			<!-- <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"> -->
-			<?= $this->Html->image('project-1.jpg', ['class' => 'img-fluid rounded-circle']); ?>
+			<img class="img-fluid rounded-circle" src="<?= 'https://www.gravatar.com/avatar/' . md5(strtolower(trim($userData['email']))) ?>" alt="">
 		</div>
 		<div class="title">
 			<h1 class="h4"><?= $userData['first_name'] . ' ' . $userData['last_name'] ?></h1>
@@ -78,6 +78,15 @@
 			<ul id="services-menu" class="collapse list-unstyled">
 				<li><?= $this->Html->link(__('List'), ['controller' => 'Services', 'action' => 'index', 'prefix' => 'admin']); ?></li>
 				<li><?= $this->Html->link(__('Add'), ['controller' => 'Services', 'action' => 'add', 'prefix' => 'admin']); ?></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#attachments-menu" aria-expanded="false" data-toggle="collapse">
+				<i class="icon-page"></i><?= __('Attachments') ?>
+			</a>
+			<ul id="attachments-menu" class="collapse list-unstyled">
+				<li><?= $this->Html->link(__('List'), ['controller' => 'Attachments', 'action' => 'index', 'prefix' => 'admin']); ?></li>
+				<li><?= $this->Html->link(__('Add'), ['controller' => 'Attachments', 'action' => 'add', 'prefix' => 'admin']); ?></li>
 			</ul>
 		</li>
 	</ul>

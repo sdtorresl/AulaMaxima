@@ -57,13 +57,13 @@ $cakeDescription = __('Aula Maxima - Servicios para el sector educativo');
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="services">
+                    <a href="<?= $this->Url->build(["controller" => "BusinessLines", "action" => "view", "2"]); ?>">
                         <figure><?= $this->Html->Image('icons/icon-services.png') ?></figure>
                         <?= __('Services') ?>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="contacts/contact">
+                    <a href="<?= $this->Url->build(["controller" => "Contacts", "action" => "contact"]); ?>">
                         <figure><?= $this->Html->Image('icons/icon-contact.png') ?></figure>
                         <?= __('Contact') ?>
                     </a>

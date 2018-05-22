@@ -167,7 +167,8 @@ nav.topnavbar {
 	padding: 0px 20px;
 	position: fixed;
 	width: 100%;
-	margin-top: -50px;
+	top: 0px;
+	z-index: 100;
 }
 
 body {
@@ -268,23 +269,23 @@ img {
     margin-top: 20px;
     
 }
-.title {
-
-	display: flex;
-    padding: 1rem;    
-    width: 35%;   
-	align-items: center;
+.business-lines .title {
+	width: 35%;
 	justify-content: right;
 }
+.title {
+	display: flex;
+    padding: 1rem;    
+    /*width: 35%;*/
+	align-items: center;
+	justify-content: left;
+}
 .title h2 {
-
 	font-family: 'Agency';
     text-transform: uppercase;
     font-size: 2.5rem;
     text-align: right;
-
 }
-
 .business-lines .description {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -316,6 +317,7 @@ footer {
 }
 figure, p {
 	margin: 0;
+	height: 100%;
 }
 
 img.logo {
@@ -325,9 +327,6 @@ img.logo {
 }
 
 .parallax {
-    /* The image used */
-    /*background-image: url("../img/photos/contact.jpg");*/
-
     /* Set a specific height */
     min-height: 300px; 
 
@@ -356,7 +355,7 @@ img.logo {
 	border-right: 5px solid #DFBF77;
 }
 #business-line figure img,  #sector figure img {
-	height: 100vh;
+	height: 100%;
 	width: auto;
 	max-width: none;
 	border-top: 1px solid #DFBF77;
@@ -383,6 +382,8 @@ img.logo {
 .info .description p {
 	width: 100%;
 	font-size: 1.2rem;
+	font-weight: bold;
+	color: grey;
 }
 .link {
 	border: 2px solid black;
@@ -409,7 +410,7 @@ img.logo {
 }
 
 #contact #contact-picture {
-    background-image: url("../img/photos/contact.jpg");
+    background-image: url("../img/web/contact.png");
 }
 
 #contact .container-fluid {

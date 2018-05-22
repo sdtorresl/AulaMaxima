@@ -18,6 +18,12 @@ msgstr ""
 msgid "Your information has been sent successfully."
 msgstr "Su información ha sido enviada satisfactoriamente"
 
+msgid "New contact on web page"
+msgstr "Nuevo contacto en la página web"
+
+msgid "Your information has been sent"
+msgstr "Su información ha sido enviada"
+
 #: Controller/ContactsController.php:31
 msgid "Your information couldn't be sent."
 msgstr "Su información no pudo ser enviada"
@@ -165,6 +171,22 @@ msgstr "El usuario no pudo ser borrado. Por favor intente nuevamente."
 #: Controller/Admin/UsersController.php:144
 msgid "Invalid username or password, try again"
 msgstr "Usuario o contraseña inválidos, intente nuevamente"
+
+#: Controller/Admin/ServicesController.php:70;98
+msgid "The Attachment has been saved."
+msgstr "El adjunto ha sido guardado."
+
+#: Controller/Admin/ServicesController.php:74;102
+msgid "The attachment could not be saved. Please, try again."
+msgstr "El adjunto no pudo ser guardado. Por favor intente nuevamente."
+
+#: Controller/Admin/ServicesController.php:123
+msgid "The attachment has been deleted."
+msgstr "El adjunto ha sido borrado."
+
+#: Controller/Admin/ServicesController.php:125
+msgid "The attachment could not be deleted. Please, try again."
+msgstr "El attachment no pudo ser guardado. Por favor intente nuevamente."
 
 #: Template/Admin/BusinessLines/add.ctp:10
 #: Template/Admin/BusinessLines/edit.ctp:10
@@ -519,6 +541,24 @@ msgstr "Último acceso"
 #: Template/Admin/Users/view.ctp:55
 msgid "Edit User"
 msgstr "Editar Usuario"
+
+msgid "Attachment"
+msgstr "Adjunto"
+
+msgid "Attachments"
+msgstr "Adjuntos"
+
+msgid "New Attachment"
+msgstr "Nuevo Adjunto"
+
+msgid "File"
+msgstr "Archivo"
+
+msgid "Directory"
+msgstr "Directorio"
+
+msgid "Type"
+msgstr "TIpo"
 
 #: Template/Bake/Element/form.ctp:32
 #: Template/Bake/Template/index.ctp:45;55
@@ -932,3 +972,5 @@ msgstr "Noviembre"
 msgid "December"
 msgstr "Diciembre"
 
+msgid "Preview"
+msgstr "Vista previa"

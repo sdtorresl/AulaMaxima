@@ -36,13 +36,17 @@
             </div>
             <?php endforeach; ?>
         </div>
-
+        <!--
         <div class="related-sectors">
             <?php foreach ($relatedSectors as $sector): ?> 
             <div class="sector">
                 <?= h($sector->title) ?>
             </div>
             <?php endforeach; ?>
+        </div>
+    -->
+        <div class="link contact">
+            <?= $this->Html->link('Contacto', ['controller' => 'contacts', 'action' => 'contact']); ?>
         </div>
     </article>
 </section>

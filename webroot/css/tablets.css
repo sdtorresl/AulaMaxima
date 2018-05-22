@@ -1,5 +1,5 @@
 /* Portrait and Landscape */
-@media (min-device-width: 800px) and (max-device-width: 1280px) {
+@media (min-device-width: 700px) and (max-device-width: 1024px) {
 	.intro {
 		width: 90%;
 	}
@@ -13,13 +13,12 @@
 	.quote h2{
 		font-size: 2rem;
 	}
-	#business-picture, #sector-picture {
+	/*#business-picture, #sector-picture {
 		display: none;
-	}
+	}*/
 	.business-lines .description {
 		width: 60%;
 		padding: 20px;
-
 	}
 
 	.info {
@@ -28,13 +27,8 @@
 		height: 100%;
 	}
 	.info .title {
-	border-left: 2px solid black;
+		border-left: 2px solid black;
 	}
-	.service {
-		width: 90%;
-		margin: 5px;
-	}
-
 	.link {
 		margin: 0;
 		width: 100%;
@@ -44,23 +38,15 @@
 		padding: 0.5rem;
 	}
 	.related-services {
+		justify-content: space-between;
+	}
+	.related-services .service {
+		width: 45%;
+	}
 	
 	flex-direction: column;
-	width: 100%;
-	margin: 0;
-	align-items:center;
-	
+		width: 100%;
+		margin: 0;
+		align-items:center;
 	}
-
-
-}
-
-/* Portrait */
-@media (max-device-width: 800px) and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media (max-device-width: 1280px) and (orientation: landscape) { 
-
 }

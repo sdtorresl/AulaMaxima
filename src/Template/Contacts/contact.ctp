@@ -2,6 +2,18 @@
 /**
  * @var \App\View\AppView $this
  */
+
+foreach ($fields as $field) {
+    if ($field->type == 'contactFormDescription' && $field->published == true) {
+        $contactFormDescription = $field->body;
+    }
+    if ($field->type == 'contactFormAddress' && $field->published == true) {
+        $contactFormAddress = $field->body;
+    }
+    if ($field->type == 'contactFormPhone' && $field->published == true) {
+        $contactFormPhone = $field->body;
+    }
+}
 ?>
 
 <!-- Page Header-->
@@ -30,9 +42,9 @@
                     <div class="col-lg-7">
 
                         <div class="contact-info">
-                            <p>Telefóno: 72264166 - 321 258 2585</p>
-                            <p>Dirección: Carrera 101 #147C - 34 correo: contacto@aulamaxima.co</p>
-                            <p>Deja tu mensaje y nos pondremos en contacto contigo.</p>
+                            <p><?= $contactFormPhone ?? '' ?></p>
+                            <p><?= $contactFormAddress ?? '' ?></p>
+                            <p><?= $contactFormDescription ?? '' ?></p>
                         </div>
 
                         <?= $this->Form->create($contact) ?>

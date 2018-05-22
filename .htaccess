@@ -4,6 +4,14 @@
 #    RequestHeader unset Proxy
 #</IfModule>
 
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://www.%1%{REQUEST_URI} [L,NE,R=301] 
+ 
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteRule    ^$    webroot/    [L]

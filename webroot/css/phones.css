@@ -1,8 +1,7 @@
 /* Portrait and Landscape */
 @media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) {
+  and (min-width: 320px) 
+  and (max-width: 700px) {
 
 	.quote {
 		height: 200px;
@@ -39,6 +38,10 @@
 		text-align: left;
 		padding-bottom: 5px;
 		border-bottom: 2px solid black;
+	}
+	.business-lines .title {
+	    width: 100%;
+	    justify-content: center;
 	}
 	.business-lines .description {
 		width: 100%;

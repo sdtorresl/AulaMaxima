@@ -45,6 +45,11 @@ class ServicesTable extends Table
             'targetForeignKey' => 'sector_id',
             'joinTable' => 'sectors_services'
         ]);
+
+        $this->hasMany('Attachments')
+        ->setForeignKey([
+            'service_id'
+        ]);
     }
 
     /**

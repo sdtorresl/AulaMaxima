@@ -8,7 +8,7 @@
 <!-- Page Header-->
 <header class="page-header">
     <div class="container-fluid">
-        <h2 class="no-margin-bottom"><?= h('Services') ?></h2>
+        <h2 class="no-margin-bottom"><?= __('Services') ?></h2>
     </div>
 </header>
 
