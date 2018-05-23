@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <?= $this->Form->create($attachment, ['type' => 'file']) ?>
                         <?php
-                        echo $this->Form->control('name');
+                        echo $this->Form->control('name', ['maxlength' => 150]);
                         echo $this->Form->control('file', ['type' => 'file']);
                         echo $this->Form->control('sector_id', ['options' => $sectors]);
                         ?>
