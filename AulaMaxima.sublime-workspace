@@ -359,6 +359,42 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/Model/Table/AttachmentsTable.php",
+			"settings":
+			{
+				"buffer_size": 3171,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Template/Admin/Attachments/edit.ctp",
+			"settings":
+			{
+				"buffer_size": 1192,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Template/Admin/Attachments/index.ctp",
+			"settings":
+			{
+				"buffer_size": 5157,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Template/Element/navigation.ctp",
+			"settings":
+			{
+				"buffer_size": 4165,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -479,26 +515,21 @@
 	[
 		"/home/sdtorresl/Programming/Web/AulaMaxima",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Model",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Attachments",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Sectors"
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Element"
 	],
 	"file_history":
 	[
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Attachments/add.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Model/Table/AttachmentsTable.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin/AttachmentsController.php",
+		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Model/Table/ServicesTable.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/config/bootstrap.php",
 		"/home/sdtorresl/Downloads/Proceso/proceso_gui.py",
 		"/home/sdtorresl/Programming/Python/ZRH.py",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Model/Table/SectorsServicesTable.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Locale/es_CO/default.po",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Element/navigation.ctp",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Controller/Admin/AttachmentsController.php",
-		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Model/Table/ServicesTable.php",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Attachments/view.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Attachments/index.ctp",
 		"/home/sdtorresl/Programming/Web/AulaMaxima/src/Template/Admin/Attachments/edit.ctp",
@@ -620,7 +651,7 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -766,8 +797,144 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/Model/Table/AttachmentsTable.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2705,
+								2705
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Template/Admin/Attachments/edit.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								221,
+								221
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 53.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Template/Admin/Attachments/index.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								879,
+								879
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Template/Element/navigation.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3467,
+								3467
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 287.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -814,7 +981,7 @@
 	"project": "AulaMaxima.sublime-project",
 	"replace":
 	{
-		"height": 74.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -829,9 +996,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "res",
+		"last_filter": "re",
 		"selected_items":
 		[
+			[
+				"re",
+				"~/Programming/Web/Resot/resot.sublime-project"
+			],
 			[
 				"res",
 				"~/Programming/Web/Resot/resot.sublime-project"
