@@ -11,6 +11,7 @@
         <h2 class="no-margin-bottom"><?= h('Attachments') ?></h2>
     </div>
 </header>
+<?= $this->Flash->render() ?>
 
 <section class="tables">
     <div class="container-fluid">
@@ -27,7 +28,7 @@
                                 <td><?= h($attachment->name) ?></td>
                             </tr>
                             <tr>
-                                <th scope="row"><?= __('file') ?></th>
+                                <th scope="row"><?= __('File') ?></th>
                                 <td><?= h($attachment->file) ?></td>
                             </tr>
                             <tr>
@@ -39,12 +40,16 @@
                                 <td><?= h($attachment->type) ?></td>
                             </tr>
                             <tr>
-                                <th scope="row"><?= __('Service') ?></th>
-                                <td><?= $attachment->has('service') ? $this->Html->link($attachment->service->name, ['controller' => 'Services', 'action' => 'view', $attachment->service->id]) : '' ?></td>
+                                <th scope="row"><?= __('Sector') ?></th>
+                                <td><?= $attachment->has('sector') ? $this->Html->link($attachment->sector->title, ['controller' => 'Sectors', 'action' => 'view', $attachment->sector->id]) : '' ?></td>
                             </tr>
                             <tr>
                                 <th scope="row"><?= __('Id') ?></th>
                                 <td><?= $this->Number->format($attachment->id) ?></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><?= __('Link') ?></th>
+                                <td><?= $this->Html->link(__('Download file'), $attachment->directory . '/' . $attachment->file) ?></td>
                             </tr>
                             <tr>
                                 <th scope="row"><?= __('Created') ?></th>

@@ -11,6 +11,7 @@
         <h2 class="no-margin-bottom"><?= __('Attachments') ?></h2>
     </div>
 </header>
+<?= $this->Flash->render() ?>
 
 <section class="tables table-hover">
     <div class="container-fluid">
@@ -27,10 +28,8 @@
                                 <tr>
                                     <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('name') ?></th>
-                                    <!-- <th scope="col"><?= $this->Paginator->sort('file') ?></th> -->
-                                    <!-- <th scope="col"><?= $this->Paginator->sort('directory') ?></th> -->
                                     <th scope="col"><?= $this->Paginator->sort('type') ?></th>
-                                    <th scope="col"><?= $this->Paginator->sort('service_id') ?></th>
+                                    <th scope="col"><?= $this->Paginator->sort('sector_id') ?></th>
                                     <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                                     <th scope="col" class="actions"><?= __('Actions') ?></th>
                                 </tr>
@@ -40,10 +39,8 @@
                                 <tr>
                                     <td><?= $this->Number->format($attachment->id) ?></td>
                                     <td><?= h($attachment->name) ?></td>
-                                    <!-- <td><?= h($attachment->file) ?></td> -->
-                                    <!-- <td><?= h($attachment->directory) ?></td> -->
                                     <td><?= h($attachment->type) ?></td>
-                                    <td><?= $attachment->has('service') ? $this->Html->link($attachment->service->name, ['controller' => 'Services', 'action' => 'view', $attachment->service->id]) : '' ?></td>
+                                    <td><?= $attachment->has('sector') ? $this->Html->link($attachment->sector->title, ['controller' => 'Sectors', 'action' => 'view', $attachment->sector->id]) : '' ?></td>
                                     <td><?= h($attachment->created) ?></td>
                                     <td class="actions">
                                         <!-- View -->

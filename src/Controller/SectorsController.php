@@ -22,7 +22,7 @@ class SectorsController extends AppController
     public function view($id = null)
     {
         $sector = $this->Sectors->get($id, [
-            'contain' => ['BusinessLines', 'Services']
+            'contain' => ['BusinessLines', 'Services', 'Attachments']
         ]);
 
         $relatedSectors = $this->Sectors->find()

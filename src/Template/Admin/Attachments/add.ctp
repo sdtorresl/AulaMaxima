@@ -10,6 +10,7 @@
         <h2 class="no-margin-bottom"><?= __('Attachments') ?></h2>
     </div>
 </header>
+<?= $this->Flash->render() ?>
 
 <section class="forms">
     <div class="container-fluid">
@@ -25,8 +26,7 @@
                         <?php
                         echo $this->Form->control('name');
                         echo $this->Form->control('file', ['type' => 'file']);
-                        // echo $this->Form->control('service');
-                        echo $this->Form->control('service_id', ['options' => $services]);
+                        echo $this->Form->control('sector_id', ['options' => $sectors]);
                         ?>
 
                         <?= $this->Form->button(__('Submit')) ?>

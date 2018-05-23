@@ -8,13 +8,14 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $name
- * @property string $file
+ * @property $file
  * @property string $directory
  * @property string $type
+ * @property string $size
+ * @property int $sector_id
  * @property \Cake\I18n\FrozenTime $created
- * @property int $service_id
  *
- * @property \App\Model\Entity\Service $service
+ * @property \App\Model\Entity\Sector $sector
  */
 class Attachment extends Entity
 {
@@ -33,7 +34,9 @@ class Attachment extends Entity
         'file' => true,
         'directory' => true,
         'type' => true,
+        'size' => true,
+        'sector_id' => true,
         'created' => true,
-        'service' => true
+        'sector' => true
     ];
 }

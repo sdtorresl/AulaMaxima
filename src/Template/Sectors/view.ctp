@@ -29,6 +29,14 @@
             <p><?= h($sector->description) ?></p>
         </div>
 
+        <div class="related-attachments">
+            <?php foreach ($sector->attachments as $attachment): ?> 
+            <div class="attachment">
+                <?= $this->Html->link($attachment->name, $attachment->directory . '/' . $attachment->file) ?>
+            </div>
+            <?php endforeach; ?>
+        </div>
+
         <div class="related-services">
             <?php foreach ($sector->services as $service): ?> 
             <div class="service">

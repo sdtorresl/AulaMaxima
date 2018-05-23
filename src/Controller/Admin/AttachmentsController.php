@@ -21,7 +21,7 @@ class AttachmentsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Services']
+            'contain' => ['Sectors']
         ];
         $attachments = $this->paginate($this->Attachments);
 
@@ -42,7 +42,7 @@ class AttachmentsController extends AppController
     public function view($id = null)
     {
         $attachment = $this->Attachments->get($id, [
-            'contain' => ['Services']
+            'contain' => ['Sectors']
         ]);
 
         $this->set('attachment', $attachment);
@@ -69,8 +69,8 @@ class AttachmentsController extends AppController
             }
             $this->Flash->error(__('The attachment could not be saved. Please, try again.'));
         }
-        $services = $this->Attachments->Services->find('list', ['limit' => 200]);
-        $this->set(compact('attachment', 'services'));
+        $sectors = $this->Attachments->Sectors->find('list', ['limit' => 200]);
+        $this->set(compact('attachment', 'sectors'));
         $this->set('_serialize', ['attachment']);
 
         $this->set('page', 'atttachments'); 
@@ -98,8 +98,8 @@ class AttachmentsController extends AppController
             }
             $this->Flash->error(__('The attachment could not be saved. Please, try again.'));
         }
-        $services = $this->Attachments->Services->find('list', ['limit' => 200]);
-        $this->set(compact('attachment', 'services'));
+        $sectors = $this->Attachments->Sectors->find('list', ['limit' => 200]);
+        $this->set(compact('attachment', 'sectors'));
         $this->set('_serialize', ['attachment']);
 
         $this->set('page', 'atttachments'); 
@@ -124,8 +124,5 @@ class AttachmentsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
-
-        $this->set('page', 'atttachments'); 
-        $this->viewBuilder()->setLayout('admin');
     }
 }

@@ -173,7 +173,7 @@ msgid "Invalid username or password, try again"
 msgstr "Usuario o contraseña inválidos, intente nuevamente"
 
 #: Controller/Admin/ServicesController.php:70;98
-msgid "The Attachment has been saved."
+msgid "The attachment has been saved."
 msgstr "El adjunto ha sido guardado."
 
 #: Controller/Admin/ServicesController.php:74;102
@@ -187,6 +187,18 @@ msgstr "El adjunto ha sido borrado."
 #: Controller/Admin/ServicesController.php:125
 msgid "The attachment could not be deleted. Please, try again."
 msgstr "El attachment no pudo ser guardado. Por favor intente nuevamente."
+
+msgid "Edit Attachment"
+msgstr "Modificar Adjunto"
+
+msgid "New Attachment"
+msgstr "Añadir Adjunto"
+
+msgid "Download file"
+msgstr "Descargar archivo"
+
+msgid "Link"
+msgstr "Enlace"
 
 #: Template/Admin/BusinessLines/add.ctp:10
 #: Template/Admin/BusinessLines/edit.ctp:10

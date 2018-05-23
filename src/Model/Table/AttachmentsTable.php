@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Attachments Model
  *
- * @property \App\Model\Table\ServicesTable|\Cake\ORM\Association\BelongsTo $Services
+ * @property |\Cake\ORM\Association\BelongsTo $Sectors
  *
  * @method \App\Model\Entity\Attachment get($primaryKey, $options = [])
  * @method \App\Model\Entity\Attachment newEntity($data = null, array $options = [])
@@ -51,8 +51,8 @@ class AttachmentsTable extends Table
             ]
         ]);
 
-        $this->belongsTo('Services', [
-            'foreignKey' => 'service_id',
+        $this->belongsTo('Sectors', [
+            'foreignKey' => 'sector_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -76,19 +76,17 @@ class AttachmentsTable extends Table
 
         $validator
             ->requirePresence('file', 'create')
-            ->notEmpty('file');
+            ->notEmpty('file')
+            ->allowEmpty('file', 'update');
 
         $validator
-            // ->scalar('directory')
-            // ->requirePresence('directory', 'create')
             ->allowEmpty('directory');
 
         $validator
-            // ->scalar('type')
             ->allowEmpty('type');
 
         $validator
-            // ->scalar('size')
+            ->scalar('size')
             ->allowEmpty('size');
 
         return $validator;
@@ -103,7 +101,7 @@ class AttachmentsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['service_id'], 'Services'));
+        $rules->add($rules->existsIn(['sector_id'], 'Sectors'));
 
         return $rules;
     }
